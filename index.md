@@ -8,7 +8,7 @@ layout: default
 
 <img class="profile-picture" src="profile.jpeg">
 
-I am Harris Ahmad, a rising Computer Science senior at the Lahore University of Management Sciences (LUMS), Pakistan. Broadly, I am interested in diving deeper into networked and distributed systems, but I’m willing to entertain any compelling projects. Currently, my research primarily centers on the following theme: rethinking the internet design and architecture to account for better affordability, inclusion, and user experience. I'm currently working under the supervision of [Dr. Zafar Ayyub Qazi](https://web.lums.edu.pk/~zafar) and [Dr. Ihsan Ayyub Qazi](https://www.ihsanqazi.com).
+I am Harris Ahmad, a rising Computer Science senior at the [Lahore University of Management Sciences (LUMS)](https://www.lums.edu.pk/), Pakistan. Broadly, I am interested in diving deeper into networked and distributed systems, but I’m willing to entertain any compelling projects. Currently, my research primarily centers on the following theme: rethinking the internet design and architecture to account for better affordability, inclusion, and user experience. I'm currently working under the supervision of [Dr. Zafar Ayyub Qazi](https://web.lums.edu.pk/~zafar) and [Dr. Ihsan Ayyub Qazi](https://www.ihsanqazi.com).
 
 Over my junior year, I've worked on a Measurement Analysis study quantifying the buffer losses incurred due to in-stream YouTube advertisements. We've quantified how users in developing and developed countries bear the incurred financial burden due to these ads. To read more about this work, find my research statement [here](Teaching_and_Research_Statement-2.pdf "download").
 
