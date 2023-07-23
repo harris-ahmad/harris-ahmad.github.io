@@ -1,0 +1,26 @@
+title: Harris Ahmad
+url: https://harris-ahmad.github.io
+baseurl: ""
+
+domain: harris-ahmad.github.io
+
+markdown: kramdown
+#ins_logo: "./bits-logo.png"
+
+tracking_id: #
+
+footer: yes
+footer_url: ""
+footer_text: "Copyright © Harris Ahmad; All rights reserved."
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+nav:
+ - name: "About"
+   link: ""
+ - name: "Resume"
+   link: "resume.pdf"
+ - name: "Contact"
+   link: "contact"
