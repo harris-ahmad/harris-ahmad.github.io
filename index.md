@@ -15,7 +15,7 @@ Over my junior year, I've worked on a Measurement Analysis study quantifying the
 ## Research Interests
 
 Currently, my research calls for immediate steps towards reconsidering the design of various
-applications on the internet to make them affordable, inclusive and offer a better user experience. Broadly, I’m motivated to entertain projects that circle programmable networks, cellular networks, cloud computing, high-performance computing, performance analysis, and verification of different networks. An intersection of computational algorithms, packet forwarding and measurement functions, and various low-level network-programming compliant languages such as P4 out of hundreds available also draws my attention.
+applications on the internet to make them affordable, inclusive and offer a better user experience. Broadly, I’m motivated to entertain projects that circle programmable networks, cellular networks, cloud computing, high-performance computing, performance analysis, and verification of different networks. An intersection of computational algorithms, packet forwarding and measurement functions, and various low-level network-programming compliant languages such as P4 out of hundreds available also draws my attention. You can find my research statement [here]("./Teaching_and_Research_Statement-2.pdf" "download").
 
 ## Publications
 
