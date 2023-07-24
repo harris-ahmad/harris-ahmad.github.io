@@ -1,5 +1,5 @@
 title: Harris Ahmad
-url: "https://ankitsultana.com"
+url: "https://harris-ahmad.github.io/"
 baseurl: ""
 
 markdown: kramdown
@@ -17,7 +17,7 @@ sass:
 
 nav:
  - name: "About"
-   link: ""
+   link: "/"
  - name: "Resume"
    link: "resume.pdf"
  - name: "Contact"
