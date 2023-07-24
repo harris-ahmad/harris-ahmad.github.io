@@ -30,61 +30,61 @@ is_contact: true
 <style>
     /* add some form designing elements to pageclip-form class and make it responsive */
     .pageclip-form {
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-shadow: 0 0 5px #ccc;
-    }
-    .pageclip-form label {
-        display: block;
-        margin-bottom: 5px;
-    }
-    .pageclip-form input,
-    .pageclip-form textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-    .pageclip-form input:focus,
-    .pageclip-form textarea:focus {
-        outline: none;
-        border-color: #aaa;
-    }
-    .pageclip-form button {
-        background: #333;
-        color: #fff;
-        border: 0;
-        border-radius: 5px;
-        padding: 10px 15px;
-        cursor: pointer;
-    }
-    .pageclip-form button:hover {
-        background: #444;
-    }
-    .pageclip-form button:disabled {
-        opacity: 0.5;
-        cursor: default;
-    }
-    .pageclip-form button .spinner {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        border: 2px solid;
-        border-right-color: transparent;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        margin-left: 10px;
-        vertical-align: middle;
-        opacity: 0;
-    }
-    .pageclip-form button:disabled .spinner {
-        opacity: 1;
-    }
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #ccc;
+        }
+        .pageclip-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .pageclip-form input,
+        .pageclip-form textarea {
+            width: 480px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .pageclip-form input:focus,
+        .pageclip-form textarea:focus {
+            outline: none;
+            border-color: #aaa;
+        }
+        .pageclip-form button {
+            background: #333;
+            color: #fff;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .pageclip-form button:hover {
+            background: #444;
+        }
+        .pageclip-form button:disabled {
+            opacity: 0.5;
+            cursor: default;
+        }
+        .pageclip-form button .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+            vertical-align: middle;
+            opacity: 0;
+        }
+        .pageclip-form button:disabled .spinner {
+            opacity: 1;
+        }
 </style>
 <form action="https://send.pageclip.co/PUTf9KHJBJ3napaDaRSIq5HPPkk2b6BC/contact-form" class="pageclip-form"
     method="post">
