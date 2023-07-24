@@ -38,7 +38,7 @@ applications on the internet to make them affordable, inclusive and offer a bett
 <!-- add a relevant emoji and the heading "Miscellaneous" -->
 ## 🤷‍♂️ Miscellaneous
 
-* One of the papers I've enjoyed reading is [Raft](https://raft.github.io/raft.pdf)
+* One of the papers I've enjoyed reading is [Raft](https://raft.github.io/raft.pdf).
 * I'm a huge fan of the [C++](https://isocpp.org/) programming language.
 * The song I'm currently listening to is [Hero](https://www.youtube.com/watch?v=mYFaghHyMKc) by Family of the Year.
-* When I find some time to spare, I like to scroll through [@rmdrk](https://www.instagram.com/rmdrk/?hl=en)'s Instagram page. His quotes are worth reading.
+* When I find some time to spare, I like to scroll through [@rmdrk](https://www.instagram.com/rmdrk/?hl=en)'s and [@blakeaudenpoetry](https://www.instagram.com/blakeaudenpoetry/?hl=en)'s Instagram. Their quotes are worth reading. 
