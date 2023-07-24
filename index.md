@@ -4,7 +4,15 @@ layout: default
 
 > You don’t become confident by shouting affirmations in the mirror, but by having a stack of undeniable proof that you are who you say you are. Outwork your self doubt. - Alex Hormozi
 
-[👋 About Me](#👋-about-me) / [📊 Research Interests](#📊-research-interests) / [📄 Publications](#📄-publications) / [🏫 Teaching](#🏫-teaching) / [👨‍🏫 References](#👨‍🏫-references) / [📝 Blogs](#📝-blogs) / [🤷‍♂️ Miscellaneous](#🤷‍♂️-miscellaneous)
+
+### Navigate to
+* [👋 About Me](#👋-about-me)
+* [📊 Research Interests](#📊-research-interests)
+* [📄 Publications](#📄-publications)
+* [🏫 Teaching](#🏫-teaching)
+* [👨‍🏫 References](#👨‍🏫-references)
+* [📝 Blogs](#📝-blogs)
+* [🤷‍♂️ Miscellaneous](#🤷‍♂️-miscellaneous)
 
 ## 👋 About Me
 
