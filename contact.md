@@ -12,7 +12,7 @@ is_contact: true
 ## 📬 Mailing Address
 
 > Lahore University of Management Sciences (LUMS), Lahore, Pakistan
-> Khyaban-e-Jinnah, opposite Sector U،, Phase 5 D.H.A, Lahore, Punjab 54792
+> Khyaban-e-Jinnah, opposite Sector U, Phase 5 D.H.A, Lahore, Punjab 54792
 
 ---
 
