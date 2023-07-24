@@ -6,17 +6,17 @@ layout: default
 
 
 ### Navigate to
-* [👋 About Me](#about-me)
+* [👋 About Me](#👋-about-me)
 * [📊 Research Interests](#research-interests)
 * [📄 Publications](#publications)
-* [🏫 Teaching](#teaching)
+* [🏫 Teaching](#)
 * [👨‍🏫 References](#references)
 * [📝 Blogs](#blogs)
-* [🤷‍♂️ Miscellaneous](#miscellaneous)
-
-## <a href="#about-me"></a> 👋 About Me
+* [🤷 Miscellaneous](#🤷-miscellaneous)
 
 <img class="profile-picture" src="profile.jpeg">
+
+<h2 id="👋-about-me">👋 About Me</h2>
 
 I am a rising Computer Science senior at the <a href="https://www.lums.edu.pk/" target="_blank">Lahore University of Management Sciences (LUMS)</a>, Pakistan. Broadly, I am interested in diving deeper into networked and distributed systems, but I’m willing to entertain any compelling projects. Currently, my research primarily centers on the following theme: rethinking the internet design and architecture to account for better affordability, inclusion, and user experience. I'm currently working under the supervision of <a href="https://web.lums.edu.pk/~zafar" target="_blank">Dr. Zafar Ayyub Qazi</a>
  and <a href="https://www.ihsanqazi.com" target="_blank">Dr. Ihsan Ayyub Qazi</a>.
@@ -32,7 +32,7 @@ applications on the internet to make them affordable, inclusive and offer a bett
 
 > Coming Soon...
 
-## <a href="#teaching"></a> 🏫 Teaching
+## <a href="teaching"></a> 🏫 Teaching
 
 * Undergraduate Teaching Assistant, LUMS
     * CS200/EE201: Introduction to Programming (Spring 2023)
@@ -47,7 +47,8 @@ applications on the internet to make them affordable, inclusive and offer a bett
 * <a href="https://harris-ahmad.notion.site/harris-ahmad/a504b98dedee42ac9ea256d92ff2668c?v=2fd15646449048aabca5b40bbd8d2384" target="_blank">A Comprehensive Guide on Object Oriented Constructs in C++</a>
 
 <!-- add a relevant emoji and the heading "Miscellaneous" -->
-## <a href="#miscellaneous"></a> 🤷‍♂️ Miscellaneous
+
+<h2 id="#🤷-miscellaneous">🤷 Miscellaneous</h2>
 
 * One of the papers I've enjoyed reading is [Raft](https://raft.github.io/raft.pdf).
 * I'm a huge fan of the [C++](https://isocpp.org/) programming language.
