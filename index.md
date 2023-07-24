@@ -34,3 +34,11 @@ applications on the internet to make them affordable, inclusive and offer a bett
 ## 📝 Blogs
 
 * <a href="https://harris-ahmad.notion.site/harris-ahmad/a504b98dedee42ac9ea256d92ff2668c?v=2fd15646449048aabca5b40bbd8d2384" target="_blank">A Comprehensive Guide on Object Oriented Constructs in C++</a>
+
+<!-- add a relevant emoji and the heading "Miscellaneous" -->
+## 🤷‍♂️ Miscellaneous
+
+* One of the papers I've enjoyed reading is [Raft](https://raft.github.io/raft.pdf)
+* I'm a huge fan of the [C++](https://isocpp.org/) programming language.
+* The song I'm currently listening to is [Hero](https://www.youtube.com/watch?v=mYFaghHyMKc) by Family of the Year.
+* When I find some time to spare, I like to scroll through [@rmdrk](https://www.instagram.com/rmdrk/?hl=en)'s Instagram page. His quotes are worth reading.
