@@ -14,7 +14,7 @@ layout: default
 * [📝 Blogs](#📝-blogs)
 * [🤷‍♂️ Miscellaneous](#🤷‍♂️-miscellaneous)
 
-## 👋 About Me
+## <a href="#👋-about-me">👋 About Me</a>
 
 <img class="profile-picture" src="profile.jpeg">
 
