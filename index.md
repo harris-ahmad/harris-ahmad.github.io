@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> The greatest successes come from having the freedom to fail - Zuckerberg
+> You don’t become confident by shouting affirmations in the mirror, but by having a stack of undeniable proof that you are who you say you are. Outwork your self doubt. - Alex Hormozi
 
 ## 👋 About Me
 
