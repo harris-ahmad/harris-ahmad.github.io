@@ -88,7 +88,7 @@ is_contact: true
         @media (max-width: 500px) {
             .pageclip-form input,
             .pageclip-form textarea {
-                width: 100%;
+                width: 95%;
             }
         }
 </style>
