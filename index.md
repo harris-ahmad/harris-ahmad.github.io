@@ -8,7 +8,8 @@ layout: default
 
 <img class="profile-picture" src="profile.jpeg">
 
-I am a rising Computer Science senior at the [Lahore University of Management Sciences (LUMS)](https://www.lums.edu.pk/), Pakistan. Broadly, I am interested in diving deeper into networked and distributed systems, but I’m willing to entertain any compelling projects. Currently, my research primarily centers on the following theme: rethinking the internet design and architecture to account for better affordability, inclusion, and user experience. I'm currently working under the supervision of [Dr. Zafar Ayyub Qazi](https://web.lums.edu.pk/~zafar) and [Dr. Ihsan Ayyub Qazi](https://www.ihsanqazi.com).
+I am a rising Computer Science senior at the <a href="https://www.lums.edu.pk/" target="_blank">Lahore University of Management Sciences (LUMS)</a>, Pakistan. Broadly, I am interested in diving deeper into networked and distributed systems, but I’m willing to entertain any compelling projects. Currently, my research primarily centers on the following theme: rethinking the internet design and architecture to account for better affordability, inclusion, and user experience. I'm currently working under the supervision of <a href="https://web.lums.edu.pk/~zafar" target="_blank">Dr. Zafar Ayyub Qazi</a>
+ and <a href="https://www.ihsanqazi.com" target="_blank">Dr. Ihsan Ayyub Qazi</a>.
 
 Over my junior year, I've worked on a Measurement Analysis study quantifying the buffer losses incurred due to in-stream YouTube advertisements. We've quantified how users in developing and developed countries bear the incurred financial burden due to these ads. I have experience in submitting to leading conferences like the ACM Web Conference (formerly, WWW) 2023 and the ACM CoNEXT 2023. To read about this work, head to my research statement [here](research-statement.pdf "download")
 
