@@ -85,6 +85,12 @@ is_contact: true
         .pageclip-form button:disabled .spinner {
             opacity: 1;
         }
+        @media (max-width: 500px) {
+            .pageclip-form input,
+            .pageclip-form textarea {
+                width: 100%;
+            }
+        }
 </style>
 <form action="https://send.pageclip.co/PUTf9KHJBJ3napaDaRSIq5HPPkk2b6BC/contact-form" class="pageclip-form"
     method="post">
