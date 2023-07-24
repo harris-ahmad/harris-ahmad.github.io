@@ -23,31 +23,31 @@ I am a rising Computer Science senior at the <a href="https://www.lums.edu.pk/" 
 
 Over my junior year, I've worked on a Measurement Analysis study quantifying the buffer losses incurred due to in-stream YouTube advertisements. We've quantified how users in developing and developed countries bear the incurred financial burden due to these ads. I have experience in submitting to leading conferences like the ACM Web Conference (formerly, WWW) 2023 and the ACM CoNEXT 2023. To read about this work, head to my research statement [here](research-statement.pdf "download").
 
-## 📊 Research Interests
+## <a href="#📊-research-interests">📊 Research Interests</a>
 
 Currently, my research calls for immediate steps towards reconsidering the design of various
 applications on the internet to make them affordable, inclusive and offer a better user experience. Broadly, I’m motivated to entertain projects that circle programmable networks, cellular networks, cloud computing, high-performance computing, performance analysis, and verification of different networks. An intersection of computational algorithms, packet forwarding and measurement functions, and congestion control mehanisms within data centers also draws my attention.
 
-## 📄 Publications
+## <a href="#📄-publications">📄 Publications</a>
 
 > Coming Soon...
 
-## 🏫 Teaching
+## <a href="#🏫-teaching">🏫 Teaching</a>
 
 * Undergraduate Teaching Assistant, LUMS
     * CS200/EE201: Introduction to Programming (Spring 2023)
 
-## 👨‍🏫 References
+## <a href="#👨‍🏫-references">👨‍🏫 References</a>
 
 * Dr. Zafar Ayyub Qazi: Assistant Professor, Department of Computer Science, LUMS
 * Dr. Ihsan Ayyub Qazi: Associate Professor, Department of Computer Science, LUMS
 
-## 📝 Blogs
+## <a href="#📝-blogs">📝 Blogs</a>
 
 * <a href="https://harris-ahmad.notion.site/harris-ahmad/a504b98dedee42ac9ea256d92ff2668c?v=2fd15646449048aabca5b40bbd8d2384" target="_blank">A Comprehensive Guide on Object Oriented Constructs in C++</a>
 
 <!-- add a relevant emoji and the heading "Miscellaneous" -->
-## 🤷‍♂️ Miscellaneous
+## <a href="#🤷‍♂️-miscellaneous">🤷‍♂️ Miscellaneous</a>
 
 * One of the papers I've enjoyed reading is [Raft](https://raft.github.io/raft.pdf).
 * I'm a huge fan of the [C++](https://isocpp.org/) programming language.
