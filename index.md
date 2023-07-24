@@ -33,4 +33,4 @@ applications on the internet to make them affordable, inclusive and offer a bett
 
 ## Blogs
 
-* [A Comprehensive Guide on Object Oriented Constructs in C++](https://harris-ahmad.notion.site/harris-ahmad/a504b98dedee42ac9ea256d92ff2668c?v=2fd15646449048aabca5b40bbd8d2384)
+* <a href="https://harris-ahmad.notion.site/harris-ahmad/a504b98dedee42ac9ea256d92ff2668c?v=2fd15646449048aabca5b40bbd8d2384" target="_blank">A Comprehensive Guide on Object Oriented Constructs in C++</a>
