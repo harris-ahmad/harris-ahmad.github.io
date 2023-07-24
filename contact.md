@@ -21,6 +21,7 @@ is_contact: true
 1. <a href="https://www.linkedin.com/in/harris-ahmad-9a6266214/" target="_blank">LinkedIn</a>
 
 2. <a href="https://github.com/harris-ahmad/" target="_blank">GitHub</a>
+
 ---
 
 ## 📨 Contact Form
