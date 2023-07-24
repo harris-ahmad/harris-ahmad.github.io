@@ -85,36 +85,6 @@ is_contact: true
     .pageclip-form button:disabled .spinner {
         opacity: 1;
     }
-    @keyframes spin {
-        to {
-            transform: rotate(360deg);
-        }
-    }
-    @media (max-width: 500px) {
-        .pageclip-form {
-            padding: 10px;
-        }
-    }
-    @media (max-width: 400px) {
-        .pageclip-form {
-            padding: 5px;
-        }
-    }
-    @media (max-width: 300px) {
-        .pageclip-form {
-            padding: 2px;
-        }
-    }
-    @media (max-width: 200px) {
-        .pageclip-form {
-            padding: 1px;
-        }
-    }
-    @media (max-width: 100px) {
-        .pageclip-form {
-            padding: 0;
-        }
-    }
 </style>
 <form action="https://send.pageclip.co/PUTf9KHJBJ3napaDaRSIq5HPPkk2b6BC/contact-form" class="pageclip-form"
     method="post">
