@@ -93,11 +93,6 @@ is_contact: true
                 padding-right: 1px;
             }
         }
-        @media (max-width: 500px) {
-            .pageclip-form {
-                margin-left: 100px;
-            }
-        }
 </style>
 <form action="https://send.pageclip.co/PUTf9KHJBJ3napaDaRSIq5HPPkk2b6BC/contact-form" class="pageclip-form"
     method="post">
