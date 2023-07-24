@@ -89,6 +89,13 @@ is_contact: true
             .pageclip-form input,
             .pageclip-form textarea {
                 width: 95%;
+                margin-right: 1px;
+                padding-right: 1px;
+            }
+        }
+        @media (max-width: 500px) {
+            .pageclip-form {
+                margin-left: 100px;
             }
         }
 </style>
