@@ -10,6 +10,7 @@ layout: default
 * [📊 Research Interests](#📊-research-interests)
 * [📄 Publications](#📄-publications)
 * [🏫 Teaching](#🏫-teaching)
+* [🙋 Volunteer Experience](#🙋-volunteer)
 * [👨‍🏫 References](#👨‍🏫-references)
 * [📝 Blogs](#📝-blogs)
 * [🤷 Miscellaneous](#🤷-miscellaneous)
@@ -37,6 +38,11 @@ applications on the internet to make them affordable, inclusive and offer a bett
 * Undergraduate Teaching Assistant, LUMS
     * CS200/EE201: Introduction to Programming (Spring 2023)
 
+<h2 id="🙋-volunteer">🙋 Volunteer Experience</h2>
+
+* Assisted Dr. Zafar Ayyub Qazi in a rigorous 4-Day Summer Course centered on the Internet Architecture at LUMS.
+    * For more information, feel free to read about this program [here](https://summer.lums.edu.pk/course-details.php?cid=207). I made a website for the course. Click [here](https://summer-at-lums.github.io/) to view. 
+
 <h2 id="👨‍🏫-references">👨‍🏫 References</h2>
 
 * Dr. Zafar Ayyub Qazi: Assistant Professor, Department of Computer Science, LUMS
@@ -49,8 +55,6 @@ applications on the internet to make them affordable, inclusive and offer a bett
 * [Notes that I took While Studying Raft](notes-raft.pdf "download")
 
 [Click](https://harris-ahmad.github.io/blogs/) to view full list.
-
-<!-- add a relevant emoji and the heading "Miscellaneous" -->
 
 <h2 id="🤷-miscellaneous">🤷 Miscellaneous</h2>
 
