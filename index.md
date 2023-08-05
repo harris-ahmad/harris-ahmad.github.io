@@ -51,8 +51,8 @@ applications on the internet to make them affordable, inclusive and offer a bett
 <h2 id="📝-blogs">📝 Blogs</h2>
 
 * <a href="https://harris-ahmad.notion.site/harris-ahmad/a504b98dedee42ac9ea256d92ff2668c?v=2fd15646449048aabca5b40bbd8d2384" target="_blank">A Comprehensive Guide on Object Oriented Constructs in C++</a>
-
-* [Notes that I took While Studying Raft](notes-raft.pdf "download")
+* [Notes that I took While Studying Raft](notes-raft.pdf "raft")
+* Lecture-wise notes that I'm taking while reviewing the distributed systems course (CS582) I enrolled in during the Fall 2022 semester at LUMS. Click [here](https://github.com/harris-ahmad/DistributedSystems) to read if you're interested.
 
 [Click](https://harris-ahmad.github.io/blogs/) to view full list.
 
