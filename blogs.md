@@ -11,3 +11,4 @@ permalink: /blogs/
 * [Notes that I took While Studying Raft](notes-raft.pdf "raft")
 
 * Lecture-wise notes that I'm taking while reviewing the distributed systems course (CS582) I enrolled in during the Fall 2022 semester at LUMS. Click [here](https://github.com/harris-ahmad/DistributedSystems) to read if you're interested.
+* [Here](https://github.com/harris-ahmad/DSA-in-CPP)'s a GitHub Repo where I'm implementing, in C++, some commonly taught data structures in university courses.
