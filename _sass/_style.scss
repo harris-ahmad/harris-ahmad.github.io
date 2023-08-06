@@ -12,24 +12,29 @@ html {
     margin: 0;
     padding: 0;
     background-color: #2E3440;
-    color: #d3d3d3;
+    color: #D8DEE9;
 }
+
 body {
     margin: 0;
     font-family: Roboto Mono;
     height: 100%;
 }
+
 h1 {
     font-family: Roboto;
 }
+
 a {
     text-decoration: none;
     color: $accent;
 }
+
 a:hover {
     text-decoration: none;
-    color:#DC8ADD
+    color: #BF616A
 }
+
 hr {
     border: 0;
     height: 0;
@@ -46,27 +51,32 @@ hr {
     color: #EEEEEE;
     display: inline-block;
 }
+
 .navbar {
     padding: 50px 0 50px 0;
-    border:hsl(from black h s l)
 }
+
 .navbar-ul {
     display: inline-block;
     margin: 0;
     padding: 5px 0 5px 0;
     margin-left: 20px;
 }
+
 .nav-list {
     list-style-type: none;
     margin: 0 5px 0 10px;
 }
+
 .alignable {
     display: inline-block;
 }
+
 .pull-left {
     @extend .alignable;
     float: left;
 }
+
 .pull-right {
     @extend .alignable;
     float: right;
@@ -78,6 +88,7 @@ hr {
     max-width: 50%;
     margin: auto;
 }
+
 .wrapper {
     min-height: 100%;
 }
@@ -85,40 +96,43 @@ hr {
 /* Institute Image */
 
 #ins-logo {
-	margin: auto;
-	display: block;
-	max-height: 100px;
-	text-align: center;
+    margin: auto;
+    display: block;
+    max-height: 100px;
+    text-align: center;
 }
+
 /* Thumbail Images for Social Media */
 
 #contact_container {
-    display: flex; 
+    display: flex;
     justify-content: center;
 }
-#thumbnail_image{
+
+#thumbnail_image {
     max-width: 70px;
     margin: 10px;
     display: inline-block;
 }
-#thumbnail_image:hover{
+
+#thumbnail_image:hover {
     max-width: 75px;
 }
 
 /* Country Image */
 
-#country_image{
+#country_image {
     height: 48px;
     width: 48px;
 }
 
 /* Country Image */
-#footer_div{
+#footer_div {
     display: flex;
     justify-content: center;
 }
 
-#footer_image{
+#footer_image {
     height: 35%;
     width: 35%;
 }
@@ -131,7 +145,8 @@ hr {
         max-width: $med-width;
         transition: 0.3s ease all;
     }
-    .profile-picture{
+
+    .profile-picture {
         display: none;
     }
 }
@@ -140,41 +155,49 @@ hr {
     .container {
         max-width: 83%;
     }
+
     .navbar-ul {
         margin-top: 5px;
     }
-    .profile-picture{
+
+    .profile-picture {
         display: none;
     }
 }
 
 @media (max-width: 500px) {
-	.navbar {
-		text-align: center;
-		padding: 50px 0px 0px 0px;
-	}
-	#author-name {
-		width: 100%;
-		float: none;
-	}
-	#navlist {
-		padding: 10px 0 10px 0;
-		margin: 0;
-		display: block;
-		float: none;
-		text-align: center;
-		width: 100%;
-	}
-	#navlist li.alignable {
-		display: inline-block;
-	}
-	#navlist li.pull-left {
-		float: none;
-	}
-	#navlist li.nav-list {
-		margin: 0;
-	}
-    .profile-picture{
+    .navbar {
+        text-align: center;
+        padding: 50px 0px 0px 0px;
+    }
+
+    #author-name {
+        width: 100%;
+        float: none;
+    }
+
+    #navlist {
+        padding: 10px 0 10px 0;
+        margin: 0;
+        display: block;
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #navlist li.alignable {
+        display: inline-block;
+    }
+
+    #navlist li.pull-left {
+        float: none;
+    }
+
+    #navlist li.nav-list {
+        margin: 0;
+    }
+
+    .profile-picture {
         display: none;
     }
 }
