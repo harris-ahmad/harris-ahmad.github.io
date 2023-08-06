@@ -1,4 +1,7 @@
 @import "vars";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto Mono:300,300i,400,400i,700,700i');
 
 /*
  * Basic
@@ -8,18 +11,24 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #2E3440;
+    color: #d3d3d3;
 }
 body {
     margin: 0;
-    font-family: "Inconsolata";
+    font-family: Roboto Mono;
     height: 100%;
+}
+h1 {
+    font-family: Roboto;
 }
 a {
     text-decoration: none;
     color: $accent;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color:#DC8ADD
 }
 hr {
     border: 0;
@@ -34,11 +43,12 @@ hr {
 
 #author-name {
     font-size: 30px;
-    color: #272727;
+    color: #EEEEEE;
     display: inline-block;
 }
 .navbar {
     padding: 50px 0 50px 0;
+    border:hsl(from black h s l)
 }
 .navbar-ul {
     display: inline-block;
@@ -65,7 +75,7 @@ hr {
 /* Divs */
 
 .container {
-    max-width: $max-width;
+    max-width: 50%;
     margin: auto;
 }
 .wrapper {
@@ -80,6 +90,39 @@ hr {
 	max-height: 100px;
 	text-align: center;
 }
+/* Thumbail Images for Social Media */
+
+#contact_container {
+    display: flex; 
+    justify-content: center;
+}
+#thumbnail_image{
+    max-width: 70px;
+    margin: 10px;
+    display: inline-block;
+}
+#thumbnail_image:hover{
+    max-width: 75px;
+}
+
+/* Country Image */
+
+#country_image{
+    height: 48px;
+    width: 48px;
+}
+
+/* Country Image */
+#footer_div{
+    display: flex;
+    justify-content: center;
+}
+
+#footer_image{
+    height: 35%;
+    width: 35%;
+}
+
 
 /* Mobile */
 
@@ -87,6 +130,9 @@ hr {
     .container {
         max-width: $med-width;
         transition: 0.3s ease all;
+    }
+    .profile-picture{
+        display: none;
     }
 }
 
@@ -96,6 +142,9 @@ hr {
     }
     .navbar-ul {
         margin-top: 5px;
+    }
+    .profile-picture{
+        display: none;
     }
 }
 
@@ -125,6 +174,9 @@ hr {
 	#navlist li.nav-list {
 		margin: 0;
 	}
+    .profile-picture{
+        display: none;
+    }
 }
 
 @import "typography";
