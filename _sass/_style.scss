@@ -1,4 +1,7 @@
 @import "vars";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto Mono:300,300i,400,400i,700,700i');
 
 /*
  * Basic
@@ -8,19 +11,30 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #2E3440;
+    color: #D8DEE9;
 }
+
 body {
     margin: 0;
-    font-family: "Inconsolata";
+    font-family: Roboto Mono;
     height: 100%;
 }
+
+h1 {
+    font-family: Roboto;
+}
+
 a {
     text-decoration: none;
     color: $accent;
 }
+
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #BF616A
 }
+
 hr {
     border: 0;
     height: 0;
@@ -34,29 +48,35 @@ hr {
 
 #author-name {
     font-size: 30px;
-    color: #272727;
+    color: #EEEEEE;
     display: inline-block;
 }
+
 .navbar {
     padding: 50px 0 50px 0;
 }
+
 .navbar-ul {
     display: inline-block;
     margin: 0;
     padding: 5px 0 5px 0;
     margin-left: 20px;
 }
+
 .nav-list {
     list-style-type: none;
     margin: 0 5px 0 10px;
 }
+
 .alignable {
     display: inline-block;
 }
+
 .pull-left {
     @extend .alignable;
     float: left;
 }
+
 .pull-right {
     @extend .alignable;
     float: right;
@@ -65,9 +85,10 @@ hr {
 /* Divs */
 
 .container {
-    max-width: $max-width;
+    max-width: 50%;
     margin: auto;
 }
+
 .wrapper {
     min-height: 100%;
 }
@@ -75,11 +96,47 @@ hr {
 /* Institute Image */
 
 #ins-logo {
-	margin: auto;
-	display: block;
-	max-height: 100px;
-	text-align: center;
+    margin: auto;
+    display: block;
+    max-height: 100px;
+    text-align: center;
 }
+
+/* Thumbail Images for Social Media */
+
+#contact_container {
+    display: flex;
+    justify-content: center;
+}
+
+#thumbnail_image {
+    max-width: 70px;
+    margin: 10px;
+    display: inline-block;
+}
+
+#thumbnail_image:hover {
+    max-width: 75px;
+}
+
+/* Country Image */
+
+#country_image {
+    height: 48px;
+    width: 48px;
+}
+
+/* Country Image */
+#footer_div {
+    display: flex;
+    justify-content: center;
+}
+
+#footer_image {
+    height: 35%;
+    width: 35%;
+}
+
 
 /* Mobile */
 
@@ -88,43 +145,61 @@ hr {
         max-width: $med-width;
         transition: 0.3s ease all;
     }
+
+    .profile-picture {
+        display: none;
+    }
 }
 
 @media (max-width: 650px) {
     .container {
         max-width: 83%;
     }
+
     .navbar-ul {
         margin-top: 5px;
+    }
+
+    .profile-picture {
+        display: none;
     }
 }
 
 @media (max-width: 500px) {
-	.navbar {
-		text-align: center;
-		padding: 50px 0px 0px 0px;
-	}
-	#author-name {
-		width: 100%;
-		float: none;
-	}
-	#navlist {
-		padding: 10px 0 10px 0;
-		margin: 0;
-		display: block;
-		float: none;
-		text-align: center;
-		width: 100%;
-	}
-	#navlist li.alignable {
-		display: inline-block;
-	}
-	#navlist li.pull-left {
-		float: none;
-	}
-	#navlist li.nav-list {
-		margin: 0;
-	}
+    .navbar {
+        text-align: center;
+        padding: 50px 0px 0px 0px;
+    }
+
+    #author-name {
+        width: 100%;
+        float: none;
+    }
+
+    #navlist {
+        padding: 10px 0 10px 0;
+        margin: 0;
+        display: block;
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #navlist li.alignable {
+        display: inline-block;
+    }
+
+    #navlist li.pull-left {
+        float: none;
+    }
+
+    #navlist li.nav-list {
+        margin: 0;
+    }
+
+    .profile-picture {
+        display: none;
+    }
 }
 
 @import "typography";

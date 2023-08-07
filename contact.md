@@ -21,3 +21,5 @@ is_contact: true
 1. <a href="https://www.linkedin.com/in/harris-ahmad-9a6266214/" target="_blank">LinkedIn</a>
 
 2. <a href="https://github.com/harris-ahmad/" target="_blank">GitHub</a>
+
+3. <a href="https://twitter.com/harris_ahmad55" target="_blank">Twitter</a>
