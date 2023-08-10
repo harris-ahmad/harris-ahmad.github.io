@@ -38,6 +38,7 @@ applications on the internet to make them affordable, inclusive and offer a bett
 * Undergraduate Teaching Assistant, LUMS
     * CS200/EE201: Introduction to Programming (Spring 2023)
     * CS200/EE201: Introduction to Programming (Fall 2023)
+    * CS582: Distributed Systems (Fall 2023)
 
 <h2 id="🙋-volunteer">🙋 Volunteer Experience</h2>
 
