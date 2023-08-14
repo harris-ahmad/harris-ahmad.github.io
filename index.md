@@ -7,7 +7,7 @@ layout: default
 
 ### Navigate to
 
-| [👋 About Me](#👋-about-me) | [📊 Research Interests](#📊-research-interests) | [📄 Publications](#📄-publications) | [🏫 Teaching](#🏫-teaching) | [🙋 Volunteer Experience](#🙋-volunteer) | [👨‍🏫 References](#👨‍🏫-references) | [📝 Blogs](#📝-blogs) | [🤷 Miscellaneous](#🤷-miscellaneous) | [📈 GitHub Stats](#📈-github-stats) |
+| [👋 About Me](#👋-about-me) / [📊 Research Interests](#📊-research-interests) / [📄 Publications](#📄-publications) / [🏫 Teaching](#🏫-teaching) / [🙋 Volunteer Experience](#🙋-volunteer) / [👨‍🏫 References](#👨‍🏫-references) / [📝 Blogs](#📝-blogs) / [🤷 Miscellaneous](#🤷-miscellaneous) / [📈 GitHub Stats](#📈-github-stats) |
 
 <img class="profile-picture" src="profile.jpeg">
 
