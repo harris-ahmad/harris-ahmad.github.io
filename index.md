@@ -52,7 +52,7 @@ applications on the internet to make them affordable, inclusive and offer a bett
 
 <h2 id="📝-blogs">📝 Blogs</h2>
 
-* Click <a href="https://harris-ahmad.notion.site/harris-ahmad/a504b98dedee42ac9ea256d92ff2668c?v=2fd15646449048aabca5b40bbd8d2384" target="_blank">here</a> to read a comprehensive guide on OOP constructs in C++ that I drafted during my TAship in Spring 2023. 
+* Click <a href="https://github.com/harris-ahmad/Everything-OOP/" target="_blank">here</a> to read a comprehensive guide on OOP constructs in C++ that I drafted during my TAship in Spring 2023. 
 * Click [here](notes-raft.pdf "raft") to read the notes that I took while studying Raft.
 * Lecture-wise notes that I'm taking while reviewing the distributed systems course (CS582) I enrolled in during the Fall 2022 semester at LUMS. Click [here](https://github.com/harris-ahmad/DistributedSystems) to read if you're interested.
 * [Here](https://github.com/harris-ahmad/DSA-in-CPP)'s a GitHub Repo where I'm implementing, in C++, some commonly taught data structures in university courses.
@@ -66,3 +66,7 @@ applications on the internet to make them affordable, inclusive and offer a bett
 * The song I'm currently listening to is [Hero](https://www.youtube.com/watch?v=mYFaghHyMKc) by Family of the Year.
 * When I find some time to spare, I like to scroll through [@rmdrk](https://www.instagram.com/rmdrk/?hl=en)'s and [@blakeaudenpoetry](https://www.instagram.com/blakeaudenpoetry/?hl=en)'s Instagram. Their quotes are worth reading.
 * Fantastic pieces of advice by Dr. Ihsan: [Click](http://ihsan-qazi.blogspot.com/2010/08/few-pieces-of-advice-i-gave-to-my.html) here to read.
+
+<h2 id="📈-github-stats">📈 GitHub Stats</h2>
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=harris-ahmad&theme=onedark)](https://git.io/streak-stats)
