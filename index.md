@@ -14,6 +14,7 @@ layout: default
 * [👨‍🏫 References](#👨‍🏫-references)
 * [📝 Blogs](#📝-blogs)
 * [🤷 Miscellaneous](#🤷-miscellaneous)
+* [📈 GitHub Stats](#📈-github-stats)
 
 <img class="profile-picture" src="profile.jpeg">
 
