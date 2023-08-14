@@ -6,17 +6,6 @@ layout: default
 
 
 ### Navigate to
-* [👋 About Me](#👋-about-me)
-* [📊 Research Interests](#📊-research-interests)
-* [📄 Publications](#📄-publications)
-* [🏫 Teaching](#🏫-teaching)
-* [🙋 Volunteer Experience](#🙋-volunteer)
-* [👨‍🏫 References](#👨‍🏫-references)
-* [📝 Blogs](#📝-blogs)
-* [🤷 Miscellaneous](#🤷-miscellaneous)
-* [📈 GitHub Stats](#📈-github-stats)
-
-<!-- create a horizontal navigation menu using the above options -->
 
 | [👋 About Me](#👋-about-me) | [📊 Research Interests](#📊-research-interests) | [📄 Publications](#📄-publications) | [🏫 Teaching](#🏫-teaching) | [🙋 Volunteer Experience](#🙋-volunteer) | [👨‍🏫 References](#👨‍🏫-references) | [📝 Blogs](#📝-blogs) | [🤷 Miscellaneous](#🤷-miscellaneous) | [📈 GitHub Stats](#📈-github-stats) |
 
