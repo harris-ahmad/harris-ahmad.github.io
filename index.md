@@ -16,6 +16,10 @@ layout: default
 * [🤷 Miscellaneous](#🤷-miscellaneous)
 * [📈 GitHub Stats](#📈-github-stats)
 
+<!-- create a horizontal navigation menu using the above options -->
+
+| [👋 About Me](#👋-about-me) | [📊 Research Interests](#📊-research-interests) | [📄 Publications](#📄-publications) | [🏫 Teaching](#🏫-teaching) | [🙋 Volunteer Experience](#🙋-volunteer) | [👨‍🏫 References](#👨‍🏫-references) | [📝 Blogs](#📝-blogs) | [🤷 Miscellaneous](#🤷-miscellaneous) | [📈 GitHub Stats](#📈-github-stats) |
+
 <img class="profile-picture" src="profile.jpeg">
 
 <h2 id="👋-about-me">👋 About Me</h2>
