@@ -7,6 +7,8 @@ markdown: kramdown
 
 tracking_id: #
 
+google_analytics: G-THLHD1VEH9
+
 footer: yes
 footer_url: ""
 footer_text: "Copyright © Harris Ahmad; All rights reserved."
