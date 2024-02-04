@@ -21,6 +21,9 @@ Over my junior year, I've worked on a Measurement Analysis study quantifying the
 <h2 id="📰-news">📰 News </h2>
 <hr>
 
+* 01/24: I got a fully-funded Ph.D. Computer Science offer from [SUNY, Buffalo (University at Buffalo)](https://www.buffalo.edu/) for the Fall 2024 offering.
+* 01/24: Happy to share that my research on analyzing YouTube Ads through an affordability lens has been accepted at [TheWebConf 2024](https://www2024.thewebconf.org/)
+
 <h2 id="📊-research-interests">📊 Research Interests</h2>
 <hr>
 
