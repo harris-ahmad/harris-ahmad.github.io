@@ -21,11 +21,14 @@ Over my junior year, I've worked on a Measurement Analysis study quantifying the
 <h2 id="📊-research-interests">📊 Research Interests</h2>
 
 Currently, my research calls for immediate steps towards reconsidering the design of various
-applications on the internet to make them affordable, inclusive and offer a better user experience. Broadly, I’m motivated to entertain projects that circle programmable networks, cellular networks, cloud computing, high-performance computing, performance analysis, and verification of different networks. An intersection of computational algorithms, packet forwarding and measurement functions, and congestion control mehanisms within data centers also draws my attention.
+applications on the internet to make them affordable, inclusive and offer a better user experience. Broadly, I’m motivated to entertain projects that circle programmable networks, cellular networks, cloud computing, high-performance computing, performance analysis, and verification of different networks. An intersection of computational algorithms, packet forwarding and measurement functions, and congestion control mehanisms within data centers also draws my attention. 
 
 <h2 id="📄-publications">📄 Publications</h2>
 
-> Coming Soon...
+* **Uncovering the Hidden Data Costs of Mobile YouTube Video Ads** [[PDF](https://harris-ahmad.github.io/)] [[Code](https://harris-ahmad.github.io/)] <br />
+Emaan Atique, Saad Sher Alam, <span style="color:yellow">Harris Ahmed</span>, Haseeb Ahmed, Ihsan Ayyub Qazi, Zafar Ayyub Qazi <br />
+<span style="color:violet">The ACM Web Conference 2024 (To Appear)</span> 
+
 
 <h2 id="🏫-teaching">🏫 Teaching</h2>
 
@@ -57,7 +60,6 @@ applications on the internet to make them affordable, inclusive and offer a bett
 
 * One of the papers I've enjoyed reading is [Raft](https://raft.github.io/raft.pdf).
 * I'm a huge fan of the [Go](https://go.dev/) programming language.
-* The song I'm currently listening to is [Hero](https://www.youtube.com/watch?v=mYFaghHyMKc) by Family of the Year.
 * When I find some time to spare, I like to scroll through [@rmdrk](https://www.instagram.com/rmdrk/?hl=en)'s and [@blakeaudenpoetry](https://www.instagram.com/blakeaudenpoetry/?hl=en)'s Instagram. Their quotes are worth reading.
 * Fantastic pieces of advice by Dr. Ihsan: [Click](http://ihsan-qazi.blogspot.com/2010/08/few-pieces-of-advice-i-gave-to-my.html) here to read.
 
