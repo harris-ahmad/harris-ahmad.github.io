@@ -7,7 +7,7 @@ layout: default
 
 ### Navigate to
 
-| [👋 About Me](#👋-about-me) / [📊 Research Interests](#📊-research-interests) / [📄 Publications](#📄-publications) / [🏫 Teaching](#🏫-teaching) / [🙋 Volunteer Experience](#🙋-volunteer) / [👨‍🏫 References](#👨‍🏫-references) / [📝 Blogs](#📝-blogs) / [🤷 Miscellaneous](#🤷-miscellaneous) |
+| [👋 About Me](#👋-about-me) / [📰 News ](#📰-news) / [📊 Research Interests](#📊-research-interests) / [📄 Publications](#📄-publications) / [🏫 Teaching](#🏫-teaching) / [🙋 Volunteer Experience](#🙋-volunteer) / [👨‍🏫 References](#👨‍🏫-references) / [📝 Blogs](#📝-blogs) / [🤷 Miscellaneous](#🤷-miscellaneous) |
 
 <img class="profile-picture" src="profile.jpeg">
 
@@ -28,7 +28,7 @@ Over my junior year, I've worked on a Measurement Analysis study quantifying the
 <hr>
 
 Currently, my research calls for immediate steps towards reconsidering the design of various
-applications on the internet to make them affordable, inclusive and offer a better user experience. Broadly, I’m motivated to entertain projects that circle programmable networks, cellular networks, cloud computing, high-performance computing, performance analysis, and verification of different networks. An intersection of computational algorithms, packet forwarding and measurement functions, and congestion control mehanisms within data centers also draws my attention. 
+applications on the internet to make them affordable, inclusive and offer a better user experience. Broadly, I’m motivated to entertain projects that circle programmable networks, edge & serverless computing, performance analysis of off-the-shelf datastores, and verification of different networks.
 
 <h2 id="📄-publications">📄 Publications</h2>
 <hr>
