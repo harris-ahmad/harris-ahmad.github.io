@@ -46,6 +46,7 @@ Emaan Atique, Saad Sher Alam, <span style="color:yellow">Harris Ahmed</span>, Ha
 
 * Dr. Zafar Ayyub Qazi: Assistant Professor, Department of Computer Science, LUMS
 * Dr. Ihsan Ayyub Qazi: Associate Professor, Department of Computer Science, LUMS
+* Dr. Mian Muhammad Awais: Professor, Department of Computer Science, LUMS
 
 <h2 id="📝-blogs">📝 Blogs</h2>
 
