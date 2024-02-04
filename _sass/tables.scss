@@ -1,81 +1,169 @@
+// table {
+//     margin: 15px 0;
+//     border-collapse: collapse;
+//     width: 100%;
+//     padding: 0;
+//     background-color: #2E3440
+// }
+// table tr {
+//     border-top: 1px solid #ffffff;
+//     margin: 0;
+//     padding: 0;
+//     background-color: #2E3440
+// }
+// table tr:nth-child(2n) {
+//     background-color: #f8f8f8;
+// }
+// table tr th {
+//     font-weight: bold;
+//     border: 1px solid #cccccc;
+//     text-align: left;
+//     margin: 0;
+//     padding: 6px 13px;
+// }
+// table tr td {
+//     border: 1px solid #cccccc;
+//     text-align: left;
+//     margin: 0;
+//     padding: 6px 13px;
+//     color: #cccccc;
+// }
+// table tr th :first-child, table tr td :first-child {
+//     margin: 0;
+// }
+// table tr th :last-child, table tr td :last-child {
+//     margin: 0;
+// }
+
+// // write media queries to make the table responsive
+
+// @media screen and (max-width: 600px) {
+//     table {
+//         border: 0;
+//     }
+//     table caption {
+//         font-size: 1.3em;
+//     }
+//     table thead {
+//         border: none;
+//         clip: rect(0 0 0 0);
+//         height: 1px;
+//         margin: -1px;
+//         overflow: hidden;
+//         padding: 0;
+//         position: absolute;
+//         width: 1px;
+//     }
+//     table tr {
+//         border-bottom: 3px solid #ddd;
+//         display: block;
+//         margin-bottom: .625em;
+//     }
+//     table td {
+//         border-bottom: 1px solid #ddd;
+//         display: block;
+//         font-size: .8em;
+//         text-align: right;
+//     }
+//     table td:before {
+//         /*
+//         * aria-label has no advantage, it won't be read inside a table
+//         content: attr(aria-label);
+//         */
+//         content: attr(data-label);
+//         float: left;
+//         font-weight: bold;
+//         text-transform: uppercase;
+//     }
+//     table td:last-child {
+//         border-bottom: 0;
+//     }
+// }
+
+// Enhanced table styles for "Navigate to" navigation links
 table {
     margin: 15px 0;
     border-collapse: collapse;
     width: 100%;
-    padding: 0;
-    background-color: #2E3440
-}
-table tr {
-    border-top: 1px solid #ffffff;
-    margin: 0;
-    padding: 0;
-    background-color: #2E3440
-}
-table tr:nth-child(2n) {
-    background-color: #f8f8f8;
-}
-table tr th {
+    background-color: #2E3440;
+    // Adding rounded corners for aesthetic appeal
+    border-radius: 8px;
+    overflow: hidden; // This ensures the border-radius clips the child elements
+  }
+  
+  table tr {
+    border-top: 1px solid #4C566A; // Softer border color for less contrast
+    background-color: #2E3440;
+  }
+  
+  table tr th {
     font-weight: bold;
-    border: 1px solid #cccccc;
+    border: 1px solid #4C566A; // Softer border color
     text-align: left;
-    margin: 0;
-    padding: 6px 13px;
-}
-table tr td {
-    border: 1px solid #cccccc;
+    padding: 10px; // Increased padding for a better visual spacing
+    color: #ECEFF4; // Brighter color for headers for better readability
+    background-color: #3B4252; // Slightly different background color for header
+  }
+  
+  table tr td {
+    border: 1px solid #4C566A; // Softer border color
     text-align: left;
-    margin: 0;
-    padding: 6px 13px;
-    color: #cccccc;
-}
-table tr th :first-child, table tr td :first-child {
-    margin: 0;
-}
-table tr th :last-child, table tr td :last-child {
-    margin: 0;
-}
-
-// write media queries to make the table responsive
-
-@media screen and (max-width: 600px) {
+    padding: 10px; // Consistent padding with th
+    color: #ECEFF4; // Text color that stands out against the background
+    font-size: 0.9rem; // A smaller font size for content
+    // Styling links inside the table cell for better aesthetics
+    a {
+      display: inline-block;
+      margin-right: 8px; // Space out links
+      padding: 5px 10px; // Padding for clickable area
+      background-color: #3B4252; // Background to make it stand out
+      color: #ECEFF4;
+      border-radius: 4px; // Rounded corners for links
+      transition: background-color 0.3s ease; // Smooth transition for hover effect
+  
+      &:hover {
+        background-color: #434C5E; // A lighter background on hover
+        text-decoration: none; // No underline on hover
+      }
+    }
+  }
+  
+  // Media queries for responsive table
+  @media screen and (max-width: 600px) {
     table {
-        border: 0;
+      border: 0;
     }
-    table caption {
-        font-size: 1.3em;
-    }
-    table thead {
-        border: none;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-    }
+  
     table tr {
-        border-bottom: 3px solid #ddd;
-        display: block;
-        margin-bottom: .625em;
+      border-bottom: 3px solid #3B4252; // Keeping the border color consistent with the theme
+      display: block;
+      margin-bottom: 1em;
     }
+  
     table td {
-        border-bottom: 1px solid #ddd;
-        display: block;
-        font-size: .8em;
-        text-align: right;
+      border-bottom: 1px solid #4C566A;
+      display: block;
+      font-size: 0.8em;
+      text-align: right;
+      position: relative; // For positioning the pseudo-element
+      padding-left: 50%; // Make space for the label
     }
+  
     table td:before {
-        /*
-        * aria-label has no advantage, it won't be read inside a table
-        content: attr(aria-label);
-        */
-        content: attr(data-label);
-        float: left;
-        font-weight: bold;
-        text-transform: uppercase;
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%; // Width of the label
+      padding-right: 10px; // Padding between label and content
+      white-space: nowrap; // Ensure the label stays in a single line
+      text-align: left;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #ECEFF4; // Label color
     }
+  
     table td:last-child {
-        border-bottom: 0;
+      border-bottom: 0;
     }
-}
+  }
+  

@@ -1,206 +1,215 @@
 @import "vars";
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500');
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Roboto Mono:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Lato:wght@300;400;700&family=Roboto+Mono:wght@300;400;700&display=swap');
 
-/*
- * Basic
- */
 
-html {
-    height: 100%;
+// Variables
+$background-color: #2E3440;
+$text-color: #D8DEE9;
+$accent-color: #88C0D0; // Adjusted for better contrast
+$link-hover-color: #BF616A;
+$font-stack: "Lyon-Text", Georgia, ui-serif, serif;
+$roboto-font-stack: 'Roboto', sans-serif;
+
+// Mixins
+@mixin link-hover {
+    text-decoration: none;
+    color: $link-hover-color;
+    cursor: pointer;
+}
+
+@mixin responsive-max-width($size) {
+    max-width: $size;
+    transition: 0.3s ease all;
+}
+
+// Resets
+* {
     margin: 0;
     padding: 0;
-    background-color: #2E3440;
-    color: #D8DEE9;
+    box-sizing: border-box;
+}
+
+// Basic Styles
+html {
+    height: 100%;
+    background-color: $background-color;
+    color: $text-color;
+    font-size: 16px; // Adjusted for better readability
+    font-family: $font-stack;
 }
 
 body {
-    margin: 0;
-    font-family: Roboto Mono;
-    height: 100%;
+    min-height: 100%;
 }
 
 h1 {
-    font-family: Roboto;
+    font-family: $roboto-font-stack;
 }
+
 
 a {
     text-decoration: none;
-    color: $accent;
-}
+    color: $accent-color;
 
-a:hover {
-    text-decoration: none;
-    color: #BF616A
+    &:hover {
+        @include link-hover;
+    }
 }
 
 hr {
-    border: 0;
-    height: 0;
+    border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/*
- * Navbar
- */
-
+// Navbar
 #author-name {
     font-size: 30px;
     color: #EEEEEE;
-    display: inline-block;
+    display: inline-flex;
+    position: relative;
+    //   justify-content: center;
 }
 
 .navbar {
-    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center children horizontally */
+    justify-content: center;
+    /* Center children vertically if there's space */
+    padding: 1em 0;
+}
+
+#author-container {
+    margin-bottom: 10px;
+    /* Space between author name and navigation links */
 }
 
 .navbar-ul {
-    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    /* Remove default padding */
     margin: 0;
-    padding: 5px 0 5px 0;
-    margin-left: 20px;
+    /* Remove default margin */
+    display: flex;
+    /* Align navigation items in a row */
+    gap: 15px;
+    /* Space between navigation items */
+    justify-content: center;
+    /* Center navigation items */
 }
 
 .nav-list {
-    list-style-type: none;
-    margin: 0 5px 0 10px;
+    margin: 0 1em; // Give some space between nav items
 }
 
-.alignable {
-    display: inline-block;
-}
-
-.pull-left {
-    @extend .alignable;
-    float: left;
-}
-
-.pull-right {
-    @extend .alignable;
-    float: right;
-}
-
-/* Divs */
-
+// Container & Wrapping Elements
 .container {
-    max-width: 50%;
+    @include responsive-max-width(50%);
     margin: auto;
+    font-size: 0.9em;
 }
 
 .wrapper {
     min-height: 100%;
 }
 
-/* Institute Image */
-
-#ins-logo {
-    margin: auto;
+// Images
+#ins-logo,
+#thumbnail_image,
+#country_image,
+#footer_image {
     display: block;
-    max-height: 100px;
-    text-align: center;
-}
-
-/* Thumbail Images for Social Media */
-
-#contact_container {
-    display: flex;
-    justify-content: center;
-}
-
-#thumbnail_image {
-    max-width: 70px;
-    margin: 10px;
-    display: inline-block;
+    margin: auto;
 }
 
 #thumbnail_image:hover {
-    max-width: 75px;
+    transform: scale(1.1); // Use scale for smoother hover effect
 }
 
-/* Country Image */
-
-#country_image {
-    height: 48px;
-    width: 48px;
-}
-
-/* Country Image */
+// Footer
 #footer_div {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; // Distribute space between elements
 }
 
-#footer_image {
-    height: 35%;
-    width: 35%;
-}
-
-
-/* Mobile */
-
+// Mobile Styles
 @media (max-width: 800px) {
     .container {
-        max-width: $med-width;
-        transition: 0.3s ease all;
-    }
-
-    .profile-picture {
-        display: none;
+        @include responsive-max-width(95%);
     }
 }
 
 @media (max-width: 650px) {
     .container {
-        max-width: 83%;
-    }
-
-    .navbar-ul {
-        margin-top: 5px;
-    }
-
-    .profile-picture {
-        display: none;
+        @include responsive-max-width(90%);
     }
 }
 
 @media (max-width: 500px) {
     .navbar {
-        text-align: center;
-        padding: 50px 0px 0px 0px;
-    }
-
-    #author-name {
-        width: 100%;
-        float: none;
-    }
-
-    #navlist {
-        padding: 10px 0 10px 0;
-        margin: 0;
-        display: block;
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-
-    #navlist li.alignable {
-        display: inline-block;
-    }
-
-    #navlist li.pull-left {
-        float: none;
-    }
-
-    #navlist li.nav-list {
-        margin: 0;
-    }
-
-    .profile-picture {
-        display: none;
+        flex-direction: column; // Stack nav items vertically
+        align-items: center; // Align items in the center
     }
 }
 
-@import "typography";
+// Typography
+.content {
+    a:hover {
+        @include link-hover;
+    }
+
+    ol,
+    ul {
+        padding-left: 2em;
+    }
+
+    ol {
+        counter-reset: list;
+
+        li {
+            list-style: none;
+            margin: 0.5em 0;
+            position: relative;
+
+            &:before {
+                content: "[" counter(list, decimal) "] ";
+                counter-increment: list;
+                position: absolute;
+                left: -2em;
+            }
+        }
+    }
+
+    ul li {
+        margin: 0.5em 0;
+    }
+
+    blockquote {
+        border-left: 5px solid $link-hover-color;
+        margin: 1em 0;
+        padding: 0.5em;
+        font-style: italic;
+        background-color: darken($background-color, 5%); // Slightly darker background for contrast
+    }
+
+    .profile-picture {
+        width: 228px;
+        margin: 1em;
+        float: left;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    img {
+        text-align: center;
+    }
+}
+
+// Importing additional styles
+// @import "typography";
 @import "tables";
