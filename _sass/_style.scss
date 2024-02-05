@@ -149,10 +149,14 @@ hr {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .navbar {
         flex-direction: column; // Stack nav items vertically
         align-items: center; // Align items in the center
+    }
+
+    #author-name {
+        margin-bottom: 12px;
     }
 
     // add the "About Me" text underneath the image
