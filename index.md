@@ -78,7 +78,7 @@ Emaan Atique, Saad Sher Alam, <span style="color:yellow">Harris Ahmed</span>, Ha
 <h2 id="🤷-miscellaneous">🤷 Miscellaneous</h2>
 <hr>
 
-* One of the papers I've enjoyed reading is [Raft](https://raft.github.io/raft.pdf).
+* Click [here](https://dl.acm.org/doi/pdf/10.1145/2815400.2815426) to view the paper that I've enjoyed reading the most.
 * I'm a huge fan of the [Go](https://go.dev/) programming language.
 * When I find some time to spare, I like to scroll through [@rmdrk](https://www.instagram.com/rmdrk/?hl=en)'s and [@blakeaudenpoetry](https://www.instagram.com/blakeaudenpoetry/?hl=en)'s Instagram. Their quotes are worth reading.
 * Fantastic pieces of advice by Dr. Ihsan: [Click](http://ihsan-qazi.blogspot.com/2010/08/few-pieces-of-advice-i-gave-to-my.html) here to read.
