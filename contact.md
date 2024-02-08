@@ -12,14 +12,13 @@ permalink: /contact
 
 <br>
 
----
+
 <br>
 ## 📬 Mailing Address
 
 > Lahore University of Management Sciences (LUMS), Lahore, Pakistan
 > Khyaban-e-Jinnah, opposite Sector U, Phase 5 D.H.A, Lahore, Punjab 54792
 
----
 <br>
 ## 📱 Socials
 
@@ -28,3 +27,4 @@ permalink: /contact
 2. <a href="https://github.com/harris-ahmad/" target="_blank">GitHub</a>
 
 3. <a href="https://twitter.com/harris_ahmad55" target="_blank">Twitter</a>
+<br><br>
