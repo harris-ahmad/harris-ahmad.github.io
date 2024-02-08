@@ -2,7 +2,7 @@
 layout: default
 ---
 
-> You don’t become confident by shouting affirmations in the mirror, but by having a stack of undeniable proof that you are who you say you are. Outwork your self doubt. - Alex Hormozi
+> In the tapestry of life, love weaves the brightest thread, success adds strength, and revenge frays the edges. Choose wisely, for the pattern you create is your legacy.
 
 
 <!-- ### Navigate to -->
