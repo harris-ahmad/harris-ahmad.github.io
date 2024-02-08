@@ -1,21 +1,26 @@
 ---
 layout: default
 is_contact: true
+permalink: /contact
 ---
+<br>
+##  👋 Come say Hi! 
 
 * Email: [24100315@lums.edu.pk](mailto:24100315@lums.edu.pk)
 
 * Phone: [+92 300 3721112](tel:+92 300 3721112)
 
----
+<br>
 
+---
+<br>
 ## 📬 Mailing Address
 
 > Lahore University of Management Sciences (LUMS), Lahore, Pakistan
 > Khyaban-e-Jinnah, opposite Sector U, Phase 5 D.H.A, Lahore, Punjab 54792
 
 ---
-
+<br>
 ## 📱 Socials
 
 1. <a href="https://www.linkedin.com/in/harris-ahmad-9a6266214/" target="_blank">LinkedIn</a>
