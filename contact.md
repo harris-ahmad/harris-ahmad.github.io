@@ -22,9 +22,9 @@ permalink: /contact
 <br>
 ## 📱 Socials
 
-1. <a href="https://www.linkedin.com/in/harris-ahmad-9a6266214/" target="_blank">LinkedIn</a>
+1. <a href="https://www.linkedin.com/in/harris-ahmad-9a6266214/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
 
-2. <a href="https://github.com/harris-ahmad/" target="_blank">GitHub</a>
+2. <a href="https://github.com/harris-ahmad/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
 
-3. <a href="https://twitter.com/harris_ahmad55" target="_blank">Twitter</a>
+3. <a href="https://twitter.com/harris_ahmad55" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
 <br><br>

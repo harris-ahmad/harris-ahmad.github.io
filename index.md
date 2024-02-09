@@ -54,9 +54,20 @@ Emaan Atique, Saad Sher Alam, <span style="color:yellow">Harris Ahmed</span>, Ha
 
 <h2 id="👨‍🏫-references">👨‍🏫 References</h2>
 
-* Dr. Zafar Ayyub Qazi: Assistant Professor, Department of Computer Science, LUMS
-* Dr. Ihsan Ayyub Qazi: Associate Professor, Department of Computer Science, LUMS
-* Dr. Mian Muhammad Awais: Professor, Department of Computer Science, LUMS
+<h3 style="margin-left: 31px;">BCompSc</h3>
+
+<ul>
+    <li style="margin-left: 36px;"><a href="https://web.lums.edu.pk/~zafar" target="_blank">Dr. Zafar Ayyub Qazi</a>: Assistant Professor, Dept. of Computer Science, LUMS</li>
+    <li style="margin-left: 36px;"><a href="https://www.ihsanqazi.com" target="_blank">Dr. Ihsan Ayyub Qazi</a>: Associate Professor, Dept. of Computer Science, LUMS</li>
+    <li style="margin-left: 36px;"><a href="https://lums.edu.pk/lums_employee/516" target="_blank">Dr. Mian Muhammad Awais</a>: Professor, Dept. of Computer Science, LUMS</li>
+</ul>
+
+<h3 style="margin-left: 31px;">Ph.D. CSE </h3>
+
+<ul>
+    <li style="margin-left: 36px;"><a href="https://sites.google.com/view/haonanlu/home" target="_blank">Dr. Haonan Lu</a>: Assistant Professor, SEAS, Dept. of CSE, SUNY Buffalo (University at Buffalo) </li> 
+</ul>
+
 <br><br>
 
 <h2 id="📝-blogs">📝 Blogs</h2>

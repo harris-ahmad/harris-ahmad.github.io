@@ -23,6 +23,7 @@
     <meta name="description" content="{{ desc }}">
     <link href="https://db.onlinewebfonts.com/c/854f40508546a6154ded78884803020e?family=Lyon+Text+Web+Black+Regular" rel="stylesheet"> 
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
     {% if site.favicon %}
@@ -65,7 +66,13 @@
             <ul id="navlist" class="alignable pull-right navbar-ul">
                 {% for x in site.nav %}
                     {% if x.name == "Resume" %}
-                        <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
+                        <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}"><i class="fas fa-file-alt"></i> {{ x.name }}</a>
+                    {% elsif x.name == "About" %}
+                        <li class="alignable pull-left nav-list"><a href="{{ x.link }}"><i class="fas fa-user"></i> {{ x.name }}</a>
+                    {% elsif x.name == "Contact" %}
+                        <li class="alignable pull-left nav-list"><a href="{{ x.link }}"><i class="fas fa-envelope"></i> {{ x.name }}</a>
+                    {% elsif x.name == "Blogs" %}
+                        <li class="alignable pull-left nav-list"><a href="{{ x.link }}"><i class="fas fa-blog"></i> {{ x.name }}</a>    
                     {% else %}
                         <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
                     {% endif %}
