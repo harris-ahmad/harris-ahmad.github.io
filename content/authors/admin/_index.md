@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: Harris Ahmad
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation:
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Harris
+last_name: Ahmad
 
 # Status emoji
 status:
@@ -20,85 +20,71 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: PhD CSE @ UBuffalo, SUNY
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: University at Buffalo
+    url: https://buffalo.edu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: "mailto:harrisah@buffalo.edu"
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
   - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.instagram.com/harris_ahmad1
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/harris-ahmad
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://www.linkedin.com/in/harris-ahmad-9a6266214/
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/0009-0008-5402-8398
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
+  - Distributed Storage Systems
+  - Server-side Rendering
   - Information Retrieval
+  - Internet Measurements
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: PhD Computer Science and Engineering
+    institution: University at Buffalo
+    date_start: 2024-08-26
+    date_end: 2031-06-03
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      Supervised by <a href="https://sites.google.com/view/haonanlu/home" target="_blank">Dr. Haonan Lu</a>
+  - area: BSc Computer Science
+    institution: Lahore University of Management Sciences
+    date_start: 2020-09-03
+    date_end: 2024-05-23
     summary: |
-      GPA: 3.8/4.0
+      Courses included:
+      - Distributed Systems
+      - Data Science
+      - Network-Centric Computing
+      - Software Engineering
+      - Databases
+      - Advanced Programming
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Advised by: <a href="https://web.lums.edu.pk/~zafar/" target="_blank">Dr. Zafar Ayyub Qazi</a> & <a href="https://www.ihsanqazi.com/" target="_blank">Dr. Ihsan Ayyub Qazi</a>
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
+  - position: Research Assistant
+    company_name: Lahore University of Management Sciences (LUMS)
+    company_url: https://lums.edu.pk/
+    company_logo: ""
+    date_start: 2022-06-01
+    date_end: 2024-05-12
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Conducted a comprehensive measurement study on YouTube advertisement costs for users in developing regions. 
+      - Presented research findings at esteemed conferences including The ACM WebConf (formerly known as WWW) and ACM CoNEXT.
+      - Led the technical development within the research group, managing the code repository and fostering an environment of innovation.
   - position: Backend Software Engineer
     company_name: X
-    company_url: ''
-    company_logo: ''
+    company_url: ""
+    company_logo: ""
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
@@ -113,31 +99,31 @@ skills:
   - name: Technical Skills
     items:
       - name: Python
-        description: ''
+        description: ""
         percent: 80
         icon: code-bracket
       - name: Data Science
-        description: ''
+        description: ""
         percent: 100
         icon: chart-bar
       - name: SQL
-        description: ''
+        description: ""
         percent: 40
         icon: circle-stack
   - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
+    color: "#eeac02"
+    color_border: "#f0bf23"
     items:
       - name: Hiking
-        description: ''
+        description: ""
         percent: 60
         icon: person-simple-walk
       - name: Cats
-        description: ''
+        description: ""
         percent: 100
         icon: cat
       - name: Photography
-        description: ''
+        description: ""
         percent: 80
         icon: camera
 
@@ -156,14 +142,14 @@ languages:
 awards:
   - title: Neural Networks and Deep Learning
     url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
+    date: "2023-11-25"
     awarder: Coursera
     icon: coursera
     summary: |
       I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
   - title: Blockchain Fundamentals
     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
+    date: "2023-07-01"
     awarder: edX
     icon: edx
     summary: |
@@ -171,10 +157,10 @@ awards:
       - Synthesize your own blockchain solutions
       - Gain an in-depth understanding of the specific mechanics of Bitcoin
       - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
+  - title: "Object-Oriented Programming in R"
     url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
     certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
+    date: "2023-01-21"
     awarder: datacamp
     icon: datacamp
     summary: |
@@ -182,5 +168,6 @@ awards:
 ---
 
 ## About Me
-
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+### THIS WEBSITE IS UNDER CONSTRUCTION
+I am an incoming PhD CSE student at UBuffalo, SUNY. Broadly, I am interested in diving deeper into networked and distributed storage systems, but I am willing to entertain any compelling projects. Currently, my research primarily centers on the following theme: rethinking the internet design and architecture to account for better affordability,
+inclusion, and user experience. I have experience in submitting to leading conferences like the ACM Web Conference (formerly, WWW) 2023 and the ACM CoNEXT 2023.
