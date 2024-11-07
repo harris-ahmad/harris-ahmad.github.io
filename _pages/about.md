@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-# About
+# [About](#about)
 
 As a skilled Software Engineer with a Bachelor’s in Computer Science from LUMS, I specialize in backend and full-stack development. I have a proven track record of building scalable, efficient systems and applications for high-profile clients like Wallmart, Starbucks, and JLL. My expertise spans FastAPI, MongoDB, Redis, and ExpressJS, among other technologies. Notable projects include developing an asset management system, that enhanced application efficiency by 28%, creating a cross-platform health app, and leading a research project that significantly reduced data retrieval time. With a strong foundation in
 both academic research and practical implementation, I bring a results-driven approach to every project.
@@ -16,7 +16,7 @@ During my undergrad, I was advised by [Dr. Zafar Ayyub Qazi](https://web.lums.ed
 
 Currently, I'm serving as a Software Engineer at [Linq.io](https://linq.io/), a company that offers an asset intelligence platform to streamline asset management and boost operational efficiency. I will be joining the University at Buffalo (SUNY) for PhD CSE in Spring'25 where I'll work under the guidance of [Dr. Haonan Lu](https://sites.google.com/view/haonanlu/home).
 
-# Publications
+# [Publications](#publications)
 
 1. **Uncovering the Hidden Data Costs of Mobile YouTube Ads** <br>
    by Emaan Atique*, Saad Sher Alam*, <ins>Harris Ahmad</ins>, Zafar Ayyub Qazi, Ihsan Ayyub Qazi <br>
@@ -24,9 +24,9 @@ Currently, I'm serving as a Software Engineer at [Linq.io](https://linq.io/), a 
    \*Authors contributed equally <br>
    [[paper](/files/ytafford-www'24.pdf){:target="\_blank"}, [code](https://github.com/nsgLUMS/videoads-affordability-www24){:target="\_blank"}]
 
-# Work Experiences
+# [Work Experience](#work-experience)
 
-## Professional Experience
+## [Professional Experience](#professional-experience)
 
 **Software Engineer** <br />
 **Linq.io - Dallas, TX (Remote)**  
@@ -104,7 +104,7 @@ _January 2021 to December 2021_
 - Cleaned and analyzed a large dataset, comparing model performances using F1-score and accuracy.
 - Developed an end-to-end system and considered future advancements with GPT-4 or LLaMA 2.
 
-## Research Experience
+## [Research Experience](#research-experience)
 
 **Research Assistant** <br />
 **Networks and Systems Group - Lahore**  
@@ -114,7 +114,7 @@ _June 2022 to May 2024_
 - Presented research at ACM WebConf and ACM CoNEXT, enhancing global scholarly discourse.
 - Led technical development, fostering innovation and collaboration.
 
-## Teaching Experience
+## [Teaching Experience](#teaching-experience)
 
 1. CS582: Distributed Systems, Fall'24 - Teaching Assistant (**LUMS**)
 2. CS200: Introduction to Programming, Fall'24 - Teaching Assistant (**LUMS**)
