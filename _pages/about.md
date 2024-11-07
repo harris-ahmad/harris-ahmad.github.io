@@ -1,49 +1,121 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+# About
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+As a skilled Software Engineer with a Bachelor’s in Computer Science from LUMS, I specialize in backend and full-stack development. I have a proven track record of building scalable, efficient systems and applications for high-profile clients like Wallmart, Starbucks, and JLL. My expertise spans FastAPI, MongoDB, Redis, and ExpressJS, among other technologies. Notable projects include developing an asset management system, that enhanced application efficiency by 28%, creating a cross-platform health app, and leading a research project that significantly reduced data retrieval time. With a strong foundation in
+both academic research and practical implementation, I bring a results-driven approach to every project.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+During my undergrad, I was advised by [Dr. Zafar Ayyub Qazi](https://web.lums.edu.pk/~zafar/){:target="\_blank"}, [Dr. Ihsan Ayyub Qazi](https://www.ihsanqazi.com/){:target="\_blank"}, and [Dr. Mian Muhammad Awais](https://lums.edu.pk/lums_employee/516){:target="\_blank"}. My research interests focus on designing scalable, efficient backend systems and applications, where I work to optimize data retrieval and performance for high-profile clients. I'm dedicated to pushing the boundaries of distributed database design for large-scale applications, combining hands-on implementation with a solid research foundation.
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+Currently, I'm serving as a Software Engineer at [Linq.io](https://linq.io/), a company that offers an asset intelligence platform to streamline asset management and boost operational efficiency. I will be joining the University at Buffalo (SUNY) for PhD CSE in Spring'25 where I'll work under the guidance of [Dr. Haonan Lu](https://sites.google.com/view/haonanlu/home).
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+# Publications
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+1. **Uncovering the Hidden Data Costs of Mobile YouTube Ads** <br>
+   by Emaan Atique*, Saad Sher Alam*, <ins>Harris Ahmad</ins>, Zafar Ayyub Qazi, Ihsan Ayyub Qazi <br>
+   In Proceedings of the 33rd ACM Web Conference (**TheWebConf'24**), Sentosa, Singapore <br>
+   \*Authors contributed equally <br>
+   [[paper](/files/ytafford-www'24.pdf){:target="\_blank"}, [code](https://github.com/nsgLUMS/videoads-affordability-www24){:target="\_blank"}]
 
-**Markdown generator**
+# Work Experiences
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+## Professional Experience
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+**Software Engineer** <br />
+**Linq.io - Dallas, TX (Remote)**  
+ _July 2024 to Present_
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+- Developing scalable server-side solutions using FastAPI for robust APIs and optimized database performance.
+- Building an asset management software for top-tier clients like Walmart, Starbucks, and JLL to help them manage their assets.
+- Currently leading the development of an asset management software for Walmart. Played a key role in implementing the system debug info page, allowing root users/admins to access debugging information, which improved application efficiency by 28%.
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+---
+
+**Backend Developer** <br />
+**Its IT Group - Remote**  
+ _May 2024 to Present_
+
+- Developing scalable server-side solutions using MERN & GraphQL for robust APIs and optimized database performance.
+- Working on an ExpressJS web server integrated with a Swift iOS app for construction cost estimation.
+- Utilized iPhone/iPad's LiDAR scanner for room dimension scanning, which is sent to the server for cost analysis.
+
+---
+
+**Full Stack Developer** <br />
+**LUMS - Lahore**  
+_October 2023 to March 2024_
+
+- Created a cross-platform app for health practitioners to record medical and socioeconomic history.
+- Implemented EMRs with an optimized vectored database for patient data management.
+- Integrated a chatbot for patient medical advice.
+
+---
+
+**Full Stack Developer** <br />
+**Interactive Media Lab - Lahore**  
+_October 2023 to March 2024_
+
+- Developed a scalable, fault-tolerant system using Quart/Flask, reducing data retrieval time by 10x.
+- Implemented Amazon Lambda Functions and DynamoDB, enhancing system efficiency.
+- Led a team, improving project delivery time.
+
+---
+
+**Backend Developer** <br />
+**LUMS - Lahore**  
+_January 2023 to December 2023_
+
+- Built a resilient P2P file sharing app using Python and socket programming.
+- Implemented distributed hash tables and consistent hashing for optimized file retrieval.
+
+---
+
+**Frontend Developer** <br />
+**LUMS - Lahore**  
+_May 2023 to June 2023_
+
+- Developed and designed a dynamic course website for a 5-day Internet Architecture course at LUMS.
+- Enhanced accessibility and resource management for over 60 participants.
+
+---
+
+**Backend Developer** <br />
+**LUMS - Lahore**  
+_June 2022 to December 2022_
+
+- Developed a robust full stack speech therapy web application using MERN stack.
+- Designed a user-centric platform to enhance therapy sessions and exercises.
+- Integrated 3rd-party APIs such as Calendly and RapidAPI's quote generator.
+
+---
+
+**Machine Learning Developer** <br />
+**Fiverr - Lahore**  
+_January 2021 to December 2021_
+
+- Conducted experiments with various ML models and frameworks.
+- Cleaned and analyzed a large dataset, comparing model performances using F1-score and accuracy.
+- Developed an end-to-end system and considered future advancements with GPT-4 or LLaMA 2.
+
+## Research Experience
+
+**Research Assistant** <br />
+**Networks and Systems Group - Lahore**  
+_June 2022 to May 2024_
+
+- Conducted a study on YouTube ad costs, revealing hidden expenses and contributing to internet affordability insights.
+- Presented research at ACM WebConf and ACM CoNEXT, enhancing global scholarly discourse.
+- Led technical development, fostering innovation and collaboration.
+
+## Teaching Experience
+
+1. CS582: Distributed Systems, Fall'24 - Teaching Assistant (**LUMS**)
+2. CS200: Introduction to Programming, Fall'24 - Teaching Assistant (**LUMS**)
+3. CS200: Introduction to Programming, Spring'23 - Teaching Assistant (**LUMS**)

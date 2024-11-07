@@ -6,7 +6,7 @@
   position: fixed;
   background: white;
   border-bottom: 1px solid $border-color;
-  height: $masthead-height;
+  height: 75px;
   top: 0;
   width: 100%;
 
@@ -15,6 +15,10 @@
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
+
+  @include breakpoint($medium){
+    height: $masthead-height; 
+  }
 
   &__inner-wrap {
     @include container;
