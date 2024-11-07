@@ -26,7 +26,7 @@ Currently, I'm serving as a Software Engineer at [Linq.io](https://linq.io/), a 
 
 # [Work Experience](#work-experience)
 
-## [Professional Experience](#professional-experience)
+## Professional Experience
 
 **Software Engineer** <br />
 **Linq.io - Dallas, TX (Remote)**  
@@ -104,7 +104,7 @@ _January 2021 to December 2021_
 - Cleaned and analyzed a large dataset, comparing model performances using F1-score and accuracy.
 - Developed an end-to-end system and considered future advancements with GPT-4 or LLaMA 2.
 
-## [Research Experience](#research-experience)
+## Research Experience
 
 **Research Assistant** <br />
 **Networks and Systems Group - Lahore**  
@@ -114,7 +114,7 @@ _June 2022 to May 2024_
 - Presented research at ACM WebConf and ACM CoNEXT, enhancing global scholarly discourse.
 - Led technical development, fostering innovation and collaboration.
 
-## [Teaching Experience](#teaching-experience)
+## Teaching Experience
 
 1. CS582: Distributed Systems, Fall'24 - Teaching Assistant (**LUMS**)
 2. CS200: Introduction to Programming, Fall'24 - Teaching Assistant (**LUMS**)
