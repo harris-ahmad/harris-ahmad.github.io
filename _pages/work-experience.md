@@ -9,6 +9,7 @@ title: ""
 
 **Software Engineer** <br />
 **Linq.io - Dallas, TX (Remote)**  
+<img src="https://entronix.io/wp-content/uploads/2023/03/EntronixCleanLogo_horizontal.png" alt="Linq Logo" style="height: 30px; vertical-align: middle;">  
  _July 2024 to Present_
 
 - Developing scalable server-side solutions using FastAPI for robust APIs and optimized database performance.
@@ -19,6 +20,7 @@ title: ""
 
 **Backend Developer** <br />
 **Its IT Group - Remote**  
+<img src="https://www.itsitgroup.com/wp-content/uploads/2022/07/Its-logo.jpg" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
  _May 2024 to Present_
 
 - Developing scalable server-side solutions using MERN & GraphQL for robust APIs and optimized database performance.
@@ -29,6 +31,7 @@ title: ""
 
 **Full Stack Developer** <br />
 **LUMS - Lahore**  
+<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
 _October 2023 to March 2024_
 
 - Created a cross-platform app for health practitioners to record medical and socioeconomic history.
@@ -39,6 +42,7 @@ _October 2023 to March 2024_
 
 **Full Stack Developer** <br />
 **Interactive Media Lab - Lahore**  
+<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
 _October 2023 to March 2024_
 
 - Developed a scalable, fault-tolerant system using Quart/Flask, reducing data retrieval time by 10x.
@@ -49,6 +53,7 @@ _October 2023 to March 2024_
 
 **Backend Developer** <br />
 **LUMS - Lahore**  
+<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
 _January 2023 to December 2023_
 
 - Built a resilient P2P file sharing app using Python and socket programming.
@@ -58,6 +63,7 @@ _January 2023 to December 2023_
 
 **Frontend Developer** <br />
 **LUMS - Lahore**  
+<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
 _May 2023 to June 2023_
 
 - Developed and designed a dynamic course website for a 5-day Internet Architecture course at LUMS.
@@ -67,6 +73,7 @@ _May 2023 to June 2023_
 
 **Backend Developer** <br />
 **LUMS - Lahore**  
+<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
 _June 2022 to December 2022_
 
 - Developed a robust full stack speech therapy web application using MERN stack.
@@ -77,6 +84,7 @@ _June 2022 to December 2022_
 
 **Machine Learning Developer** <br />
 **Fiverr - Lahore**  
+<img src="https://www.citypng.com/public/uploads/preview/hd-fiverr-logo-transparent-background-701751694713868csfsamlgnd.png?v=2024102917" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
 _January 2021 to December 2021_
 
 - Conducted experiments with various ML models and frameworks.
@@ -86,7 +94,9 @@ _January 2021 to December 2021_
 ## Research Experience
 
 **Research Assistant** <br />
-**Networks and Systems Group - LUMS**  
+**Networks and Systems Group - LUMS**
+<br />
+<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
 _June 2022 to May 2024_
 
 - Conducted a study on YouTube ad costs, revealing hidden expenses and contributing to internet affordability insights.
@@ -94,7 +104,7 @@ _June 2022 to May 2024_
 - Led technical development, fostering innovation and collaboration.
 
 ## Teaching Experience
-
+<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
 1. CS582: Distributed Systems, Fall'24 - Teaching Assistant (**LUMS**)
 2. CS200: Introduction to Programming, Fall'24 - Teaching Assistant (**LUMS**)
 3. CS200: Introduction to Programming, Spring'23 - Teaching Assistant (**LUMS**)
