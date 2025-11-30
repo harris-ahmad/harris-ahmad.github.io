@@ -7,53 +7,47 @@ title: ""
 
 ## Professional Experience
 
+**Research Software Engineer** <br />
+**CPI-NS, UBuffalo - Buffalo, NY** <br />
+_January 2025 to Present_
+
+- Implemented 3 concurrency and replication protocols such as primary backup, chain replication and two phase locking in Go to test their effectiveness in systems that are suited for collaborative AI. This work is a part of an ongoing NSF grant.
+- Testing the protocols using CloudLab's 4-node architecture showed these existing protocols are unfit for nodes that collaborate in real-time.
+- Currently developing a distributed transaction reordering & coordination system for another NSF funded project by designing and implementing a snapshot-based architecture in C++ and Go that reduces lock contention and minimizes transaction abort rate, achieving a significant throughput improvement. We're submitting this to OSDI'26.
+
+---
+
 **Software Engineer** <br />
-**Linq.io - Dallas, TX (Remote)**  
-<img src="https://entronix.io/wp-content/uploads/2023/03/EntronixCleanLogo_horizontal.png" alt="Linq Logo" style="height: 30px; vertical-align: middle;">  
- _July 2024 to Present_
+**Linq.io - Dallas, TX (Remote)** <br />
+_July 2024 to December 2024_
 
-- Developing scalable server-side solutions using FastAPI for robust APIs and optimized database performance.
-- Building an asset management software for top-tier clients like Walmart, Starbucks, and JLL to help them manage their assets.
-- Currently leading the development of an asset management software for Walmart. Played a key role in implementing the system debug info page, allowing root users/admins to access debugging information, which improved application efficiency by 28%.
+- Built on-the-fly media generation API using FastAPI and MongoDB that reduced page load time by 60%, dynamically generating asset thumbnails as users scroll through 10K+ item inventories.
+- Deployed successful SSO authentication using OAuth 2.0 & FusionAuth enabling enterprise users to access systems with existing credentials.
+- Created admin debugging and playground dashboards that exposed system metrics via direct OS calls, reducing troubleshooting time from hours to minutes for 50+ support tickets.
+
+---
+
+**System Engineer** <br />
+**Its IT Group - Lahore, PK** <br />
+_May 2024 to August 2024_
+
+- Redesigned the backend in node.js and MongoDB of an AR app for VTuber/karaoke 3D avatars leveraging WebSockets for real-time comments, notifications and likes across 5K+ daily active users.
+- Implemented 3D model pipeline to process LiDAR scans, building USDZ to GLB converter enabling Unity integration, reducing manual measurement time by 80%.
+
+---
+
+**Research Software Engineer** <br />
+**Interactive Media Lab, LUMS - Lahore, PK** <br />
+_October 2023 to March 2024_
+
+- Built Awaaz-e-Sehat health platform using Python Flask framework on AWS Lambda, reducing API response time from 5s to 500ms handling 10K+ daily medical queries.
+- Designed serverless data pipeline AWS (Lambda, DynamoDB, S3) to store and index 50K+ medical recordings, eliminating server costs while scaling automatically.
+- Built medical transcription service using Whisper API and GPT-4, converting doctor consultations and medical history recordings to structured clinical notes with 95% accuracy, processing 1K+ recordings daily.
 
 ---
 
 **Backend Developer** <br />
-**Its IT Group - Remote**  
-<img src="https://www.itsitgroup.com/wp-content/uploads/2022/07/Its-logo.jpg" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
- _May 2024 to Present_
-
-- Developing scalable server-side solutions using MERN & GraphQL for robust APIs and optimized database performance.
-- Working on an ExpressJS web server integrated with a Swift iOS app for construction cost estimation.
-- Utilized iPhone/iPad's LiDAR scanner for room dimension scanning, which is sent to the server for cost analysis.
-
----
-
-**Full Stack Developer** <br />
-**LUMS - Lahore**  
-<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
-_October 2023 to March 2024_
-
-- Created a cross-platform app for health practitioners to record medical and socioeconomic history.
-- Implemented EMRs with an optimized vectored database for patient data management.
-- Integrated a chatbot for patient medical advice.
-
----
-
-**Full Stack Developer** <br />
-**Interactive Media Lab - Lahore**  
-<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
-_October 2023 to March 2024_
-
-- Developed a scalable, fault-tolerant system using Quart/Flask, reducing data retrieval time by 10x.
-- Implemented Amazon Lambda Functions and DynamoDB, enhancing system efficiency.
-- Led a team, improving project delivery time.
-
----
-
-**Backend Developer** <br />
-**LUMS - Lahore**  
-<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
+**LUMS - Lahore** <br />
 _January 2023 to December 2023_
 
 - Built a resilient P2P file sharing app using Python and socket programming.
@@ -62,8 +56,7 @@ _January 2023 to December 2023_
 ---
 
 **Frontend Developer** <br />
-**LUMS - Lahore**  
-<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
+**LUMS - Lahore** <br />
 _May 2023 to June 2023_
 
 - Developed and designed a dynamic course website for a 5-day Internet Architecture course at LUMS.
@@ -72,8 +65,7 @@ _May 2023 to June 2023_
 ---
 
 **Backend Developer** <br />
-**LUMS - Lahore**  
-<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
+**LUMS - Lahore** <br />
 _June 2022 to December 2022_
 
 - Developed a robust full stack speech therapy web application using MERN stack.
@@ -83,8 +75,7 @@ _June 2022 to December 2022_
 ---
 
 **Machine Learning Developer** <br />
-**Fiverr - Lahore**  
-<img src="https://www.citypng.com/public/uploads/preview/hd-fiverr-logo-transparent-background-701751694713868csfsamlgnd.png?v=2024102917" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
+**Fiverr - Lahore** <br />
 _January 2021 to December 2021_
 
 - Conducted experiments with various ML models and frameworks.
@@ -93,18 +84,28 @@ _January 2021 to December 2021_
 
 ## Research Experience
 
-**Research Assistant** <br />
-**Networks and Systems Group - LUMS**
-<br />
-<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
-_June 2022 to May 2024_
+**Research Software Engineer** <br />
+**Networks and Systems Group, LUMS - Lahore, PK** <br />
+_May 2022 to December 2023_
 
-- Conducted a study on YouTube ad costs, revealing hidden expenses and contributing to internet affordability insights.
-- Presented research at ACM WebConf and ACM CoNEXT, enhancing global scholarly discourse.
-- Led technical development, fostering innovation and collaboration.
+- Discovered the impact of varying video bitrates across main-video resolutions: 720p causes ~3× higher latent buffer loss than 360p (10.1 MB vs 3.4 MB), finding led to recommendations for adaptive ad-insertion/ABR changes to cut loss and cost.
+- Collected data for 17600 YouTube videos and 46600 YouTube ads across 8 countries. This is the first large corpus of YouTube data, with 15+ features, that includes buffer data for each video. The dataset and codebase are publicly available.
+- Published findings in Proceedings of the ACM Web Conference 2024 (WWW'24).
+- Built distributed scraper using Selenium/PyTube to collect YouTube metrics, parallelizing across 20 machines gathering 2TB+ of performance data over a year.
 
 ## Teaching Experience
-<img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="Its It Group Logo" style="height: 30px; vertical-align: middle;">  
-1. CS582: Distributed Systems, Fall'24 - Teaching Assistant (**LUMS**)
-2. CS200: Introduction to Programming, Fall'24 - Teaching Assistant (**LUMS**)
-3. CS200: Introduction to Programming, Spring'23 - Teaching Assistant (**LUMS**)
+
+**Teaching Assistant** <br />
+**University at Buffalo - Buffalo, NY** <br />
+_Spring 2025_
+
+- Modern Networking Concepts (CSE 489/589)
+
+---
+
+**Teaching Assistant** <br />
+**Lahore University of Management Sciences - Lahore, PK** <br />
+_Spring 2023, Fall 2023_
+
+- CS200: Object Oriented Programming in C++ (Spring'23, Fall'23)
+- CS582: Distributed Systems (Fall'23)

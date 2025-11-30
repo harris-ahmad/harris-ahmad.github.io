@@ -8,11 +8,11 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Harris Ahmad @ Linq.io"
+title                    : "Harris Ahmad"
 title_separator          : "-"
 name                     : &name "Harris Ahmad"
-description              : &description "personal description"
-url                      : https://harris-ahmad.github.io 
+description              : &description "PhD Student @ University at Buffalo | Software Engineer | Distributed Systems Researcher"
+url                      : https://harris-ahmad.github.io
 baseurl                  : ""
 repository               : "harris-ahmad/harris-ahmad.github.io"
 
@@ -23,12 +23,12 @@ author:
   # Biographic information
   avatar           : "profile-pic.png"
   name             : "Harris Ahmad"
-  pronouns         : "he/him" # example: "she/her"  
-  bio              : "Software Engineer @ Linq Americas, LLC"
-  location         : "Lahore, Pakistan"
-  employer         : "Linq Americas, LLC"
+  pronouns         : "he/him" # example: "she/her"
+  bio              : "PhD Student @ University at Buffalo"
+  location         : "Buffalo, New York"
+  employer         : "University at Buffalo"
   uri              : # URL
-  email            : "harris.ahmad@linq.io" 
+  email            : "harrisah@buffalo.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile

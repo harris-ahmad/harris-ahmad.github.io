@@ -5,12 +5,11 @@ title: ""
 
 # Contact
 
-Address: Lahore, Pakistan
+Address: Buffalo, New York, United States
 
-Phone: (92) 300-3721112
+Phone: +1 716-279 5206
 
 Email: 
-- [harris.ahmad@linq.io](mailto:harris.ahmad@linq.io)
 - [harrisah@buffalo.edu](mailto:harrisah@buffalo.edu)
 
 ---
