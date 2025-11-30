@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Harris Ahmad"
+title                    : "Harris Ahmad @ UBuffalo CSE"
 title_separator          : "-"
 name                     : &name "Harris Ahmad"
 description              : &description "PhD Student @ University at Buffalo | Software Engineer | Distributed Systems Researcher"
