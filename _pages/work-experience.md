@@ -1,6 +1,8 @@
 ---
 permalink: /work-experience
 title: ""
+description: "Professional software engineering experience including work at University at Buffalo, Linq.io, Its IT Group, and research positions. Expertise in distributed systems, backend development, and database optimization."
+keywords: "work experience, software engineer, research engineer, University at Buffalo, distributed systems, backend development, Python, Go, FastAPI"
 ---
 
 # Work Experience

@@ -133,7 +133,7 @@ title: ""
       <a href="https://github.com/harris-ahmad/awaaz-e-sehat" target="_blank" style="display: block;">
          <img src="https://opengraph.githubassets.com/1/harris-ahmad/awaaz-e-sehat" alt="GitHub Repo - Awaaz E Sehat Flask Web App" style="width:100%; border-radius: 8px;">
       </a>
-      
+
       <br>
       <a href="https://github.com/harris-ahmad/awaaz-e-sehat" target="_blank">
          <img src="https://img.shields.io/github/stars/harris-ahmad/awaaz-e-sehat?style=social" alt="GitHub stars - Awaaz E Sehat Flask Web App">

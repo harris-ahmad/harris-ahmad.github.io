@@ -1,10 +1,15 @@
 ---
 permalink: /
 title: ""
+excerpt: "PhD Student at University at Buffalo specializing in Distributed Systems and Database Optimization. Seeking Software Engineering PhD Research Internships for Summer 2026."
+description: "Harris Ahmad is a PhD student at University at Buffalo researching distributed systems and database optimization. Experienced software engineer seeking SWE research internships for Summer 2026. Skilled in Python, C++, Go, React, and cloud technologies."
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
+header:
+  og_image: /images/profile-pic.png
+keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, database optimization, University at Buffalo, UBuffalo, research internship, summer 2026, Python developer, React developer, machine learning, computer science"
 ---
 
 <style>
@@ -260,7 +265,7 @@ redirect_from:
 </div>
 
 <!-- About Section -->
-<div class="section">
+<div class="section" id="about">
   <h2>About Me</h2>
   <p>I'm a PhD student in Computer Science at the <strong>University at Buffalo (SUNY)</strong>, where I work under the guidance of <a href="https://sites.google.com/view/haonanlu/home" target="_blank">Dr. Haonan Lu</a>. My research focuses on distributed systems, database optimization, and scalable backend architectures.</p>
 
@@ -272,7 +277,7 @@ redirect_from:
 </div>
 
 <!-- Skills Section -->
-<div class="section">
+<div class="section" id="skills">
   <h2>Skills & Technologies</h2>
 
   <div class="skills-list">
@@ -285,15 +290,15 @@ redirect_from:
 </div>
 
 <!-- Featured Projects Section -->
-<div class="section">
+<div class="section" id="projects">
   <h2>Featured Projects</h2>
 
   <div class="project-item">
     <h3>SimpleAuth</h3>
     <p>npm authentication package built on Passport.js, providing easy-to-use authentication strategies for Node.js applications.</p>
     <div class="project-links">
-      <a href="https://github.com/harris-ahmad/SimpleAuth" target="_blank">GitHub</a>
-      <a href="https://www.npmjs.com/package/simpleauth" target="_blank">npm Package</a>
+      <a href="https://github.com/harris-ahmad/AuthenticationSystem" target="_blank">GitHub</a>
+      <a href="https://www.npmjs.com/package/@harrisahmad/simpleauth" target="_blank">npm Package</a>
     </div>
   </div>
 
@@ -301,7 +306,7 @@ redirect_from:
     <h3>Data Structures & Algorithms</h3>
     <p>Comprehensive implementations of fundamental DSA in multiple languages covering trees, graphs, sorting, and dynamic programming.</p>
     <div class="project-links">
-      <a href="https://github.com/harris-ahmad/DSA" target="_blank">GitHub</a>
+      <a href="https://github.com/harris-ahmad/DataStructuresAndAlgorithms" target="_blank">GitHub</a>
     </div>
   </div>
 
@@ -309,7 +314,7 @@ redirect_from:
     <h3>Crypto Telegram Bot</h3>
     <p>Real-time cryptocurrency price monitoring bot in Go with live alerts, portfolio tracking, and market analysis via CoinGecko API.</p>
     <div class="project-links">
-      <a href="https://github.com/harris-ahmad/Crypto-Telegram-Bot-GO" target="_blank">GitHub</a>
+      <a href="https://github.com/harris-ahmad/TelegramBot-Go" target="_blank">GitHub</a>
     </div>
   </div>
 
@@ -327,7 +332,7 @@ redirect_from:
 </div>
 
 <!-- Work Experience Section -->
-<div class="section">
+<div class="section" id="experience">
   <h2>Work Experience</h2>
 
   <div class="experience-item">
@@ -366,7 +371,7 @@ redirect_from:
 </div>
 
 <!-- Publications Section -->
-<div class="section">
+<div class="section" id="publications">
   <h2>Publications</h2>
 
   <div class="publication-item">
@@ -386,7 +391,7 @@ redirect_from:
 </div>
 
 <!-- Contact Section -->
-<div class="section">
+<div class="section" id="contact">
   <h2>Get In Touch</h2>
   <p>I'm currently seeking <strong>software engineering PhD research internship opportunities</strong> for Summer 2026. Feel free to reach out!</p>
 
