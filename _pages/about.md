@@ -248,7 +248,8 @@ redirect_from:
 <div class="hero-section">
   <h1>Harris Ahmad</h1>
   <p class="tagline">PhD Student @ University at Buffalo | Software Engineer | Distributed Systems Researcher</p>
-  <p style="font-size: 1.1rem; color: #2c5aa0; font-weight: 600; margin-top: 0.5rem;">Seeking Software Engineering PhD Research Internships for Summer 2026</p>
+  <p style="font-size: 1.1rem; color: #2c5aa0; font-weight: 600; margin-top: 0.5rem;">Seeking Software Engineering PhD Research Internships for Summer 2026.</p><p>If you have a referral, please
+  reach out to harrisah@buffalo.edu</p>
 
   <div class="hero-buttons">
     <a href="/files/Final_Resume-3.pdf" class="btn-primary" target="_blank">Download Resume</a>
