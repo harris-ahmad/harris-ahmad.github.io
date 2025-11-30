@@ -327,36 +327,19 @@
     }
   }
 
-  // Create floating search button
-  function createSearchButton() {
-    const button = document.createElement('button');
-    button.className = 'search-trigger';
-    button.setAttribute('aria-label', 'Search');
-    button.innerHTML = `
-      <span class="search-trigger-icon">🔍</span>
-      <span class="search-trigger-text">Search</span>
-      <kbd class="search-trigger-kbd">⌘K</kbd>
-    `;
-    button.addEventListener('click', openPalette);
-    document.body.appendChild(button);
-
-    // Update kbd text based on OS
-    const isMac = /Mac|iPhone|iPod|iPad/.test(navigator.userAgent);
-    if (!isMac) {
-      button.querySelector('.search-trigger-kbd').textContent = 'Ctrl+K';
-    }
-  }
-
   // Initialize
   function init() {
     // Create palette
     createPalette();
 
-    // Create search button
-    createSearchButton();
-
     // Keyboard shortcuts
     document.addEventListener('keydown', handleKeyboard);
+
+    // Navigation search button
+    const navSearchBtn = document.getElementById('nav-search-btn');
+    if (navSearchBtn) {
+      navSearchBtn.addEventListener('click', openPalette);
+    }
 
     // Click backdrop to close
     const backdrop = document.querySelector('.command-palette-backdrop');
