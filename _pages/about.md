@@ -396,7 +396,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, da
   <p>I'm currently seeking <strong>software engineering PhD research internship opportunities</strong> for Summer 2026. Feel free to reach out!</p>
 
   <p style="margin-top: 1rem;">
-    <strong>Email:</strong> <a href="mailto:harrisah@buffalo.edu">harrisah@buffalo.edu</a> | <a href="mailto:harrisah@buffalo.edu">harrisah@buffalo.edu</a><br>
+    <strong>Email:</strong> <a href="mailto:harrisah@buffalo.edu">harrisah@buffalo.edu</a><br>
     <strong>Location:</strong> Buffalo, New York<br>
     <strong>GitHub:</strong> <a href="https://github.com/harris-ahmad" target="_blank">github.com/harris-ahmad</a><br>
     <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harris-ahmad-9a6266214" target="_blank">linkedin.com/in/harris-ahmad</a>
