@@ -1,5 +1,6 @@
 /* Command Palette - Terminal Style */
 
+<<<<<<< HEAD
 /* Floating Search Button */
 .search-trigger {
   position: fixed;
@@ -55,6 +56,59 @@
 
   .search-trigger-kbd {
     display: none;
+=======
+/* Navigation Search Button */
+.masthead__menu {
+  position: relative;
+}
+
+.nav-search-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.nav-search-button:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: #2c5aa0;
+}
+
+.nav-search-button:focus {
+  outline: 2px solid #2c5aa0;
+  outline-offset: 2px;
+}
+
+.nav-search-button svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-search-button {
+    right: 60px; /* Position it left of burger menu */
+    padding: 8px;
+  }
+
+  .nav-search-button svg {
+    width: 18px;
+    height: 18px;
+>>>>>>> dev
   }
 }
 
@@ -75,10 +129,13 @@
   display: flex;
 }
 
+<<<<<<< HEAD
 .command-palette.active ~ .search-trigger {
   display: none;
 }
 
+=======
+>>>>>>> dev
 /* Backdrop */
 .command-palette-backdrop {
   position: absolute;

@@ -349,14 +349,20 @@
 
   // Initialize
   function init() {
+
+    createSearchButton();
+
     // Create palette
     createPalette();
 
-    // Create search button
-    createSearchButton();
-
     // Keyboard shortcuts
     document.addEventListener('keydown', handleKeyboard);
+
+    // Navigation search button
+    const navSearchBtn = document.getElementById('nav-search-btn');
+    if (navSearchBtn) {
+      navSearchBtn.addEventListener('click', openPalette);
+    }
 
     // Click backdrop to close
     const backdrop = document.querySelector('.command-palette-backdrop');

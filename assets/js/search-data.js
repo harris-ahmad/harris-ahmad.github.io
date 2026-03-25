@@ -197,7 +197,7 @@ const searchData = [
     type: 'page',
     title: 'Resume / CV',
     description: 'Download my resume',
-    url: '/files/Final_Resume-3.pdf',
+    url: '/files/Resume.pdf',
     keywords: ['resume', 'cv', 'download', 'pdf']
   },
 

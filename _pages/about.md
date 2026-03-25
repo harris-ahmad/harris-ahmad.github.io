@@ -257,7 +257,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, da
   reach out to harrisah@buffalo.edu</p>
 
   <div class="hero-buttons">
-    <a href="/files/Final_Resume-3.pdf" class="btn-primary" target="_blank">Download Resume</a>
+    <a href="/files/Resume.pdf" class="btn-primary" target="_blank">Download Resume</a>
     <a href="https://github.com/harris-ahmad" class="btn-secondary" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/harris-ahmad-9a6266214" class="btn-secondary" target="_blank">LinkedIn</a>
     <a href="mailto:harrisah@buffalo.edu" class="btn-secondary">Contact</a>

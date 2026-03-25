@@ -37,7 +37,7 @@ layout: null
 
   <!-- Resume PDF -->
   <url>
-    <loc>{{ site.url }}/files/Final_Resume-3.pdf</loc>
+    <loc>{{ site.url }}/files/Resume.pdf</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
