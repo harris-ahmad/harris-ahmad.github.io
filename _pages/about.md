@@ -1,15 +1,15 @@
 ---
 permalink: /
 title: ""
-excerpt: "PhD Student at University at Buffalo specializing in Distributed Systems and Database Optimization. Seeking Software Engineering PhD Research Internships for Summer 2026."
-description: "Harris Ahmad is a PhD student at University at Buffalo researching distributed systems and database optimization. Experienced software engineer seeking SWE research internships for Summer 2026. Skilled in Python, C++, Go, React, and cloud technologies."
+excerpt: "Master's Student at University at Buffalo specializing in Distributed Systems and Database Optimization. Seeking Software Engineering/ Research Internships for Summer 2026."
+description: "Harris Ahmad is a Master's student at University at Buffalo researching distributed systems and database optimization. Experienced software engineer seeking SWE research internships for Summer 2026. Skilled in Python, C++, Go, React, and cloud technologies."
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 header:
   og_image: /images/profile-pic.png
-keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, database optimization, University at Buffalo, UBuffalo, research internship, summer 2026, Python developer, React developer, machine learning, computer science"
+keywords: "Harris Ahmad, Master's student, software engineer, distributed systems, database optimization, University at Buffalo, UBuffalo, research internship, summer 2026, Python developer, React developer, machine learning, computer science"
 ---
 
 <style>
@@ -252,8 +252,8 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, da
 <!-- Hero Section -->
 <div class="hero-section">
   <h1>Harris Ahmad</h1>
-  <p class="tagline">PhD Student @ University at Buffalo | Software Engineer | Distributed Systems Researcher</p>
-  <p style="font-size: 1.1rem; color: #2c5aa0; font-weight: 600; margin-top: 0.5rem;">Seeking Software Engineering PhD Research Internships for Summer 2026.</p><p>If you have a referral, please
+  <p class="tagline">Master's CSE Student @ University at Buffalo | Software Engineer | Distributed Systems Researcher</p>
+  <p style="font-size: 1.1rem; color: #2c5aa0; font-weight: 600; margin-top: 0.5rem;">Seeking Software Engineering/ Research Internships for Summer 2026.</p><p>If you have a referral, please
   reach out to harrisah@buffalo.edu</p>
 
   <div class="hero-buttons">
@@ -267,9 +267,9 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, da
 <!-- About Section -->
 <div class="section" id="about">
   <h2>About Me</h2>
-  <p>I'm a PhD student in Computer Science at the <strong>University at Buffalo (SUNY)</strong>, where I work under the guidance of <a href="https://sites.google.com/view/haonanlu/home" target="_blank">Dr. Haonan Lu</a>. My research focuses on distributed systems, database optimization, and scalable backend architectures.</p>
+  <p>I'm a Master's student in Computer Science at the <strong>University at Buffalo (SUNY)</strong>, where I work under the guidance of <a href="https://sites.google.com/view/haonanlu/home" target="_blank">Dr. Haonan Lu</a>. My research focuses on distributed systems, database optimization, and scalable backend architectures.</p>
 
-  <p>Before starting my PhD, I gained 2+ years of professional software engineering experience building systems for companies like <strong>Walmart, Starbucks, and JLL</strong>, where I specialized in backend development using FastAPI, MongoDB, Redis, and modern cloud technologies.</p>
+  <p>Before starting my Master's, I gained 2+ years of professional software engineering experience building systems for companies like <strong>Walmart, Starbucks, and JLL</strong>, where I specialized in backend development using FastAPI, MongoDB, Redis, and modern cloud technologies. I started working on these projects during my undergraduate studies.</p>
 
   <p>During my undergraduate studies at LUMS, I was advised by <a href="https://web.lums.edu.pk/~zafar/" target="_blank">Dr. Zafar Ayyub Qazi</a>, <a href="https://www.ihsanqazi.com/" target="_blank">Dr. Ihsan Ayyub Qazi</a>, and <a href="https://lums.edu.pk/lums_employee/516" target="_blank">Dr. Mian Muhammad Awais</a>. I conducted research on internet affordability and YouTube ad costs, publishing at <strong>ACM WebConf 2024</strong>.</p>
 
@@ -393,7 +393,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, da
 <!-- Contact Section -->
 <div class="section" id="contact">
   <h2>Get In Touch</h2>
-  <p>I'm currently seeking <strong>software engineering PhD research internship opportunities</strong> for Summer 2026. Feel free to reach out!</p>
+  <p>I'm currently seeking <strong>software engineering/ research internship opportunities</strong> for Summer 2026. Feel free to reach out!</p>
 
   <p style="margin-top: 1rem;">
     <strong>Email:</strong> <a href="mailto:harrisah@buffalo.edu">harrisah@buffalo.edu</a><br>

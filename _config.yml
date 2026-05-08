@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Harris Ahmad @ UBuffalo CSE"
 title_separator          : "-"
 name                     : &name "Harris Ahmad"
-description              : &description "PhD Student @ University at Buffalo | Software Engineer | Distributed Systems Researcher"
+description              : &description "Master's CSE @ University at Buffalo | Software Engineer | Distributed Systems Researcher"
 url                      : https://harris-ahmad.github.io
 baseurl                  : ""
 repository               : "harris-ahmad/harris-ahmad.github.io"
