@@ -1,8 +1,8 @@
 ---
 permalink: /
 title: ""
-excerpt: "PhD Student at University at Buffalo specializing in Distributed Systems and Database Optimization. Seeking Software Engineering/ Research Internships for Summer 2026."
-description: "Harris Ahmad is a PhD student at University at Buffalo researching distributed systems and database optimization. Experienced software engineer seeking SWE research internships for Summer 2026. Skilled in Python, C++, Go, React, and cloud technologies."
+excerpt: "PhD Student at University at Buffalo specializing in Distributed Systems and Database Optimization. Seeking Software Engineering/ Research Internships for Spring/ Summer 2027."
+description: "Harris Ahmad is a PhD student at University at Buffalo researching distributed systems and database optimization. Experienced software engineer seeking SWE research internships for Spring/ Summer 2027. Skilled in Python, C++, Go, React, and cloud technologies."
 author_profile: true
 redirect_from:
   - /about/
@@ -253,7 +253,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, da
 <div class="hero-section">
   <h1>Harris Ahmad</h1>
   <p class="tagline">PhD CSE Student @ University at Buffalo | Software Engineer | Distributed Systems Researcher</p>
-  <p style="font-size: 1.1rem; color: #2c5aa0; font-weight: 600; margin-top: 0.5rem;">Seeking Software Engineering/ Research Internships for Summer 2026.</p><p>If you have a referral, please
+  <p style="font-size: 1.1rem; color: #2c5aa0; font-weight: 600; margin-top: 0.5rem;">Seeking Software Engineering/ Research Internships for Spring/ Summer 2026.</p><p>If you have a referral, please
   reach out to harrisah@buffalo.edu</p>
 
   <div class="hero-buttons">
@@ -393,7 +393,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, da
 <!-- Contact Section -->
 <div class="section" id="contact">
   <h2>Get In Touch</h2>
-  <p>I'm currently seeking <strong>software engineering/ research internship opportunities</strong> for Summer 2026. Feel free to reach out!</p>
+  <p>I'm currently seeking <strong>software engineering/ research internship opportunities</strong> for Spring/ Summer 2027. Feel free to reach out!</p>
 
   <p style="margin-top: 1rem;">
     <strong>Email:</strong> <a href="mailto:harrisah@buffalo.edu">harrisah@buffalo.edu</a><br>
