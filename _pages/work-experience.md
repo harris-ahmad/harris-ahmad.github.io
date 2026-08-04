@@ -2,10 +2,32 @@
 permalink: /work-experience
 title: ""
 description: "Professional software engineering and research experience at University at Buffalo, Linq.io, LUMS, and related roles. Distributed systems, backend development, and transactional databases."
-keywords: "work experience, software engineer, research engineer, University at Buffalo, distributed systems, FoundationDB, CockroachDB, FastAPI, Go"
+keywords: "work experience, software engineer, research engineer, University at Buffalo, distributed systems, FoundationDB, CockroachDB, FastAPI, Go, YC, Y Combinator"
+gallery:
+  - url: yc-ai-startup-school-2026/yc-badge.jpg
+    image_path: yc-ai-startup-school-2026/yc-badge.jpg
+    alt: "Harris Ahmad at Y Combinator AI Startup School 2026"
+    title: "YC AI Startup School 2026"
+  - url: yc-ai-startup-school-2026/chase-center.jpg
+    image_path: yc-ai-startup-school-2026/chase-center.jpg
+    alt: "Crowd outside Chase Center during YC AI Startup School office hours"
+    title: "Chase Center — YC AI Startup School"
 ---
 
 # Work Experience
+
+## Selected Programs
+
+**Participant** <br />
+**Y Combinator AI Startup School — San Francisco, CA** <br />
+_July 2026_
+
+- Selected for YC's AI Startup School 2026 at Chase Center — a multi-day program for builders working on AI products and research.
+- Joined office hours and 1:1 conversations with founders and operators about what we're building; networked with peers across AI systems, products, and research.
+
+{% include gallery caption="YC AI Startup School 2026 — San Francisco (Chase Center)" %}
+
+---
 
 ## Professional Experience
 

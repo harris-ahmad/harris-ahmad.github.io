@@ -130,6 +130,22 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
   </div>
 
   <div class="experience-item">
+    <h3>YC AI Startup School</h3>
+    <p class="experience-meta">Y Combinator • San Francisco, CA • July 2026</p>
+    <ul>
+      <li>Selected participant at YC AI Startup School 2026 (Chase Center) — office hours and 1:1s with founders on AI products and systems</li>
+    </ul>
+    <div class="photo-gallery">
+      <a href="/images/yc-ai-startup-school-2026/yc-badge.jpg" target="_blank" rel="noopener">
+        <img src="/images/yc-ai-startup-school-2026/yc-badge.jpg" alt="At Y Combinator AI Startup School 2026">
+      </a>
+      <a href="/images/yc-ai-startup-school-2026/chase-center.jpg" target="_blank" rel="noopener">
+        <img src="/images/yc-ai-startup-school-2026/chase-center.jpg" alt="Chase Center during YC AI Startup School 2026">
+      </a>
+    </div>
+  </div>
+
+  <div class="experience-item">
     <h3>Software Engineer</h3>
     <p class="experience-meta">Linq.io • Dallas, TX (Remote) • July 2024 - December 2024</p>
     <ul>
