@@ -3,75 +3,54 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
   <url>
     <loc>{{ site.url }}/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Projects Page -->
-  <url>
-    <loc>{{ site.url }}/projects/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Work Experience Page -->
-  <url>
-    <loc>{{ site.url }}/work-experience/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Writing index -->
   <url>
     <loc>{{ site.url }}/writing/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Publications Page -->
+  <url>
+    <loc>{{ site.url }}/projects/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/work-experience/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>{{ site.url }}/publications/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Resume PDF -->
+  <url>
+    <loc>{{ site.url }}/contact</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>{{ site.url }}/files/Resume.pdf</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
-
-  {% for post in site.posts %}
+{% for post in site.posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
-  {% endfor %}
-
-  {% for page in site.pages %}
-    {% if page.sitemap != false and page.url != '/404.html' %}
-  <url>
-    <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
-    {% if page.date %}
-    <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-    {% else %}
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    {% endif %}
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-    {% endif %}
-  {% endfor %}
+{% endfor %}
 </urlset>
