@@ -178,6 +178,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
     <strong>Email:</strong> <a href="mailto:harrisah@buffalo.edu?subject=Spring%2FSummer%202027%20internship">harrisah@buffalo.edu</a><br>
     <strong>Location:</strong> Buffalo, New York<br>
     <strong>GitHub:</strong> <a href="https://github.com/harris-ahmad" target="_blank">github.com/harris-ahmad</a><br>
-    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harris-ahmad1" target="_blank">linkedin.com/in/harris-ahmad1</a>
+    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harris-ahmad1" target="_blank">linkedin.com/in/harris-ahmad1</a><br>
+    <strong>ORCID:</strong> <a href="https://orcid.org/0009-0008-5402-8398" target="_blank">orcid.org/0009-0008-5402-8398</a>
   </p>
 </div>

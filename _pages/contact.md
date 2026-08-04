@@ -13,6 +13,8 @@ title: ""
 
 **LinkedIn:** [linkedin.com/in/harris-ahmad1](https://www.linkedin.com/in/harris-ahmad1)
 
+**ORCID:** [orcid.org/0009-0008-5402-8398](https://orcid.org/0009-0008-5402-8398)
+
 ---
 
 I'm seeking software engineering / research internships for **Spring / Summer 2027**. Prefer email for first contact.

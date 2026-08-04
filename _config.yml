@@ -12,7 +12,7 @@ title                    : "Harris Ahmad @ UBuffalo CSE"
 title_separator          : "-"
 name                     : &name "Harris Ahmad"
 description              : &description "PhD CSE @ University at Buffalo | Distributed systems & transactional databases for collaborative AI | Seeking SWE/research internships Spring/Summer 2027"
-url                      : https://harris-ahmad.github.io
+url                      : https://harrisahmad.dev
 baseurl                  : ""
 repository               : "harris-ahmad/harris-ahmad.github.io"
 
@@ -27,14 +27,14 @@ author:
   bio              : "PhD CSE @ UB · distributed systems · Spring/Summer 2027 internships"
   location         : "Buffalo, New York"
   employer         : "University at Buffalo"
-  uri              : # URL
+  uri              : "https://harrisahmad.dev"
   email            : "harrisah@buffalo.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=4AY0nvEAAAAJ"
   impactstory      : # URL
-  # orcid            : ""
+  orcid            : "https://orcid.org/0009-0008-5402-8398"
   # pubmed           : ""
   researchgate     : # URL
 
@@ -81,7 +81,7 @@ future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : false # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            :
   discourse:
@@ -107,7 +107,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -135,6 +135,7 @@ social:
     - "https://github.com/harris-ahmad"
     - "https://www.linkedin.com/in/harris-ahmad1"
     - "https://scholar.google.com/citations?hl=en&user=4AY0nvEAAAAJ"
+    - "https://orcid.org/0009-0008-5402-8398"
 
 
 # Analytics
@@ -226,7 +227,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
@@ -244,7 +245,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -253,7 +254,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _portfolio
   - scope:
       path: ""
@@ -262,7 +263,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comment: true
+      comments: false
   # _talks
   - scope:
       path: ""

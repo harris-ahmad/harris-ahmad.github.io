@@ -4,8 +4,8 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Harris Ahmad",
-  "url": "https://harris-ahmad.github.io",
-  "image": "https://harris-ahmad.github.io/images/profile-pic.png",
+  "url": "{{ site.url }}",
+  "image": "{{ site.url }}/images/profile-pic.png",
   "jobTitle": "PhD Student & Research Software Engineer",
   "worksFor": {
     "@type": "Organization",
@@ -27,7 +27,8 @@
   "sameAs": [
     "https://github.com/harris-ahmad",
     "https://www.linkedin.com/in/harris-ahmad1",
-    "https://scholar.google.com/citations?hl=en&user=4AY0nvEAAAAJ"
+    "https://scholar.google.com/citations?hl=en&user=4AY0nvEAAAAJ",
+    "https://orcid.org/0009-0008-5402-8398"
   ],
   "knowsAbout": [
     "Distributed Systems",
@@ -74,6 +75,7 @@
 
 <!-- Open Graph Enhanced -->
 <meta property="og:type" content="profile">
+<meta property="og:image" content="{{ site.url }}/images/profile-pic.png">
 <meta property="profile:first_name" content="Harris">
 <meta property="profile:last_name" content="Ahmad">
 <meta property="profile:username" content="harris-ahmad">
@@ -82,7 +84,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title | default: site.title }}">
 <meta name="twitter:description" content="{{ page.description | default: site.description }}">
-<meta name="twitter:image" content="https://harris-ahmad.github.io/images/profile-pic.png">
+<meta name="twitter:image" content="{{ site.url }}/images/profile-pic.png">
 
 <!-- Geo tags for local search -->
 <meta name="geo.region" content="US-NY">
