@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Harris Ahmad @ UBuffalo CSE"
 title_separator          : "-"
 name                     : &name "Harris Ahmad"
-description              : &description "PhD CSE @ University at Buffalo | Software Engineer | Distributed Systems Researcher"
+description              : &description "PhD CSE @ University at Buffalo | Distributed systems & transactional databases for collaborative AI | Seeking SWE/research internships Spring/Summer 2027"
 url                      : https://harris-ahmad.github.io
 baseurl                  : ""
 repository               : "harris-ahmad/harris-ahmad.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile-pic.png"
   name             : "Harris Ahmad"
   pronouns         : "he/him" # example: "she/her"
-  bio              : "PhD CSE @ University at Buffalo"
+  bio              : "PhD CSE @ UB · distributed systems · Spring/Summer 2027 internships"
   location         : "Buffalo, New York"
   employer         : "University at Buffalo"
   uri              : # URL

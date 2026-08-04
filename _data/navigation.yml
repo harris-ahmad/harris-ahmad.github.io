@@ -4,17 +4,17 @@ main:
   - title: "About"
     url: /
 
-  - title: "Publications"
-    url: /publications
-
-  - title: "Resume"
-    url: /files/Resume.pdf
-    
   - title: "Work Experience"
     url: /work-experience
 
   - title: "Projects"
     url: /projects
-  
+
+  - title: "Publications"
+    url: /publications
+
+  - title: "Resume"
+    url: /files/Resume.pdf
+
   - title: "Contact"
     url: /contact

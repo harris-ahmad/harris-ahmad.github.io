@@ -15,7 +15,7 @@ _January 2025 to Present_
 
 - Implemented 3 concurrency and replication protocols such as primary backup, chain replication and two phase locking in Go to test their effectiveness in systems that are suited for collaborative AI. This work is a part of an ongoing NSF grant.
 - Testing the protocols using CloudLab's 4-node architecture showed these existing protocols are unfit for nodes that collaborate in real-time.
-- Currently developing a distributed transaction reordering & coordination system for another NSF funded project by designing and implementing a snapshot-based architecture in C++ and Go that reduces lock contention and minimizes transaction abort rate, achieving a significant throughput improvement. We're submitting this to OSDI'26.
+- Currently developing a distributed transaction reordering & coordination system for another NSF-funded project — snapshot-based architecture in C++ and Go aimed at reducing lock contention and transaction abort rates (manuscript in preparation for a top systems venue).
 
 ---
 
