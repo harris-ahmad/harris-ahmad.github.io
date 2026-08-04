@@ -22,7 +22,7 @@ gallery:
 **Y Combinator AI Startup School — San Francisco, CA** <br />
 _July 2026_
 
-- Selected for YC's AI Startup School 2026 at Chase Center — a multi-day program for builders working on AI products and research.
+- Selected for YC's AI Startup School 2026 at Chase Center from a pool of ~30,000 applicants — a multi-day program for builders working on AI products and research.
 - Joined office hours and 1:1 conversations with founders and operators about what we're building; networked with peers across AI systems, products, and research.
 
 {% include gallery caption="YC AI Startup School 2026 — San Francisco (Chase Center)" %}

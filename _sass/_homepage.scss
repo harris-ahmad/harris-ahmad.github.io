@@ -68,6 +68,37 @@
   }
 }
 
+.news-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.news-item {
+  padding-left: 1.25rem;
+  border-left: 3px solid #2c5aa0;
+
+  h3 {
+    font-size: 1.15rem;
+    margin: 0.15rem 0 0.4rem;
+    color: #2c5aa0;
+  }
+
+  p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+  }
+}
+
+.news-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
 .skills-list {
   margin-top: 1rem;
 

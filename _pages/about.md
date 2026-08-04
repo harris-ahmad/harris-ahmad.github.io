@@ -27,6 +27,20 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
   </div>
 </div>
 
+<!-- News Section -->
+<div class="section" id="news">
+  <h2>News</h2>
+  <div class="news-timeline">
+    {% for item in site.data.news %}
+    <div class="news-item">
+      <p class="news-date">{{ item.label }}</p>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.body }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
 <!-- About Section -->
 <div class="section" id="about">
   <h2>About Me</h2>
@@ -133,7 +147,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
     <h3>YC AI Startup School</h3>
     <p class="experience-meta">Y Combinator • San Francisco, CA • July 2026</p>
     <ul>
-      <li>Selected participant at YC AI Startup School 2026 (Chase Center) — office hours and 1:1s with founders on AI products and systems</li>
+      <li>Selected participant at YC AI Startup School 2026 (Chase Center) from a pool of ~30,000 applicants — office hours and 1:1s with founders on AI products and systems</li>
     </ul>
     <div class="photo-gallery">
       <a href="/images/yc-ai-startup-school-2026/yc-badge.jpg" target="_blank" rel="noopener">
