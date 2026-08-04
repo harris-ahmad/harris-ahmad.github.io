@@ -8,8 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Harris Ahmad @ UBuffalo CSE"
-title_separator          : "-"
+title                    : "Harris Ahmad"
+title_separator          : "|"
 name                     : &name "Harris Ahmad"
 description              : &description "PhD CSE @ University at Buffalo | Distributed systems & transactional databases for collaborative AI | Seeking SWE/research internships Spring/Summer 2027"
 url                      : https://harrisahmad.dev
@@ -107,7 +107,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : true     # change to true to hide the RSS feed in the footer
+  hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 

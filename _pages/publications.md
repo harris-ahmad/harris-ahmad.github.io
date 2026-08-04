@@ -1,6 +1,7 @@
 ---
 permalink: /publications
-title: ""
+title: "Publications | Harris Ahmad"
+description: "Research publications by Harris Ahmad, including ACM WWW '24 work on the hidden mobile data costs of YouTube video ads."
 ---
 
 # Publications
@@ -13,7 +14,7 @@ title: ""
 *Proceedings of the ACM Web Conference 2024 (WWW '24)*, Singapore, May 13–17, 2024  
 [doi:10.1145/3589334.3645496](https://doi.org/10.1145/3589334.3645496)
 
-[[PDF](/files/ytafford-www24.pdf){:target="_blank"}, [code &amp; data](https://github.com/nsgLUMS/videoads-affordability-www24){:target="_blank"}, [Google Scholar](https://scholar.google.com/citations?hl=en&user=4AY0nvEAAAAJ){:target="_blank"}]
+[[PDF](/files/ytafford-www24.pdf){:target="_blank"}, [explainer](/writing/youtube-mobile-ad-data-costs/), [code &amp; data](https://github.com/nsgLUMS/videoads-affordability-www24){:target="_blank"}, [Google Scholar](https://scholar.google.com/citations?hl=en&user=4AY0nvEAAAAJ){:target="_blank"}]
 
 ### Summary
 
@@ -26,6 +27,8 @@ We built a crawl/stream pipeline and released a public corpus of **17,600** main
 - Excess losses average about **6.7%** of a 2GB mobile plan.
 
 We discuss implications for platforms, ABR/ad-insertion policies, and affordability/inclusion.
+
+**Longer write-up:** [The hidden mobile data cost of YouTube video ads](/writing/youtube-mobile-ad-data-costs/)
 
 <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 300px;">
   <a href="https://github.com/nsgLUMS/videoads-affordability-www24" target="_blank">

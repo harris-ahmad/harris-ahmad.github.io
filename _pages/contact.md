@@ -1,6 +1,7 @@
 ---
 permalink: /contact
-title: ""
+title: "Contact | Harris Ahmad"
+description: "Contact Harris Ahmad — PhD CSE at University at Buffalo. Email harrisah@buffalo.edu for Spring/Summer 2027 internships and referrals."
 ---
 
 # Contact

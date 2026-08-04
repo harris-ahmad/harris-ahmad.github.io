@@ -12,6 +12,18 @@
     - label: "Photos"
       url: "/work-experience"
 
+- date: "2026-05"
+  label: "May 2026"
+  title: "Wrote up deadpush — guardrails for AI coding agents"
+  body: >-
+    Published a short note on deadpush, an always-on guardian that quarantines
+    secrets and agent debris before they land in your repo.
+  links:
+    - label: "Read"
+      url: "/writing/deadpush-ai-coding-agent-guardrails/"
+    - label: "GitHub"
+      url: "https://github.com/harris-ahmad/deadpush"
+
 - date: "2024-05"
   label: "May 2024"
   title: "YouTube affordability paper accepted at ACM WWW '24"
@@ -21,6 +33,8 @@
     the first independent empirical study of mobile YouTube ad data costs
     from the user perspective.
   links:
+    - label: "Explainer"
+      url: "/writing/youtube-mobile-ad-data-costs/"
     - label: "PDF"
       url: "/files/ytafford-www24.pdf"
     - label: "DOI"

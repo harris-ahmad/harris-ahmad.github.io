@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "Harris Ahmad | Distributed Systems PhD @ University at Buffalo"
 excerpt: "PhD Student at University at Buffalo specializing in Distributed Systems and Database Optimization. Seeking Software Engineering/ Research Internships for Spring/ Summer 2027."
 description: "Harris Ahmad is a PhD student at University at Buffalo researching transactional support for microservices, distributed databases, and serverless systems for collaborative AI. Seeking SWE/research internships for Spring/Summer 2027."
 author_profile: true
@@ -97,6 +97,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
     <div class="project-links">
       <a href="https://github.com/harris-ahmad/deadpush" target="_blank">GitHub</a>
       <a href="https://pypi.org/project/deadpush/" target="_blank">PyPI</a>
+      <a href="/writing/deadpush-ai-coding-agent-guardrails/">Write-up</a>
     </div>
   </div>
 
@@ -202,6 +203,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
     <p class="publication-summary">First independent empirical study of mobile YouTube ad data costs from the user perspective. We streamed <strong>17,600</strong> main videos and <strong>46,600+</strong> ads (~8,225 hours) across 8 countries and showed latent buffer wastage — e.g. users still pay for 80–100% of a skippable ad's data ~31–53% of the time after skipping, mid-roll ads force re-download of ~71s of main-video on average, and excess losses average <strong>~6.7%</strong> of a 2GB plan. Public dataset and toolchain released.</p>
     <div class="project-links">
       <a href="/files/ytafford-www24.pdf" target="_blank">PDF</a>
+      <a href="/writing/youtube-mobile-ad-data-costs/">Explainer</a>
       <a href="https://github.com/nsgLUMS/videoads-affordability-www24" target="_blank">Code &amp; data</a>
       <a href="https://scholar.google.com/citations?hl=en&user=4AY0nvEAAAAJ" target="_blank">Google Scholar</a>
     </div>

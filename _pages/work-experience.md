@@ -1,7 +1,7 @@
 ---
 permalink: /work-experience
-title: ""
-description: "Professional software engineering and research experience at University at Buffalo, Linq.io, LUMS, and related roles. Distributed systems, backend development, and transactional databases."
+title: "Work Experience | Harris Ahmad"
+description: "Software engineering and research experience — University at Buffalo, Y Combinator AI Startup School, Linq.io, LUMS, and distributed systems work."
 keywords: "work experience, software engineer, research engineer, University at Buffalo, distributed systems, FoundationDB, CockroachDB, FastAPI, Go, YC, Y Combinator"
 gallery:
   - url: yc-ai-startup-school-2026/yc-badge.jpg

@@ -1,13 +1,10 @@
-# Allow all search engines to crawl everything
+# Allow all crawlers
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://harris-ahmad.github.io/sitemap.xml
+# Prefer the custom domain sitemap
+Sitemap: https://harrisahmad.dev/sitemap.xml
 
-# Crawl-delay (optional, helps prevent overloading)
-Crawl-delay: 1
-
-# Disallow certain paths (if any)
-# Disallow: /private/
-# Disallow: /temp/
+# Disallow build/noise paths if ever published
+Disallow: /node_modules/
+Disallow: /.sass-cache/

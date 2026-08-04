@@ -1,6 +1,7 @@
 ---
 permalink: /projects
-title: ""
+title: "Projects | Harris Ahmad"
+description: "Open-source and research engineering projects by Harris Ahmad — deadpush, ChatLiberate, gitpull, Awaaz-e-Sehat, and systems/measurement artifacts."
 ---
 
 # Projects
