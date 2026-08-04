@@ -4,6 +4,7 @@ Allow: /
 
 # Prefer the custom domain sitemap
 Sitemap: https://harrisahmad.dev/sitemap.xml
+Sitemap: https://harrisahmad.dev/sitemap-static.xml
 
 # Disallow build/noise paths if ever published
 Disallow: /node_modules/

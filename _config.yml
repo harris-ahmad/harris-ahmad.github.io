@@ -272,6 +272,27 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # omit build/asset paths from jekyll-sitemap
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
+  - scope:
+      path: "files"
+    values:
+      sitemap: false
+  - scope:
+      path: "talkmap"
+    values:
+      sitemap: false
+  - scope:
+      path: "markdown_generator"
+    values:
+      sitemap: false
+  - scope:
+      path: "images"
+    values:
+      sitemap: false
 
 
 # Sass/SCSS
@@ -301,7 +322,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
 
 # Archives
 #  Type

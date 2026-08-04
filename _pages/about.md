@@ -1,8 +1,9 @@
 ---
 permalink: /
-title: "Harris Ahmad | Distributed Systems PhD @ University at Buffalo"
+title: ""
 excerpt: "PhD Student at University at Buffalo specializing in Distributed Systems and Database Optimization. Seeking Software Engineering/ Research Internships for Spring/ Summer 2027."
 description: "Harris Ahmad is a PhD student at University at Buffalo researching transactional support for microservices, distributed databases, and serverless systems for collaborative AI. Seeking SWE/research internships for Spring/Summer 2027."
+seo_title: "Harris Ahmad | Distributed Systems PhD @ University at Buffalo"
 author_profile: true
 redirect_from:
   - /about/
