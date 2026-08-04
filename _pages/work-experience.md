@@ -1,6 +1,7 @@
 ---
 permalink: /work-experience
-title: "Work Experience — Harris Ahmad"
+title: ""
+seo_title: "Work Experience — Harris Ahmad"
 description: "Software engineering and research experience — University at Buffalo, Y Combinator AI Startup School, Linq.io, LUMS, and distributed systems work."
 keywords: "work experience, software engineer, research engineer, University at Buffalo, distributed systems, FoundationDB, CockroachDB, FastAPI, Go, YC, Y Combinator"
 gallery:

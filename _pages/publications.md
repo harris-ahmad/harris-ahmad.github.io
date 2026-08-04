@@ -1,6 +1,7 @@
 ---
 permalink: /publications
-title: "Publications — Harris Ahmad"
+title: ""
+seo_title: "Publications — Harris Ahmad"
 description: "Research publications by Harris Ahmad, including ACM WWW '24 work on the hidden mobile data costs of YouTube video ads."
 ---
 
