@@ -1,21 +1,20 @@
 ---
 permalink: /work-experience
 title: ""
-description: "Professional software engineering experience including work at University at Buffalo, Linq.io, Its IT Group, and research positions. Expertise in distributed systems, backend development, and database optimization."
-keywords: "work experience, software engineer, research engineer, University at Buffalo, distributed systems, backend development, Python, Go, FastAPI"
+description: "Professional software engineering and research experience at University at Buffalo, Linq.io, LUMS, and related roles. Distributed systems, backend development, and transactional databases."
+keywords: "work experience, software engineer, research engineer, University at Buffalo, distributed systems, FoundationDB, CockroachDB, FastAPI, Go"
 ---
 
 # Work Experience
 
 ## Professional Experience
 
-**Research Software Engineer** <br />
-**CPI-NS, UBuffalo - Buffalo, NY** <br />
+**Graduate Researcher** <br />
+**University at Buffalo (SUNY) - Buffalo, NY** <br />
 _January 2025 to Present_
 
-- Implemented 3 concurrency and replication protocols such as primary backup, chain replication and two phase locking in Go to test their effectiveness in systems that are suited for collaborative AI. This work is a part of an ongoing NSF grant.
-- Testing the protocols using CloudLab's 4-node architecture showed these existing protocols are unfit for nodes that collaborate in real-time.
-- Currently developing a distributed transaction reordering & coordination system for another NSF-funded project — snapshot-based architecture in C++ and Go aimed at reducing lock contention and transaction abort rates (manuscript in preparation for a top systems venue).
+- Building a distributed transaction reordering and coordination layer on production-grade systems (FoundationDB, CockroachDB) in Go that reduces aborts, lock contention, and tail latency; work submitted to ACM SOSP 2026.
+- Prototyped primary-backup, chain replication, and distributed two-phase locking in Go to stress-test protocol behavior for collaborative AI workloads on CloudLab (NSF-supported).
 
 ---
 
@@ -23,9 +22,9 @@ _January 2025 to Present_
 **Linq.io - Dallas, TX (Remote)** <br />
 _July 2024 to December 2024_
 
-- Built on-the-fly media generation API using FastAPI and MongoDB that reduced page load time by 60%, dynamically generating asset thumbnails as users scroll through 10K+ item inventories.
-- Deployed successful SSO authentication using OAuth 2.0 & FusionAuth enabling enterprise users to access systems with existing credentials.
-- Created admin debugging and playground dashboards that exposed system metrics via direct OS calls, reducing troubleshooting time from hours to minutes for 50+ support tickets.
+- Shipped an on-demand media-generation API (FastAPI, MongoDB) that cut page load by 60% by generating asset thumbnails as users browsed 10K+ inventories.
+- Integrated OAuth 2.0 SSO for enterprise accounts so customers could sign in with existing corporate credentials.
+- Built admin debugging and playground dashboards that exposed system metrics via OS calls, reducing troubleshooting time for 50+ support tickets.
 
 ---
 
@@ -33,67 +32,29 @@ _July 2024 to December 2024_
 **Its IT Group - Lahore, PK** <br />
 _May 2024 to August 2024_
 
-- Redesigned the backend in node.js and MongoDB of an AR app for VTuber/karaoke 3D avatars leveraging WebSockets for real-time comments, notifications and likes across 5K+ daily active users.
-- Implemented 3D model pipeline to process LiDAR scans, building USDZ to GLB converter enabling Unity integration, reducing manual measurement time by 80%.
+- Redesigned the Node.js / MongoDB backend of an AR app for VTuber/karaoke 3D avatars with WebSockets for real-time comments, notifications, and likes across 5K+ daily active users.
+- Implemented a 3D model pipeline for LiDAR scans (USDZ → GLB) enabling Unity integration and cutting manual measurement time by 80%.
 
 ---
 
-**Research Software Engineer** <br />
+**Software Engineer** <br />
 **Interactive Media Lab, LUMS - Lahore, PK** <br />
 _October 2023 to March 2024_
 
-- Built Awaaz-e-Sehat health platform using Python Flask framework on AWS Lambda, reducing API response time from 5s to 500ms handling 10K+ daily medical queries.
-- Designed serverless data pipeline AWS (Lambda, DynamoDB, S3) to store and index 50K+ medical recordings, eliminating server costs while scaling automatically.
-- Built medical transcription service using Whisper API and GPT-4, converting doctor consultations and medical history recordings to structured clinical notes with 95% accuracy, processing 1K+ recordings daily.
-
----
-
-**Backend Developer** <br />
-**LUMS - Lahore** <br />
-_January 2023 to December 2023_
-
-- Built a resilient P2P file sharing app using Python and socket programming.
-- Implemented distributed hash tables and consistent hashing for optimized file retrieval.
-
----
-
-**Frontend Developer** <br />
-**LUMS - Lahore** <br />
-_May 2023 to June 2023_
-
-- Developed and designed a dynamic course website for a 5-day Internet Architecture course at LUMS.
-- Enhanced accessibility and resource management for over 60 participants.
-
----
-
-**Backend Developer** <br />
-**LUMS - Lahore** <br />
-_June 2022 to December 2022_
-
-- Developed a robust full stack speech therapy web application using MERN stack.
-- Designed a user-centric platform to enhance therapy sessions and exercises.
-- Integrated 3rd-party APIs such as Calendly and RapidAPI's quote generator.
-
----
-
-**Machine Learning Developer** <br />
-**Fiverr - Lahore** <br />
-_January 2021 to December 2021_
-
-- Conducted experiments with various ML models and frameworks.
-- Cleaned and analyzed a large dataset, comparing model performances using F1-score and accuracy.
-- Developed an end-to-end system and considered future advancements with GPT-4 or LLaMA 2.
+- Built Awaaz-e-Sehat, an e-health platform on Flask and AWS Lambda, improving API latency from 5s → 500ms for high daily query volume.
+- Ran a serverless ingest and search stack (Lambda, DynamoDB, S3) over 50K+ clinical recordings with automatic scaling.
+- Productionized Whisper + GPT-4 transcription into structured clinical notes (95% accuracy, 1K+ recordings/day).
 
 ## Research Experience
 
-**Research Software Engineer** <br />
+**Undergraduate Researcher** <br />
 **Networks and Systems Group, LUMS - Lahore, PK** <br />
 _May 2022 to December 2023_
 
-- Discovered the impact of varying video bitrates across main-video resolutions: 720p causes ~3× higher latent buffer loss than 360p (10.1 MB vs 3.4 MB), finding led to recommendations for adaptive ad-insertion/ABR changes to cut loss and cost.
-- Collected data for 17600 YouTube videos and 46600 YouTube ads across 8 countries. This is the first large corpus of YouTube data, with 15+ features, that includes buffer data for each video. The dataset and codebase are publicly available.
-- Published findings in Proceedings of the ACM Web Conference 2024 (WWW'24).
-- Built distributed scraper using Selenium/PyTube to collect YouTube metrics, parallelizing across 20 machines gathering 2TB+ of performance data over a year.
+- Measured how YouTube main-video bitrate drives buffer loss across resolutions (720p ~3× higher latent buffer loss than 360p; 10.1 MB vs 3.4 MB).
+- Released a public dataset and toolchain covering 17.6K videos and 46.6K ads across 8 countries (15+ features/video, including per-video buffer telemetry).
+- Published at ACM The Web Conference 2024 (WWW '24): [doi:10.1145/3589334.3645496](https://doi.org/10.1145/3589334.3645496).
+- Built a distributed scraper (Selenium/PyTube) parallelized across ~20 machines, gathering 2TB+ of performance data over a year.
 
 ## Teaching Experience
 
@@ -111,3 +72,9 @@ _Spring 2023, Fall 2023_
 
 - CS200: Object Oriented Programming in C++ (Spring'23, Fall'23)
 - CS582: Distributed Systems (Fall'23)
+
+## Earlier Experience
+
+**Backend / frontend coursework projects &amp; short roles at LUMS** (2022–2023) — P2P file sharing with DHTs, speech-therapy MERN app (Guftaar), and a short course-website engagement for an Internet Architecture workshop.
+
+**Machine Learning Developer (freelance), Fiverr** (2021) — dataset cleaning, model comparison, and end-to-end ML pipelines for client projects.

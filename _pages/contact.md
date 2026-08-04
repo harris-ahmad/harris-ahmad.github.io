@@ -7,11 +7,11 @@ title: ""
 
 **Location:** Buffalo, New York, United States
 
-**Email:** [harrisah@buffalo.edu](mailto:harrisah@buffalo.edu)
+**Email:** [harrisah@buffalo.edu](mailto:harrisah@buffalo.edu?subject=Spring%2FSummer%202027%20internship)
 
 **GitHub:** [github.com/harris-ahmad](https://github.com/harris-ahmad)
 
-**LinkedIn:** [linkedin.com/in/harris-ahmad](https://www.linkedin.com/in/harris-ahmad-9a6266214)
+**LinkedIn:** [linkedin.com/in/harris-ahmad1](https://www.linkedin.com/in/harris-ahmad1)
 
 ---
 

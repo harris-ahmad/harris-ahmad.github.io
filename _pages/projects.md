@@ -6,8 +6,11 @@ title: ""
 # Projects
 
 1. **deadpush**  
-   Always-on guardian for AI coding agents. Monitors the filesystem in real time, quarantines secrets and agent debris, installs git hooks, and supports hardened/sandbox enforcement tiers (plus optional CI/server-side scanning).  
-   `pip install deadpush`
+   Always-on guardian for AI coding agents. Catches secrets, agent debris, and dangerous writes before they land in your repo.
+
+   - **Problem:** Long-running agents leak keys, commit scratchpads, and pollute context while you're away.
+   - **Built:** Real-time filesystem daemon, quarantine, git hooks, MCP proxy, and hardened / sandbox / CI enforcement tiers.
+   - **Install:** `pip install deadpush`
 
    <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/harris-ahmad/deadpush" target="_blank" style="display: block;">
@@ -21,7 +24,11 @@ title: ""
    <br />
 
 2. **ChatLiberate**  
-   Open-source ChatGPT exporter that works on Personal, Business, and Teams accounts. Chrome extension + Node CLI preserve full conversation trees (including regenerated branches), images/attachments, and official `conversations.json` format for portability.
+   Open-source ChatGPT exporter that works where Settings → Export does not — including Business &amp; Teams accounts.
+
+   - **Problem:** Business/Teams users can't use official export; third-party tools drop branches and images.
+   - **Built:** Chrome extension + Node CLI that emit official `conversations.json`, full conversation trees, and attachments.
+   - **Install:** `npx chatliberate -o ./my-backup`
 
    <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/harris-ahmad/chatliberate" target="_blank" style="display: block;">
@@ -35,7 +42,11 @@ title: ""
    <br />
 
 3. **gitpull**  
-   Go CLI for managing multiple Git repositories at once — clone orgs/users, sync/status across a workspace, branch/stash/clean, plus optional local Ollama helpers for commit messages and standups. Installable via Homebrew (`brew tap harris-ahmad/tap && brew install gitpull`).
+   Go CLI for multi-repo Git workflows — clone, sync, status, branch, and local AI helpers without context-switching.
+
+   - **Problem:** Managing many clones means repetitive pull/status/commit across directories.
+   - **Built:** Parallel clone/sync, workspace-wide status/diff/stash, plus optional Ollama-powered commit/standup/ask.
+   - **Install:** `brew tap harris-ahmad/tap && brew install gitpull`
 
    <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/harris-ahmad/gitpull" target="_blank" style="display: block;">
