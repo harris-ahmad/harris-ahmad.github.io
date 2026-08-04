@@ -34,7 +34,6 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
     {% for item in site.data.news %}
     <article class="news-item">
       <time class="news-date" datetime="{{ item.date }}">{{ item.label }}</time>
-      <div class="news-marker" aria-hidden="true"></div>
       <div class="news-content">
         <h3>{{ item.title }}</h3>
         <p>{{ item.body }}</p>
