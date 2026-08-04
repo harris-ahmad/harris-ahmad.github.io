@@ -16,8 +16,8 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
 <div class="hero-section">
   <h1>Harris Ahmad</h1>
   <p class="tagline">PhD student in distributed systems · building concurrency &amp; transaction systems · previously shipped production backends</p>
-  <p style="font-size: 1.1rem; color: #2c5aa0; font-weight: 600; margin-top: 0.5rem;">Seeking Software Engineering / Research Internships for Spring / Summer 2027.</p>
-  <p>Email me about internships or referrals: <a href="mailto:harrisah@buffalo.edu?subject=Spring%2FSummer%202027%20internship">harrisah@buffalo.edu</a></p>
+  <p class="hero-cta">Seeking Software Engineering / Research Internships for Spring / Summer 2027.</p>
+  <p class="hero-email">Email me about internships or referrals: <a href="mailto:harrisah@buffalo.edu?subject=Spring%2FSummer%202027%20internship">harrisah@buffalo.edu</a></p>
 
   <div class="hero-buttons">
     <a href="/files/Resume.pdf" class="btn-primary" target="_blank">Download Resume</a>
