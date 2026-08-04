@@ -69,34 +69,128 @@
 }
 
 .news-timeline {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0;
+  margin-top: 0.5rem;
 }
 
 .news-item {
-  padding-left: 1.25rem;
-  border-left: 3px solid #2c5aa0;
+  display: grid;
+  grid-template-columns: 7.5rem 1.1rem 1fr;
+  column-gap: 0.85rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #e8e8e8;
+  align-items: start;
 
-  h3 {
-    font-size: 1.15rem;
-    margin: 0.15rem 0 0.4rem;
-    color: #2c5aa0;
+  &:first-child {
+    padding-top: 0.25rem;
   }
 
-  p {
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  h3 {
+    font-size: 1.12rem;
+    font-weight: 700;
+    margin: 0 0 0.45rem;
+    color: #1a1a1a;
+    line-height: 1.35;
+  }
+
+  .news-content > p {
     margin: 0;
     color: #555;
-    line-height: 1.6;
+    line-height: 1.65;
+    font-size: 0.98rem;
   }
 }
 
 .news-date {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #888;
-  letter-spacing: 0.02em;
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #2c5aa0;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.news-marker {
+  position: relative;
+  width: 1.1rem;
+  height: 100%;
+  justify-self: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.45rem;
+    left: 50%;
+    width: 0.55rem;
+    height: 0.55rem;
+    margin-left: -0.275rem;
+    border-radius: 50%;
+    background: #2c5aa0;
+    box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.15);
+  }
+}
+
+.news-item:not(:last-child) .news-marker::after {
+  content: "";
+  position: absolute;
+  top: 1.15rem;
+  bottom: -1.1rem;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background: linear-gradient(to bottom, #2c5aa0 0%, #c5d4e8 100%);
+  opacity: 0.55;
+}
+
+.news-links {
+  margin-top: 0.65rem;
+  font-size: 0.9rem;
+
+  a {
+    color: #2c5aa0;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-bottom-color: #2c5aa0;
+    }
+  }
+}
+
+.news-link-sep {
+  margin: 0 0.4rem;
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .news-item {
+    grid-template-columns: 0.9rem 1fr;
+    column-gap: 0.75rem;
+  }
+
+  .news-date {
+    grid-column: 2;
+    margin-bottom: 0.2rem;
+  }
+
+  .news-marker {
+    grid-row: 1 / span 3;
+  }
+
+  .news-content {
+    grid-column: 2;
+  }
 }
 
 .skills-list {

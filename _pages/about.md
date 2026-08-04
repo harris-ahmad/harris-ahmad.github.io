@@ -32,11 +32,21 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
   <h2>News</h2>
   <div class="news-timeline">
     {% for item in site.data.news %}
-    <div class="news-item">
-      <p class="news-date">{{ item.label }}</p>
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.body }}</p>
-    </div>
+    <article class="news-item">
+      <time class="news-date" datetime="{{ item.date }}">{{ item.label }}</time>
+      <div class="news-marker" aria-hidden="true"></div>
+      <div class="news-content">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.body }}</p>
+        {% if item.links %}
+        <div class="news-links">
+          {% for link in item.links %}
+          <a href="{{ link.url }}"{% if link.url contains "://" %} target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>{% unless forloop.last %}<span class="news-link-sep">·</span>{% endunless %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </article>
     {% endfor %}
   </div>
 </div>
