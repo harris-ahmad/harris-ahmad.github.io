@@ -58,7 +58,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
 
   <p>Before starting my PhD, I spent 2+ years as a professional software engineer building production backends with FastAPI, MongoDB, Redis, and cloud platforms — including media APIs, SSO, and real-time systems at companies such as Linq.io and Its IT Group.</p>
 
-  <p>During my undergraduate studies at LUMS, I was advised by <a href="https://web.lums.edu.pk/~zafar/" target="_blank">Dr. Zafar Ayyub Qazi</a>, <a href="https://www.ihsanqazi.com/" target="_blank">Dr. Ihsan Ayyub Qazi</a>, and <a href="https://lums.edu.pk/lums_employee/516" target="_blank">Dr. Mian Muhammad Awais</a>. I conducted research on internet affordability and YouTube ad costs, publishing at <strong>ACM WebConf 2024</strong>.</p>
+  <p>During my undergraduate studies at LUMS, I was advised by <a href="https://www.ihsanqazi.com/" target="_blank">Dr. Ihsan Ayyub Qazi</a>, and <a href="https://lums.edu.pk/lums_employee/516" target="_blank">Dr. Mian Muhammad Awais</a>. I conducted research on internet affordability and YouTube ad costs, publishing at <strong>ACM WebConf 2024</strong>.</p>
 
   <p><strong>Teaching:</strong> TA for Modern Networking Concepts (CSE 489/589) at UB, and previously for OOP in C++ and Distributed Systems at LUMS.</p>
 </div>
