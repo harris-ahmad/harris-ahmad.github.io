@@ -7,6 +7,25 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
 
 # Projects
 
+1. **BlastRadius**  
+   Cross-repo infrastructure memory for coding agents. Knows who else depends on an artifact before you change it, and watches those pins for CVEs.
+
+   - **Problem:** Agents are excellent inside one repo and blind across many — nothing tells you which other repos pin the base image you just bumped.
+   - **Built:** Claude Code hooks that inject cross-repo impact unprompted, MCP server, OSV monitoring filtered to versions your pins actually resolve to. Extraction scored 39/39 against a corpus with 19 planted traps.
+   - **Install:** `pip install blastradius-mcp`
+   - **[Read more →](/blastradius/)**
+
+   <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+      <a href="https://github.com/harris-ahmad/blastradius-mcp" target="_blank" style="display: block;">
+         <img src="https://opengraph.githubassets.com/1/harris-ahmad/blastradius-mcp" alt="GitHub Repo - BlastRadius" style="width:100%; border-radius: 8px;">
+      </a>
+      <br>
+      <a href="https://github.com/harris-ahmad/blastradius-mcp" target="_blank">
+         <img src="https://img.shields.io/github/stars/harris-ahmad/blastradius-mcp?style=social" alt="GitHub stars - BlastRadius">
+      </a>
+   </div>
+   <br />
+
 1. **deadpush**  
    Always-on guardian for AI coding agents. Catches secrets, agent debris, and dangerous writes before they land in your repo.
 
