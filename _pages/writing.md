@@ -28,7 +28,7 @@ Short technical notes and explainers. Newest first.
 </ul>
 
 <style>
-.writing-list { --writing-rule: #e8e8e8; --writing-meta: #777; --writing-excerpt: #555; list-style: none; padding-left: 0; }
+.writing-list { --writing-rule: #e8e8e8; --writing-meta: #707070; --writing-excerpt: #555; list-style: none; padding-left: 0; }
 @media screen { html[data-theme="dark"] .writing-list { --writing-rule: #2b3037; --writing-meta: #9aa2a9; --writing-excerpt: #c9cdd2; } }
 @media screen and (prefers-color-scheme: dark) { html:not([data-theme="light"]) .writing-list { --writing-rule: #2b3037; --writing-meta: #9aa2a9; --writing-excerpt: #c9cdd2; } }
 .writing-list li { margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--writing-rule); }

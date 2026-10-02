@@ -51,7 +51,7 @@
   --text-color: #{$text-color};
   --strong-text-color: #000;
   --gray: #{$gray};
-  --muted-text-color: #{mix(#fff, $gray, 25%)};
+  --muted-text-color: #{mix(#000, $gray, 18%)}; /* AA on white and the footer */
 
   /* lines */
   --border-color: #{$border-color};

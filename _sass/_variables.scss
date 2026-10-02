@@ -105,8 +105,8 @@ $xing-color                 : #006567;
 $link-color                 : #1e758f; // $info-color's hue, dark enough for WCAG AA (4.5:1) on white
 $link-color-hover           : mix(#000, $link-color, 25%);
 $link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$masthead-link-color        : mix(#000, $gray, 18%); // darker than $primary-color for WCAG AA on white
+$masthead-link-color-hover  : mix(#000, $masthead-link-color, 35%);
 
 
 /*

@@ -169,10 +169,10 @@ blastradius index ~/code  <span class="br-dim"># bootstrap from repos you alread
   --br-soft:   #3b3936;
   --br-muted:  #6b6862;
   --br-line:   #e3ded2;
-  --br-clay:   #c15f3c;
+  --br-clay:   #ac5435;
   --br-clay-l: #d9775720;
   --br-clay-d: #8f4527;
-  --br-fill:   #c15f3c;
+  --br-fill:   #b75a39;
   --br-fill-h: #a94f30;
   --br-edge:   #131211;
   --br-serif:  ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
