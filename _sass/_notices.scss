@@ -20,6 +20,12 @@
   border-radius: $border-radius;
   box-shadow: 0 1px 1px rgba($notice-color, 0.25);
 
+  @include dark {
+    /* dark tint of the notice color; body text stays readable on it*/
+    background-color: mix(#121417, $notice-color, 80%);
+    box-shadow: 0 1px 1px rgba(#000, 0.5);
+  }
+
   h4 {
     margin-top: 0 !important; /* override*/
     margin-bottom: 0.75em;
@@ -46,13 +52,25 @@
   a {
     color: $notice-color;
 
+    @include dark {
+      color: mix(#fff, $notice-color, 30%);
+    }
+
     &:hover {
       color: mix(#000, $notice-color, 40%);
+
+      @include dark {
+        color: mix(#fff, $notice-color, 60%);
+      }
     }
   }
 
   code {
-    background-color: mix(#fff, $notice-color, 95%)
+    background-color: mix(#fff, $notice-color, 95%);
+
+    @include dark {
+      background-color: mix(#121417, $notice-color, 90%);
+    }
   }
 
   ul {

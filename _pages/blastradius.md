@@ -163,17 +163,62 @@ blastradius index ~/code  <span class="br-dim"># bootstrap from repos you alread
 .br-page {
   --br-paper:  #f4f2ec;
   --br-paper2: #faf9f5;
+  --br-card:   #fff;
   --br-ink:    #1f1e1d;
+  --br-body:   #333130;
+  --br-soft:   #3b3936;
   --br-muted:  #6b6862;
   --br-line:   #e3ded2;
   --br-clay:   #c15f3c;
   --br-clay-l: #d9775720;
+  --br-clay-d: #8f4527;
+  --br-fill:   #c15f3c;
+  --br-fill-h: #a94f30;
+  --br-edge:   #131211;
   --br-serif:  ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
   --br-mono:   ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   color: var(--br-ink);
   line-height: 1.65;
 }
-.br-page p { color: #333130; }
+/* Dark theme: neutral surfaces to sit on the site's dark background, with a
+   lighter clay so accents keep their contrast. Explicit choice, then system. */
+@media screen {
+  html[data-theme="dark"] .br-page {
+    --br-paper:  #20252b;
+    --br-paper2: #1b1f24;
+    --br-card:   #242930;
+    --br-ink:    #eef0f2;
+    --br-body:   #c9cdd2;
+    --br-soft:   #c9cdd2;
+    --br-muted:  #9aa2a9;
+    --br-line:   #2b3037;
+    --br-clay:   #d97757;
+    --br-clay-l: #d977572e;
+    --br-clay-d: #e8967a;
+    --br-fill:   #b3542f;
+    --br-fill-h: #bb5734;
+    --br-edge:   #2b3037;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .br-page {
+    --br-paper:  #20252b;
+    --br-paper2: #1b1f24;
+    --br-card:   #242930;
+    --br-ink:    #eef0f2;
+    --br-body:   #c9cdd2;
+    --br-soft:   #c9cdd2;
+    --br-muted:  #9aa2a9;
+    --br-line:   #2b3037;
+    --br-clay:   #d97757;
+    --br-clay-l: #d977572e;
+    --br-clay-d: #e8967a;
+    --br-fill:   #b3542f;
+    --br-fill-h: #bb5734;
+    --br-edge:   #2b3037;
+  }
+}
+.br-page p { color: var(--br-body); }
 
 /* ── hero ─────────────────────────────────────────────────────────── */
 .br-hero {
@@ -203,13 +248,13 @@ blastradius index ~/code  <span class="br-dim"># bootstrap from repos you alread
   font-size: 1.12rem;
   max-width: 34rem;
   margin: 0 0 1.6rem;
-  color: #3b3936 !important;
+  color: var(--br-soft) !important;
 }
 .br-install code {
   display: inline-block;
   font-family: var(--br-mono);
   font-size: 0.95rem;
-  background: #fff;
+  background: var(--br-card);
   border: 1px solid var(--br-line);
   border-radius: 8px;
   padding: 0.6rem 1rem;
@@ -230,18 +275,18 @@ blastradius index ~/code  <span class="br-dim"># bootstrap from repos you alread
   padding: 0.5rem 1.05rem;
   border-radius: 7px;
   border: 1px solid var(--br-line);
-  background: #fff;
+  background: var(--br-card);
   color: var(--br-ink) !important;
   text-decoration: none !important;
   transition: border-color .15s ease, transform .15s ease;
 }
 .br-btn:hover { border-color: var(--br-clay); transform: translateY(-1px); }
 .br-btn-primary {
-  background: var(--br-clay);
-  border-color: var(--br-clay);
+  background: var(--br-fill);
+  border-color: var(--br-fill);
   color: #fff !important;
 }
-.br-btn-primary:hover { background: #a94f30; border-color: #a94f30; }
+.br-btn-primary:hover { background: var(--br-fill-h); border-color: var(--br-fill-h); }
 
 /* ── sections ─────────────────────────────────────────────────────── */
 .br-section { margin: 0 0 2.6rem; }
@@ -257,7 +302,7 @@ blastradius index ~/code  <span class="br-dim"># bootstrap from repos you alread
   font-family: var(--br-mono);
   font-size: 0.88em;
   background: var(--br-clay-l);
-  color: #8f4527;
+  color: var(--br-clay-d);
   padding: 0.12em 0.36em;
   border-radius: 4px;
 }
@@ -274,7 +319,7 @@ blastradius index ~/code  <span class="br-dim"># bootstrap from repos you alread
   margin: 1.2rem 0;
   padding: 1rem 1.2rem;
   font-size: 0.98rem;
-  color: #3b3936;
+  color: var(--br-soft);
 }
 
 /* ── hook flow ────────────────────────────────────────────────────── */
@@ -299,13 +344,13 @@ blastradius index ~/code  <span class="br-dim"># bootstrap from repos you alread
   padding: 0.7rem 0.85rem;
   font-size: 0.84rem;
   line-height: 1.4;
-  background: #fff;
+  background: var(--br-card);
   border: 1px solid var(--br-line);
 }
 .br-node code { background: none; color: inherit; padding: 0; font-size: 0.95em; }
 .br-node-hook {
   border-color: var(--br-clay);
-  background: #fff;
+  background: var(--br-card);
   font-family: var(--br-mono);
   font-size: 0.82rem;
 }
@@ -331,7 +376,7 @@ blastradius index ~/code  <span class="br-dim"># bootstrap from repos you alread
   border-radius: 11px;
   overflow: hidden;
   margin: 1.3rem 0;
-  border: 1px solid #131211;
+  border: 1px solid var(--br-edge);
 }
 .br-terminal-bar {
   display: flex;

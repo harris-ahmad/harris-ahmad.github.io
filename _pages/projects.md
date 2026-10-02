@@ -15,7 +15,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
    - **Install:** `pip install blastradius-mcp`
    - **[Read more →](/blastradius/)**
 
-   <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+   <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/harris-ahmad/blastradius-mcp" target="_blank" style="display: block;">
          <img src="https://opengraph.githubassets.com/1/harris-ahmad/blastradius-mcp" alt="GitHub Repo - BlastRadius" style="width:100%; border-radius: 8px;">
       </a>
@@ -33,7 +33,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
    - **Built:** Real-time filesystem daemon, quarantine, git hooks, MCP proxy, and hardened / sandbox / CI enforcement tiers.
    - **Install:** `pip install deadpush`
 
-   <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+   <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/harris-ahmad/deadpush" target="_blank" style="display: block;">
          <img src="https://opengraph.githubassets.com/1/harris-ahmad/deadpush" alt="GitHub Repo - deadpush" style="width:100%; border-radius: 8px;">
       </a>
@@ -51,7 +51,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
    - **Built:** Chrome extension + Node CLI that emit official `conversations.json`, full conversation trees, and attachments.
    - **Install:** `npx chatliberate -o ./my-backup`
 
-   <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+   <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/harris-ahmad/chatliberate" target="_blank" style="display: block;">
          <img src="https://opengraph.githubassets.com/1/harris-ahmad/chatliberate" alt="GitHub Repo - ChatLiberate" style="width:100%; border-radius: 8px;">
       </a>
@@ -69,7 +69,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
    - **Built:** Parallel clone/sync, workspace-wide status/diff/stash, plus optional Ollama-powered commit/standup/ask.
    - **Install:** `brew tap harris-ahmad/tap && brew install gitpull`
 
-   <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+   <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/harris-ahmad/gitpull" target="_blank" style="display: block;">
          <img src="https://opengraph.githubassets.com/1/harris-ahmad/gitpull" alt="GitHub Repo - gitpull" style="width:100%; border-radius: 8px;">
       </a>
@@ -83,7 +83,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
 4. **Awaaz E Sehat Flask Web App**  
    eHealth web app built with Flask on AWS Lambda as part of research software engineering work at LUMS Interactive Media Lab — patient workflows, serverless recording pipeline, and medical transcription.
 
-   <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+   <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/harris-ahmad/awaaz-e-sehat" target="_blank" style="display: block;">
          <img src="https://opengraph.githubassets.com/1/harris-ahmad/awaaz-e-sehat" alt="GitHub Repo - Awaaz E Sehat Flask Web App" style="width:100%; border-radius: 8px;">
       </a>
@@ -97,7 +97,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
 5. **Uncovering the Hidden Data Costs of Mobile YouTube Video Ads**  
    Artifact supporting our ACM WebConf 2024 paper on YouTube ad data costs — dataset and codebase for studying buffer/data usage of mobile video ads.
 
-   <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+   <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/nsgLums/videoads-affordability-www24" target="_blank" style="display: block;">
          <img src="https://opengraph.githubassets.com/1/nsgLums/videoads-affordability-www24" alt="GitHub Repo - Uncovering the Hidden Data Costs of Mobile YouTube Video Ads" style="width:100%; border-radius: 8px;">
       </a>
@@ -111,7 +111,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
 6. **SimpleAuth - npm Package**  
    Extensible authentication module for Node.js built on Passport.js — register, login, and verify credentials with a simple API. Available on npm as `@harrisahmad/simpleauth`.
 
-   <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; display: flex; justify-content: space-between; align-items: center;">
+   <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; display: flex; justify-content: space-between; align-items: center;">
       <div style="flex: 1; text-align: center; margin-right: 10px;">
          <a href="https://github.com/harris-ahmad/AuthenticationSystem" target="_blank">
             <img src="https://opengraph.githubassets.com/1/harris-ahmad/AuthenticationSystem" alt="GitHub Repo - AuthenticationSystem" style="width:100%; border-radius: 8px;">
@@ -132,7 +132,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
 7. **Guftaar - A Speech Therapy Web Application**  
    English-language m-Health app for people who stutter (PWS), connecting users with speech therapists and offering virtual treatment support — built to improve access in contexts where therapy resources are limited.
 
-   <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+   <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/harris-ahmad/Guftaar-Speech" target="_blank" style="display: block;">
          <img src="https://opengraph.githubassets.com/1/harris-ahmad/Guftaar-Speech" alt="GitHub Repo - Guftaar" style="width:100%; border-radius: 8px;">
       </a>
@@ -146,7 +146,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
 8. **Everything Object Oriented Programming**  
    Structured C++ OOP guide and exercises created following my TA role for CS200 at LUMS (Spring/Fall 2023).
 
-   <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+   <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/harris-ahmad/Everything-OOP" target="_blank" style="display: block;">
          <img src="https://opengraph.githubassets.com/1/harris-ahmad/Everything-OOP" alt="GitHub Repo - Everything-OOP" style="width:100%; border-radius: 8px;">
       </a>
@@ -160,7 +160,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
 9. **Data Structures and Algorithms**  
    Implementations of core data structures and algorithms in C++, Go, JavaScript, and Python.
 
-   <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+   <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
       <a href="https://github.com/harris-ahmad/DataStructuresAndAlgorithms" target="_blank" style="display: block;">
          <img src="https://opengraph.githubassets.com/1/harris-ahmad/DataStructuresAndAlgorithms" alt="GitHub Repo - Data Structures and Algorithms" style="width:100%; border-radius: 8px;">
       </a>
@@ -174,7 +174,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
 10. **Crypto Telegram Bot (Go)**  
     Real-time cryptocurrency price monitoring and alerts via CoinGecko, implemented in Go.
 
-    <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+    <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
        <a href="https://github.com/harris-ahmad/TelegramBot-Go" target="_blank" style="display: block;">
           <img src="https://opengraph.githubassets.com/1/harris-ahmad/TelegramBot-Go" alt="GitHub Repo - Crypto Telegram Bot" style="width:100%; border-radius: 8px;">
        </a>
@@ -188,7 +188,7 @@ description: "Open-source and research engineering projects by Harris Ahmad — 
 11. **Real-time Chat Application with Analytics**  
     Flask chat app with WebSockets, sentiment analysis, user analytics, and PostgreSQL-backed storage.
 
-    <div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
+    <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 600px; text-align: center;">
        <a href="https://github.com/harris-ahmad/ChatApp-Flask" target="_blank" style="display: block;">
           <img src="https://opengraph.githubassets.com/1/harris-ahmad/ChatApp-Flask" alt="GitHub Repo - Real-time Chat Application with Analytics" style="width:100%; border-radius: 8px;">
        </a>

@@ -31,7 +31,7 @@ We discuss implications for platforms, ABR/ad-insertion policies, and affordabil
 
 **Longer write-up:** [The hidden mobile data cost of YouTube video ads](/writing/youtube-mobile-ad-data-costs/)
 
-<div style="border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 300px;">
+<div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 300px;">
   <a href="https://github.com/nsgLUMS/videoads-affordability-www24" target="_blank">
     <img src="https://opengraph.githubassets.com/1/nsgLUMS/videoads-affordability-www24" alt="GitHub Repo" style="width:100%; border-radius: 8px;">
   </a>

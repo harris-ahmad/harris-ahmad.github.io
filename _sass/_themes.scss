@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Color themes: light (default), dark, and "follow the system"
+
+   - Light token values are computed from the Sass variables in _variables.scss,
+     so the light theme renders exactly as it did before themes existed.
+   - Dark applies when <html data-theme="dark"> (the visitor picked dark), or when
+     the OS prefers dark and the visitor hasn't picked light (no data-theme).
+   - Dark rules are screen-only, so printing always uses the light theme.
+   ========================================================================== */
+
+/* Dark overrides for the current selector: `.foo { @include dark { ... } }` */
+@mixin dark {
+  @media screen {
+    html[data-theme="dark"] & {
+      @content;
+    }
+  }
+  @media screen and (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]) & {
+      @content;
+    }
+  }
+}
+
+/* Dark overrides at the document root, e.g. for custom properties */
+@mixin dark-root {
+  @media screen {
+    html[data-theme="dark"] {
+      @content;
+    }
+  }
+  @media screen and (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]) {
+      @content;
+    }
+  }
+}
+
+:root {
+  color-scheme: light;
+
+  /* surfaces */
+  --background-color: #{$background-color};
+  --body-color: #{$body-color};
+  --surface-color: #fff; /* popovers, dropdowns, form fields */
+  --code-background-color: #{$code-background-color};
+  --code-background-color-dark: #{$code-background-color-dark};
+  --lighter-gray: #{$lighter-gray}; /* subtle fills: footer, table headers */
+
+  /* text */
+  --text-color: #{$text-color};
+  --strong-text-color: #000;
+  --gray: #{$gray};
+  --muted-text-color: #{mix(#fff, $gray, 25%)};
+
+  /* lines */
+  --border-color: #{$border-color};
+  --light-gray: #{$light-gray}; /* borders: tables, rules, footer */
+  --card-border-color: #dcdcdc; /* inline-styled cards on projects/publications */
+
+  /* fills behind white text (buttons, badges) */
+  --primary-color: #{$primary-color};
+
+  /* links */
+  --link-color: #{$link-color};
+  --link-color-hover: #{$link-color-hover};
+  --link-color-visited: #{$link-color-visited};
+  --masthead-link-color: #{$masthead-link-color};
+  --masthead-link-color-hover: #{$masthead-link-color-hover};
+
+  /* brand blue used by the homepage and custom pages */
+  --accent-color: #2c5aa0; /* text, borders, underlines */
+  --accent-fill-color: #2c5aa0; /* fills behind white text */
+  --accent-fill-hover-color: #1e3d6b;
+
+  /* shadows */
+  --box-shadow: #{$box-shadow};
+  --overlay-shadow-color: #{rgba(#000, 0.25)};
+}
+
+@include dark-root {
+  color-scheme: dark;
+
+  --background-color: #121417;
+  --body-color: #121417;
+  --surface-color: #1b1f24;
+  --code-background-color: #1b1f24;
+  --code-background-color-dark: #2b3037;
+  --lighter-gray: #1b1f24;
+
+  --text-color: #c9cdd2;
+  --strong-text-color: #eef0f2;
+  --gray: #9aa2a9;
+  --muted-text-color: #8a929a;
+
+  --border-color: #2b3037;
+  --light-gray: #3a4049;
+  --card-border-color: #2b3037;
+
+  --primary-color: #4f565e;
+
+  --link-color: #5fb8d2;
+  --link-color-hover: #8fd0e3;
+  --link-color-visited: #7dc2d6;
+  --masthead-link-color: #a3abb2;
+  --masthead-link-color-hover: #e6e9ec;
+
+  --accent-color: #7aa7e6;
+  --accent-fill-color: #2f62ad;
+  --accent-fill-hover-color: #3b72c4;
+
+  --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  --overlay-shadow-color: rgba(0, 0, 0, 0.6);
+}

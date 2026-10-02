@@ -54,7 +54,7 @@ body:hover .visually-hidden button {
   font-size: 1em;
   font-weight: bold;
   padding: 15px 23px 14px;
-  background: #fff;
+  background: var(--surface-color);
   z-index: 100000;
   text-decoration: none;
   box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
@@ -196,7 +196,7 @@ body:hover .visually-hidden button {
 
 .social-icons {
   .fa {
-    color: #000;
+    color: var(--strong-text-color);
   }
 
   .fa-bluesky,
@@ -230,6 +230,11 @@ body:hover .visually-hidden button {
   .fa-github-alt,
   .fa-github-square {
     color: $github-color;
+
+    /* the brand color is near-black, so it would vanish on a dark background */
+    @include dark {
+      color: var(--strong-text-color);
+    }
   }
 
   .fa-google-plus,
@@ -407,6 +412,11 @@ body:hover .visually-hidden button {
   border: 1px solid #e3e3e3;
   border-radius: $border-radius;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+
+  @include dark {
+    background-color: #1b1f24;
+    border-color: #2b3037;
+  }
 }
 
 
@@ -427,6 +437,10 @@ body:hover .visually-hidden button {
     height: 100%;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.85);
+
+    @include dark {
+      background-color: rgba(18, 20, 23, 0.85);
+    }
   }
 
   .modal {
@@ -444,10 +458,10 @@ body:hover .visually-hidden button {
   margin-top: -150px;
   min-height: 0;
   z-index: 9999;
-  background: #fff;
-  border: 1px solid $border-color;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
   border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  box-shadow: var(--box-shadow);
 
   &__title {
     margin: 0;
@@ -460,7 +474,7 @@ body:hover .visually-hidden button {
 
   &__actions {
     padding: 0.5em 1em;
-    border-top: 1px solid $border-color;
+    border-top: 1px solid var(--border-color);
   }
 }
 
@@ -470,12 +484,12 @@ body:hover .visually-hidden button {
    ========================================================================== */
 
 .footnote {
-  color: mix(#fff, $gray, 25%);
+  color: var(--muted-text-color);
   text-decoration: none;
 }
 
 .footnotes {
-  color: mix(#fff, $gray, 25%);
+  color: var(--muted-text-color);
 
   ol, li, p {
     margin-bottom: 0;
@@ -484,7 +498,7 @@ body:hover .visually-hidden button {
 }
 
 a.reversefootnote {
-  color: $gray;
+  color: var(--gray);
   text-decoration: none;
 
   &:hover {
