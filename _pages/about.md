@@ -25,6 +25,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
     <a href="https://github.com/harris-ahmad" class="btn-secondary" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/harris-ahmad1" class="btn-secondary" target="_blank">LinkedIn</a>
     <a href="mailto:harrisah@buffalo.edu?subject=Spring%2FSummer%202027%20internship" class="btn-secondary">Contact</a>
+    {% if site.cal_link and site.cal_link != "" %}<a href="/meet" class="btn-secondary">Book a 1:1</a>{% endif %}
   </div>
 </div>
 
