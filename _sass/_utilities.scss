@@ -79,6 +79,11 @@ body:hover .visually-hidden button {
   list-style: none;
 }
 
+.skip-link:focus {
+  top: 0;
+  left: 0;
+}
+
 
 /*
    Type
@@ -333,8 +338,11 @@ body:hover .visually-hidden button {
   height: $navicon-height;
   background: #fff;
   margin: auto;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+
+  @media (prefers-reduced-motion: no-preference) {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
 
   &:before,
   &:after {
@@ -344,8 +352,11 @@ body:hover .visually-hidden button {
     width: $navicon-width;
     height: $navicon-height;
     background: #fff;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+
+    @media (prefers-reduced-motion: no-preference) {
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
   }
 
   &:before {

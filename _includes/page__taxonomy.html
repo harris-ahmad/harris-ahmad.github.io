@@ -1,9 +1,25 @@
-{% include base_path %}
+{% comment %}<!-- Plain chips, not links: the site has no /tags/ or /categories/ archive pages, so links to them 404 -->{% endcomment %}
 
-{% if site.tag_archive.type and page.tags[0] %}
-  {% include tag-list.html %}
+{% if page.tags[0] %}
+  {% assign sorted_tags = page.tags | sort_natural %}
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
+    <span itemprop="keywords">
+    {% for tag in sorted_tags %}
+      <span class="page__taxonomy-item">{{ tag }}</span>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+    {% endfor %}
+    </span>
+  </p>
 {% endif %}
 
-{% if site.category_archive.type and page.categories[0] %}
-  {% include category-list.html %}
+{% if page.categories[0] %}
+  {% assign sorted_categories = page.categories | sort_natural %}
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
+    <span itemprop="keywords">
+    {% for category in sorted_categories %}
+      <span class="page__taxonomy-item">{{ category }}</span>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+    {% endfor %}
+    </span>
+  </p>
 {% endif %}

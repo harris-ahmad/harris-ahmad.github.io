@@ -2,17 +2,17 @@
 permalink: /publications
 title: ""
 seo_title: "Publications — Harris Ahmad"
-description: "Research publications by Harris Ahmad, including ACM WWW '24 work on the hidden mobile data costs of YouTube video ads."
+description: "Research publications by Harris Ahmad, including a paper at The ACM Web Conference 2024 (WWW '24) on the hidden mobile data costs of YouTube video ads."
 ---
 
 # Publications
 
 ## Uncovering the Hidden Data Costs of Mobile YouTube Video Ads
 
-**Emaan Atique\*, Saad Sher Alam\*, Harris Ahmad, Ihsan Ayyub Qazi, Zafar Ayyub Qazi**  
+**Emaan Atique\*, Saad Sher Alam\*, <u>Harris Ahmad</u>, Ihsan Ayyub Qazi, Zafar Ayyub Qazi**  
 \*Co-primary authors  
 
-*Proceedings of the ACM Web Conference 2024 (WWW '24)*, Singapore, May 13–17, 2024  
+*The ACM Web Conference 2024 (WWW ’24)*, Singapore, May 13–17, 2024  
 [doi:10.1145/3589334.3645496](https://doi.org/10.1145/3589334.3645496)
 
 [[PDF](/files/ytafford-www24.pdf){:target="_blank"}, [explainer](/writing/youtube-mobile-ad-data-costs/), [code &amp; data](https://github.com/nsgLUMS/videoads-affordability-www24){:target="_blank"}, [Google Scholar](https://scholar.google.com/citations?hl=en&user=4AY0nvEAAAAJ){:target="_blank"}]
@@ -33,11 +33,11 @@ We discuss implications for platforms, ABR/ad-insertion policies, and affordabil
 
 <div style="border: 1px solid var(--card-border-color); border-radius: 8px; padding: 16px; margin-top: 10px; max-width: 300px;">
   <a href="https://github.com/nsgLUMS/videoads-affordability-www24" target="_blank">
-    <img src="https://opengraph.githubassets.com/1/nsgLUMS/videoads-affordability-www24" alt="GitHub Repo" style="width:100%; border-radius: 8px;">
+    <img loading="lazy" decoding="async" src="https://opengraph.githubassets.com/1/nsgLUMS/videoads-affordability-www24" alt="GitHub Repo" style="width:100%; border-radius: 8px;">
   </a>
   <div style="margin-top: 8px; text-align: center;">
     <a href="https://github.com/nsgLUMS/videoads-affordability-www24" target="_blank">
-      <img src="https://img.shields.io/github/stars/nsgLUMS/videoads-affordability-www24?style=social" alt="GitHub stars">
+      <img loading="lazy" decoding="async" src="https://img.shields.io/github/stars/nsgLUMS/videoads-affordability-www24?style=social" alt="GitHub stars">
     </a>
   </div>
 </div>

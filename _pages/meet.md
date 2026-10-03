@@ -2,13 +2,13 @@
 permalink: /meet
 title: ""
 seo_title: "Book a 1:1 — Harris Ahmad"
-description: "Book a 1:1 call with Harris Ahmad, PhD CSE at University at Buffalo, about Spring/Summer 2027 internships, research, or referrals."
+description: "Book a 1:1 call with Harris Ahmad, Computer Science PhD student at the University at Buffalo, about Summer 2027 internships, research, or referrals."
 ---
 
 # Book a 1:1
 
 {% if site.cal_link and site.cal_link != "" %}
-Pick a time to chat about internships, research, or referrals. Times are shown in your time zone, and you'll get a calendar invite once you book.
+Pick a time to chat about Summer 2027 internships, research, or referrals. Times are shown in your time zone, and you'll get a calendar invite once you book.
 
 <div id="cal-inline" style="width:100%;min-height:640px"></div>
 <script>

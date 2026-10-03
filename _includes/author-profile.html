@@ -30,8 +30,14 @@
       {% if author.employer %}
         <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
       {% endif %}
-      {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
+      {% if author.uri and author.uri != "" %}
+        {% comment %}<!-- a "Website" link back to this same site is redundant, so only show an external one -->{% endcomment %}
+        {% assign uri_host = author.uri | downcase | remove: "https://" | remove: "http://" | remove: "www." | split: "/" | first %}
+        {% assign site_host = site.url | downcase | remove: "https://" | remove: "http://" | remove: "www." | split: "/" | first %}
+        {% assign pages_host = site.repository | downcase | split: "/" | last %}
+        {% unless uri_host == site_host or uri_host == pages_host %}
+          <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
+        {% endunless %}
       {% endif %}
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>

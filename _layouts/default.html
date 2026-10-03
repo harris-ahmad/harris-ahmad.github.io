@@ -13,6 +13,12 @@ layout: compress
 
   <body>
 
+    <a class="skip-link screen-reader-shortcut" href="#main">Skip to content</a>
+    {% comment %}<!-- smooth-scroll cancels the jump, so move focus to the content by hand -->{% endcomment %}
+    <script>
+      document.querySelector(".skip-link").addEventListener("click", function () { var main = document.getElementById("main"); if (main) { main.setAttribute("tabindex", "-1"); main.focus({ preventScroll: true }); } });
+    </script>
+
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 

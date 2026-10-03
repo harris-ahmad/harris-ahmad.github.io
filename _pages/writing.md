@@ -2,7 +2,7 @@
 permalink: /writing/
 title: ""
 seo_title: "Writing — Harris Ahmad"
-description: "Notes on distributed systems, internet measurement, AI tooling, and research from Harris Ahmad — PhD CSE at University at Buffalo."
+description: "Notes on distributed systems, internet measurement, AI tooling, and research from Harris Ahmad — Computer Science PhD student at University at Buffalo."
 author_profile: true
 ---
 

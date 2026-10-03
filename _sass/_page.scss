@@ -8,8 +8,11 @@
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
-  animation: intro 0.3s both;
-  animation-delay: 0.35s;
+
+  /* focused by the skip link; the outline would wrap the whole page */
+  &:focus {
+    outline: none;
+  }
 
   @include breakpoint($x-large) {
     max-width: $x-large;
@@ -111,8 +114,6 @@
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
-  animation: intro 0.3s both;
-  animation-delay: 0.25s;
 
   &--overlay {
     position: relative;
@@ -122,8 +123,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    animation: intro 0.3s both;
-    animation-delay: 0.25s;
 
     a {
       color: #fff;
@@ -270,7 +269,7 @@
   border: 1px solid var(--light-gray);
   border-radius: $border-radius;
 
-  &:hover {
+  &[href]:hover {
     text-decoration: none;
     color: var(--link-color-hover);
   }
@@ -297,7 +296,10 @@
 .page__comments-form {
   padding: 1em;
   background: var(--lighter-gray);
-  transition: $global-transition;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: $global-transition;
+  }
 
   &.disabled {
     input,

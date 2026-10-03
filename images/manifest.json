@@ -8,14 +8,8 @@
   "theme_color": "#2c5aa0",
   "icons": [
     {
-      "src": "/images/profile-pic.png",
-      "sizes": "1313x1312",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/images/ub-logo.png",
-      "sizes": "any",
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
     }

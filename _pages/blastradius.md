@@ -9,7 +9,7 @@ author_profile: true
 <div class="br-page" markdown="0">
 
 <section class="br-hero">
-  <div class="br-eyebrow">Open source · MIT · v0.2.0</div>
+  <div class="br-eyebrow">Open source · MIT</div>
   <h1>BlastRadius</h1>
   <p class="br-lede">Cross-repo infrastructure memory for coding agents. It knows who else
   depends on an artifact <em>before</em> you change it, and watches those pins for
@@ -62,8 +62,8 @@ author_profile: true
   </div>
 
   <p class="br-note">The tradeoff is real: you spend context on every matching tool call,
-  deterministically. So the cost is measured rather than assumed — about 40 tokens per
-  injection, and it stays silent unless something is genuinely shared.</p>
+  deterministically. So the cost is measured rather than assumed — <code>blastradius cost</code>
+  reports what every injection spends — and it stays silent unless something is genuinely shared.</p>
 </section>
 
 <section class="br-section">
@@ -107,8 +107,8 @@ author_profile: true
 
 <section class="br-section">
   <h2>Measured, not asserted</h2>
-  <p>Extraction is scored against a corpus of six repositories with <strong>19 deliberate
-  traps</strong> planted in it: multi-stage build aliases, <code>ARG</code>-templated base
+  <p>Extraction is scored against a planted corpus of six repositories with <strong>the hard
+  cases put there on purpose</strong>: multi-stage build aliases, <code>ARG</code>-templated base
   images, a <code>FROM</code> inside a heredoc, relative module sources,
   <code>workspace:</code> protocols, and a registry with a port that looks like a tag.</p>
 
@@ -116,7 +116,7 @@ author_profile: true
     <div class="br-stat"><div class="br-stat-n">39/39</div><div class="br-stat-l">artifacts found</div></div>
     <div class="br-stat"><div class="br-stat-n">39/39</div><div class="br-stat-l">version specs intact</div></div>
     <div class="br-stat"><div class="br-stat-n">0</div><div class="br-stat-l">false positives</div></div>
-    <div class="br-stat"><div class="br-stat-n">~40</div><div class="br-stat-l">tokens per injection</div></div>
+    <div class="br-stat"><div class="br-stat-n">6</div><div class="br-stat-l">planted repositories</div></div>
   </div>
 
   <p class="br-note"><strong>The second number is the one that matters.</strong> A model that
@@ -148,7 +148,7 @@ blastradius index ~/code  <span class="br-dim"># bootstrap from repos you alread
 </section>
 
 <section class="br-section br-closing">
-  <p>322 tests across Python 3.11–3.13. MIT licensed.</p>
+  <p>376 tests across 3.6K lines in 16 modules, run on Python 3.11–3.13. MIT licensed.</p>
   <div class="br-links">
     <a class="br-btn br-btn-primary" href="https://github.com/harris-ahmad/blastradius-mcp">Read the source</a>
     <a class="br-btn" href="https://pypi.org/project/blastradius-mcp/">blastradius-mcp on PyPI</a>

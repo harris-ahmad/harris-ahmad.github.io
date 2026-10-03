@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Harris Ahmad"
 title_separator          : "|"
 name                     : &name "Harris Ahmad"
-description              : &description "PhD CSE @ University at Buffalo | Distributed systems & transactional databases for collaborative AI | Seeking SWE/research internships Spring/Summer 2027"
+description              : &description "PhD CSE @ University at Buffalo | Distributed systems & transactional databases for collaborative AI | Seeking SWE/research internships for Summer 2027"
 url                      : https://harrisahmad.dev
 baseurl                  : ""
 repository               : "harris-ahmad/harris-ahmad.github.io"
@@ -21,14 +21,14 @@ repository               : "harris-ahmad/harris-ahmad.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile-pic.png"
+  avatar           : "profile-pic-350.jpg"
   name             : "Harris Ahmad"
   pronouns         : "he/him" # example: "she/her"
-  bio              : "PhD CSE @ UB · distributed systems · Spring/Summer 2027 internships"
+  bio              : "PhD CSE @ UB · distributed systems · Summer 2027 internships"
   location         : "Buffalo, New York"
   employer         : "University at Buffalo"
-  uri              : "https://harrisahmad.dev"
-  email            : "harrisah@buffalo.edu" 
+  # uri            : # left unset: it only rendered a sidebar "Website" link back to this same site
+  email            : "harrisah@buffalo.edu"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -159,6 +159,7 @@ exclude:
   - .jekyll-assets-cache
   - .sass-cache
   - CHANGELOG
+  - CONTRIBUTING.md
   - Capfile
   - Gemfile
   - Gruntfile.js
@@ -171,8 +172,13 @@ exclude:
   - config
   - gulpfile.js
   - log
+  - markdown_generator
   - node_modules
+  - package-lock.json
   - package.json
+  - talkmap
+  - talkmap.ipynb
+  - talkmap.py
   - tmp
   - vendor
 keep_files:

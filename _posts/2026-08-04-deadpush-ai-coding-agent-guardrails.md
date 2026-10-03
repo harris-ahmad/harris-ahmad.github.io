@@ -1,6 +1,6 @@
 ---
 title: "deadpush: guardrails for AI coding agents that commit your secrets"
-date: 2026-05-01
+date: 2026-08-04
 permalink: /writing/deadpush-ai-coding-agent-guardrails/
 categories:
   - writing
