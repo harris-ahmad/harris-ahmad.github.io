@@ -72,6 +72,7 @@ const schema = [
         <div class="links mono">
           <a href="/files/ytafford-www24.pdf">[PDF]</a>
           <a href="/writing/youtube-mobile-ad-data-costs/">[Explainer]</a>
+          <a href="/writing/youtube-mobile-ad-data-costs/#architecture">[Pipeline]</a>
           <a href="https://github.com/nsgLUMS/videoads-affordability-www24">[Code &amp; data]</a>
           {scholar && <a href={scholar}>[Google Scholar]</a>}
           <a href="#bibtex">[BibTeX]</a>
@@ -124,13 +125,13 @@ const schema = [
         </div>
       </li>
       <li class="hang">
-        <div class="m"><span class="n">02</span><span>Java</span></div>
+        <div class="m"><span class="n">02</span><span>Go · Java</span></div>
         <div class="item">
           <div class="title-row">
-            <h3>Coordination-free concurrency protocol</h3>
+            <h3>Transaction protocol for microservices</h3>
             <span class="chip">USENIX OSDI 2027 · in preparation</span>
           </div>
-          <p>For microservices: drops the central coordinator and global row locks that Apache Seata holds across a commit.</p>
+          <p>Aims to make transactions across microservices that each keep their own, possibly different, database serializable and all-or-nothing, without requiring XA support and without the row locks Apache Seata’s AT and XA modes hold until the global commit.</p>
         </div>
       </li>
     </ol>

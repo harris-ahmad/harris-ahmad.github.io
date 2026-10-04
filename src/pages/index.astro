@@ -1,11 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import ArchDiagram from '../components/ArchDiagram.astro';
 import { site, bookingEnabled } from '../data/site';
 import { news, monthLabel, inlineLinks } from '../data/news';
-import blastradius from '../data/diagrams/blastradius.json';
-import deadpush from '../data/diagrams/deadpush.json';
 
 const posts = (await getCollection('writing', ({ data }) => !data.draft))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
@@ -35,10 +32,10 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
 
     <div class="intro">
       <p class="muted">CS PhD student at the University at Buffalo, advised by <a href="https://sites.google.com/view/haonanlu/home">Dr. Haonan Lu</a>. Before that I shipped production backends at Linq.io, Its IT Group and LUMS.</p>
-      <p class="now"><span class="strong">Now:</span> a transaction reordering layer for existing strictly serializable concurrency control, a coordination-free protocol for microservices, and shipping BlastRadius.</p>
+      <p class="now"><span class="strong">Now:</span> a transaction reordering layer for existing strictly serializable concurrency control, a transaction protocol for microservices, and shipping BlastRadius.</p>
       <p class="status">
         <span class="dot" aria-hidden="true"></span>
-        <span><span class="strong-500">Open to software engineering and research internships · Summer 2027.</span> <span class="muted">Returning afterwards to the PhD (expected May 2028).</span></span>
+        <span><strong>Open to software engineering and research internships · Summer 2027.</strong> <span class="muted">Returning afterwards to the PhD (expected May 2028).</span></span>
       </p>
     </div>
 
@@ -60,28 +57,31 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
     </div>
   </section>
 
-  <!-- Proof strip: 2 x 2, one column on phones -->
-  <section aria-label="Results at a glance">
+  <!-- Proof strip: 2 x 2, one column on phones; each source links to where the number comes from -->
+  <section class="block tight-gap" aria-labelledby="results">
+    <div class="sec-head">
+      <h2 id="results" class="eyebrow">Results at a glance</h2>
+    </div>
     <ul class="proof">
       <li>
         <span class="big nowrap"><span class="pre">up to </span>75%</span>
         <span class="what">lower tail latency, and 85% fewer aborts</span>
-        <span class="src">src · transaction reordering layer, in preparation for USENIX OSDI 2027</span>
+        <span class="src">src · <a href="#research">transaction reordering layer</a>, in preparation for USENIX OSDI 2027</span>
       </li>
       <li>
         <span class="big">39/39</span>
         <span class="what">recall, 0 false positives</span>
-        <span class="src">src · BlastRadius eval, planted 6-repo corpus</span>
+        <span class="src">src · <a href="/blastradius/#measured">BlastRadius eval</a>, planted 6-repo corpus</span>
       </li>
       <li>
         <span class="big nowrap">5s<span class="arrow"> → </span>500ms</span>
         <span class="what">API latency for 20K+ daily active users</span>
-        <span class="src">src · Awaaz-e-Sehat, LUMS</span>
+        <span class="src">src · <a href="/work-experience">Awaaz-e-Sehat, LUMS</a></span>
       </li>
       <li>
         <span class="big">838</span>
         <span class="what">PyPI installs</span>
-        <span class="src">src · BlastRadius 336 + deadpush 502</span>
+        <span class="src">src · <a href="https://pypi.org/project/blastradius-mcp/">BlastRadius</a> 336 + <a href="https://pypi.org/project/deadpush/">deadpush</a> 502</span>
       </li>
     </ul>
   </section>
@@ -96,7 +96,7 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
     <ol class="works">
       <!-- 01 BlastRadius -->
       <li class="hang">
-        <div class="m"><span class="n">01</span><span>Aug 2026 – present</span></div>
+        <div class="m"><span class="n">01</span><span class="range"><span>Aug 2026</span> <span>– present</span></span></div>
         <div class="work">
           <div class="title-row">
             <h3>BlastRadius</h3>
@@ -109,13 +109,9 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
             <div class="c"># sample output</div>
             <div class="pre-wrap"><span class="sev">[CRITICAL]</span> vitest  CVE-2026-47429</div>
           </div>
-          <!-- Architecture as of blastradius-mcp v0.3.2 -->
-          <figure class="arch">
-            <ArchDiagram id="br" data={blastradius as any} label="BlastRadius architecture diagram" />
-            <figcaption><span class="strong">Architecture</span> — When the agent reads, edits or runs a command on a manifest, a PreToolUse hook looks up the local SQLite index and injects which other repos depend on that artifact and how tightly each pins it (blue path). At Stop, a second hook lists manifests the index hasn’t seen, and the agent records them through the MCP server, which reads exact versions from lockfiles. Outside the session (dashed), a launchd/systemd watcher syncs OSV advisories into the same index and can post new ones to Slack.</figcaption>
-          </figure>
           <div class="links">
             <a href="/blastradius/">Case study</a>
+            <a href="/blastradius/#architecture">How it works</a>
             <a href="https://github.com/harris-ahmad/blastradius-mcp">GitHub</a>
             <a href="https://pypi.org/project/blastradius-mcp/">PyPI</a>
           </div>
@@ -124,7 +120,7 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
 
       <!-- 02 Transaction reordering layer: public wording only (unpublished, in preparation) -->
       <li class="hang">
-        <div class="m"><span class="n">02</span><span>Jan 2025 – present</span></div>
+        <div class="m"><span class="n">02</span><span class="range"><span>Jan 2025</span> <span>– present</span></span></div>
         <div class="work">
           <div class="title-row">
             <h3>Transaction reordering layer</h3>
@@ -141,7 +137,7 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
 
       <!-- 03 deadpush -->
       <li class="hang">
-        <div class="m"><span class="n">03</span><span>Jun 2026 – present</span></div>
+        <div class="m"><span class="n">03</span><span class="range"><span>Jun 2026</span> <span>– present</span></span></div>
         <div class="work">
           <div class="title-row">
             <h3>deadpush</h3>
@@ -158,13 +154,9 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
             </dl>
             <div>0 false positives <span class="muted">(48 runs)</span></div>
           </div>
-          <!-- Architecture as of deadpush main @ 3867e07 -->
-          <figure class="arch">
-            <ArchDiagram id="dp" data={deadpush as any} label="deadpush architecture diagram" />
-            <figcaption><span class="strong">Architecture</span> — Every agent write path (MCP calls, raw file writes, git) goes through one <code>enforce_content()</code> kernel. A raw file write that breaks a rule is quarantined, its last safe version is restored from git HEAD, and an INCIDENT is pushed to the agent; a proxied MCP call, commit or push that breaks one is refused before it lands. Inside a deadpush sandbox session, a destructive git command (reset --hard or force-push) is handled differently: deadpush takes a validated save point, refuses the command and reports it over GPC. In CI, deadpush scan runs the same kernel on pull requests and pushes to main.</figcaption>
-          </figure>
           <div class="links">
             <a href="/writing/deadpush-ai-coding-agent-guardrails/">Write-up</a>
+            <a href="/writing/deadpush-ai-coding-agent-guardrails/#architecture">How it works</a>
             <a href="https://github.com/harris-ahmad/deadpush">GitHub</a>
             <a href="https://pypi.org/project/deadpush/">PyPI</a>
             <code class="inline-code">pip install deadpush</code>
@@ -201,6 +193,7 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
             <a href="/files/ytafford-www24.pdf">Paper (PDF)</a>
             <a href="https://github.com/nsgLUMS/videoads-affordability-www24">Code &amp; data</a>
             <a href="/writing/youtube-mobile-ad-data-costs/">Explainer</a>
+            <a href="/writing/youtube-mobile-ad-data-costs/#architecture">How it works</a>
           </div>
         </div>
       </li>
@@ -217,7 +210,7 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
     <div class="research">
       <div class="hang">
         <div class="m label">Problem</div>
-        <p class="essay">Collaborative AI workloads put many writers on shared state. Under contention, distributed transactions abort, wait on locks, or serialize behind a central coordinator, and tail latency climbs.</p>
+        <p class="essay">In sharded, strictly serializable databases, concurrency control aborts or blocks conflicting transactions under contention, and tail latency climbs. Across microservices that each keep their own, possibly different, database, making one request’s updates serializable and all-or-nothing usually means two-phase commit, which every database must support and which holds locks until the global commit, or sagas, which give up isolation.</p>
       </div>
 
       <div class="hang">
@@ -237,10 +230,10 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
             <span class="num">02</span>
             <div>
               <div class="title-row tight">
-                <h3>Coordination-free concurrency protocol</h3>
+                <h3>Transaction protocol for microservices</h3>
                 <span class="chip">OSDI 2027 · in preparation</span>
               </div>
-              <p>Java, for microservices: drops the central coordinator and global row locks Apache Seata holds across a commit.</p>
+              <p>Go and Java. Aims to make transactions across microservices that each keep their own, possibly different, database serializable and all-or-nothing, without requiring XA support and without the row locks Apache Seata’s AT and XA modes hold until the global commit.</p>
             </div>
           </li>
           <li>
@@ -292,35 +285,35 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
 
     <ol class="jobs">
       <li class="hang">
-        <div class="m"><span>Jan 2025 – present</span></div>
+        <div class="m"><span class="range"><span>Jan 2025</span> <span>– present</span></span></div>
         <div>
           <h3>Research Software Engineer <span class="org">· University at Buffalo</span></h3>
           <p>Transactional support for distributed databases and microservices, in Go and Java.</p>
         </div>
       </li>
       <li class="hang">
-        <div class="m"><span>Jul – Dec 2024</span></div>
+        <div class="m"><span class="range"><span>Jul</span> <span>– Dec 2024</span></span></div>
         <div>
           <h3>Software Engineer <span class="org">· Linq.io, Dallas (remote)</span></h3>
           <p>On-demand media API cut page load 60% across 10K+ item inventories; enterprise OAuth 2.0 SSO.</p>
         </div>
       </li>
       <li class="hang">
-        <div class="m"><span>May – Dec 2024</span></div>
+        <div class="m"><span class="range"><span>May</span> <span>– Dec 2024</span></span></div>
         <div>
           <h3>System Engineer <span class="org">· Its IT Group (contract, remote)</span></h3>
           <p>Real-time WebSocket backend for an AR app with 5K+ daily active users; LiDAR → Unity pipeline cut manual measurement time 80%.</p>
         </div>
       </li>
       <li class="hang">
-        <div class="m"><span>Oct 2023 – Mar 2024</span></div>
+        <div class="m"><span class="range"><span>Oct 2023</span> <span>– Mar 2024</span></span></div>
         <div>
           <h3>Software Engineer <span class="org">· Interactive Media Lab, LUMS</span></h3>
           <p>Awaaz-e-Sehat: API latency 5s → 500ms; Whisper + GPT-4 clinical notes at 95% accuracy.</p>
         </div>
       </li>
       <li class="hang">
-        <div class="m"><span>May 2022 – Dec 2023</span></div>
+        <div class="m"><span class="range"><span>May 2022</span> <span>– Dec 2023</span></span></div>
         <div>
           <h3>Research Software Engineer <span class="org">· Network and Systems Group, LUMS</span></h3>
           <p>Built the WWW ’24 dataset and toolchain.</p>
@@ -476,21 +469,52 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
     color: var(--muted);
   }
 
+  /* Availability: the one line every visitor should see */
   .status {
     display: flex;
     align-items: baseline;
-    gap: .625rem;
-    font-size: .9375rem;
+    gap: .75rem;
+    width: fit-content;
+    max-width: 100%;
+    margin-top: .25rem;
+    padding: .875rem 1.125rem;
+    border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent);
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--accent) 9%, var(--bg));
+    font-size: 1rem;
     line-height: 1.5;
+    text-wrap: pretty;
+  }
+
+  .status strong {
+    font-weight: 600;
+    color: var(--fg);
   }
 
   .dot {
-    width: .5rem;
-    height: .5rem;
+    width: .625rem;
+    height: .625rem;
     border-radius: 50%;
     background: var(--accent);
     flex: none;
     transform: translateY(-.05rem);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .dot {
+      animation: ping 2.4s ease-out infinite;
+    }
+  }
+
+  @keyframes ping {
+    0% {
+      box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 55%, transparent);
+    }
+
+    70%,
+    100% {
+      box-shadow: 0 0 0 .5rem color-mix(in srgb, var(--accent) 0%, transparent);
+    }
   }
 
   .actions {
@@ -540,9 +564,6 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
     gap: 1.75rem 2.5rem;
-    padding: 1.75rem 0;
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
   }
 
   .proof li {
@@ -579,6 +600,14 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
     font-size: .75rem;
     line-height: 1.5;
     color: var(--faint);
+  }
+
+  .src a {
+    color: var(--muted);
+  }
+
+  .src a:hover {
+    color: var(--accent);
   }
 
   /* Sections */
@@ -685,25 +714,6 @@ const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke=
     font-weight: 500;
   }
 
-  .arch {
-    display: flex;
-    flex-direction: column;
-    gap: .625rem;
-    min-width: 0;
-  }
-
-  .arch figcaption {
-    max-width: 40rem;
-    font-size: .875rem;
-    line-height: 1.55;
-    color: var(--muted);
-    text-wrap: pretty;
-  }
-
-  .arch code {
-    font-size: .8125rem;
-    color: var(--fg);
-  }
 
   .links.faint {
     color: var(--faint);

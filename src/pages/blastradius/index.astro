@@ -86,7 +86,7 @@ const schema = [
         </div>
 
         <!-- Architecture as of blastradius-mcp v0.3.2 -->
-        <figure class="arch">
+        <figure class="arch" id="architecture">
           <ArchDiagram id="br-case" data={blastradius as any} label="BlastRadius architecture diagram" />
           <figcaption><span class="strong">Architecture</span> — When the agent reads, edits or runs a command on a manifest, a PreToolUse hook looks up the local SQLite index and injects which other repos depend on that artifact and how tightly each pins it (blue path). At Stop, a second hook lists manifests the index hasn’t seen, and the agent records them through the MCP server, which reads exact versions from lockfiles. Outside the session (dashed), a launchd/systemd watcher syncs OSV advisories into the same index and can post new ones to Slack.</figcaption>
         </figure>

@@ -1,6 +1,7 @@
 ---
 title: "deadpush: guardrails for AI coding agents that commit your secrets"
 date: 2026-08-04
+updated: 2026-10-04
 description: "AI coding agents can leak secrets, commit scratchpads, and pollute repos while you step away. deadpush is an always-on guardian with quarantine, hooks, and enforcement tiers."
 excerpt: "Long-running AI coding agents create secrets, debris, and bad commits. How deadpush watches the filesystem and blocks the damage before it ships."
 tags:
@@ -9,6 +10,9 @@ tags:
   - developer-tools
   - security
 ---
+
+import ArchDiagram from '../../components/ArchDiagram.astro';
+import deadpush from '../../data/diagrams/deadpush.json';
 
 AI coding agents are great until they are not: a background run can drop API keys into `.env`, commit `CLAUDE.md` scratchpads, or rewrite half a module while you are in a meeting.
 
@@ -36,6 +40,15 @@ When agents run with broad filesystem and git access, common failure modes inclu
 - **Safety score** — reacts when multiple agents go wild in parallel  
 
 Details and threat model live in the [repo docs](https://github.com/harris-ahmad/deadpush).
+
+<h2 id="architecture">How it works</h2>
+
+deadpush also stops an agent from destroying work. Inside a deadpush sandbox session, before a destructive git command such as `reset --hard` or a force-push runs, it takes a validated save point and then blocks the command. In a 48-run ablation this raised the block rate from 0.33 to 0.67 and the share of work preserved from 0.92 to 1.00, with zero false positives.
+
+<figure class="arch">
+  <ArchDiagram id="dp-post" data={deadpush} label="deadpush architecture diagram" />
+  <figcaption><strong>Architecture</strong> — Every agent write path (MCP calls, raw file writes, git) goes through one <code>enforce_content()</code> kernel. A raw file write that breaks a rule is quarantined, its last safe version is restored from git HEAD, and an INCIDENT is pushed to the agent; a proxied MCP call, commit or push that breaks one is refused before it lands. Inside a deadpush sandbox session, a destructive git command (reset --hard or force-push) is handled differently: deadpush takes a validated save point, refuses the command and reports it over GPC. In CI, deadpush scan runs the same kernel on pull requests and pushes to main.</figcaption>
+</figure>
 
 ## Who it is for
 

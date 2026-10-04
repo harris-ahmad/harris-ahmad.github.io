@@ -378,6 +378,32 @@ main:focus {
   overflow-wrap: anywhere;
 }
 
+/* Architecture figure: an ArchDiagram plus its caption */
+.arch {
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  min-width: 0;
+}
+
+.arch figcaption {
+  max-width: 40rem;
+  font-size: .875rem;
+  line-height: 1.55;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.arch figcaption strong {
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.arch figcaption code {
+  font-size: .8125rem;
+  color: var(--fg);
+}
+
 /* ---------- Interior pages ---------- */
 
 .page-head {
@@ -544,9 +570,9 @@ main:focus {
 
 @media (min-width: 1120px) {
   .hang {
-    grid-template-columns: 9.5rem minmax(0, 1fr);
+    grid-template-columns: 8rem minmax(0, 1fr);
     column-gap: 2rem;
-    margin-left: -11.5rem;
+    margin-left: -10rem;
     align-items: baseline;
   }
 
@@ -555,6 +581,11 @@ main:focus {
     align-items: flex-end;
     gap: .125rem;
     text-align: right;
+  }
+
+  /* Date ranges stack in the margin: start on one line, "– end" on the next */
+  .hang > .m .range > span {
+    display: block;
   }
 }
 

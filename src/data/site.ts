@@ -7,7 +7,7 @@ export const site = {
   location: 'Buffalo, NY',
   pronouns: 'he/him',
   description:
-    'PhD CSE @ University at Buffalo | Distributed systems & transactional databases for collaborative AI | Seeking SWE/research internships for Summer 2027',
+    'PhD CSE @ University at Buffalo | Transactions for distributed databases & microservices | Seeking SWE/research internships for Summer 2027',
   resume: '/files/Resume.pdf',
   // Cal.com booking link without the domain. An empty string hides the booking widget and links.
   calLink: 'harris-ahmad/30min' as string,

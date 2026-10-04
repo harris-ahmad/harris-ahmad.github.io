@@ -1,6 +1,7 @@
 ---
 title: "The hidden mobile data cost of YouTube video ads"
 date: 2024-05-15
+updated: 2026-10-04
 description: "YouTube in-stream ads can waste mobile data even after you skip them. Summary of our WWW '24 study of 17.6K videos and 46.6K ads across eight countries."
 excerpt: "Users often still download most of a skippable YouTube ad after hitting skip — and mid-roll ads can force re-download of main-video buffer. What our WWW ’24 measurement found."
 tags:
@@ -9,6 +10,9 @@ tags:
   - affordability
   - www24
 ---
+
+import ArchDiagram from '../../components/ArchDiagram.astro';
+import www24 from '../../data/diagrams/www24.json';
 
 Mobile YouTube is free in price, but not always free in **data**. That matters most where prepaid mobile broadband is expensive relative to income.
 
@@ -26,6 +30,21 @@ We built a crawl/stream pipeline and released a public corpus covering:
 - **8 countries** (four developing, four developed)
 
 We then analyzed client **buffer state** around ad placement — which is where latent waste shows up.
+
+<h2 id="architecture">How the measurement works</h2>
+
+We ran eight Ubuntu machines, one per country, each connected through a commercial VPN endpoint in that country and throttled to the country’s average mobile bandwidth. Collection ran daily from 1 March to 1 May 2023.
+
+**Picking videos.** `S1.py` drives desktop Chrome with Selenium. It scrolls four Trending feeds and the YouTube homepage, keeps the `watch?v=` links, and reads each video’s duration from the player. `data-collection.sh` splits the trending and non-trending lists into four files each and starts an `S2.py` worker on every file.
+
+**Streaming.** Each `S2.py` worker drives Chrome through ChromeDriver, emulating a Nexus 5 (a 360×640 viewport) on m.youtube.com. It turns on Stats for Nerds, mutes the player, turns autoplay off, and polls the page continuously until the video ends. Every pass reads the player’s state and playback time and whether an ad is showing. Outside ads it also reads the resolution and seconds of buffer ahead from Stats for Nerds; during an ad it reads the ad’s video ID, buffer and resolution, whether it has a skip button, and the skip countdown. When the video ends, the worker writes four JSON logs.
+
+**From seconds to bytes.** Offline scripts add each ad’s duration and format size from yt-dlp and its most common resolution. `make-csv.ipynb` then builds one row per video: how many seconds of each skippable ad were fetched by a skip at 5 s, and how much main-video buffer was lost across each mid-roll ad. The analysis converts seconds to bytes with each format’s size.
+
+<figure class="arch">
+  <ArchDiagram id="www24-post" data={www24} label="Measurement pipeline diagram for the YouTube ad data cost study" />
+  <figcaption><strong>Architecture</strong> — Eight machines, one per country, stream through an in-country VPN at that country’s average mobile bandwidth. S1.py collects trending and homepage video URLs; data-collection.sh splits them into list files and starts an S2.py worker on each. S2 drives Chrome emulating a Nexus 5 on m.youtube.com and polls the page continuously: Stats for Nerds video ID, resolution and buffered seconds; player state, time and duration; and the ad flag, skip button and skip countdown. Offline, yt-dlp adds ad durations and format sizes, and make-csv.ipynb computes how much of each skippable ad was fetched by the 5 s skip and how much main-video buffer was lost across each mid-roll ad (blue path). Dashed boxes are outside the released code: YouTube itself, yt-dlp and the per-country machines.</figcaption>
+</figure>
 
 ## Key findings (short version)
 

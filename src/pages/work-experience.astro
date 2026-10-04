@@ -26,19 +26,19 @@ import { site } from '../data/site';
 
       <ol class="roles">
         <li class="hang">
-          <div class="m"><span>Jan 2025 – present</span><span class="where">Buffalo, NY</span></div>
+          <div class="m"><span class="range"><span>Jan 2025</span> <span>– present</span></span><span class="where">Buffalo, NY</span></div>
           <div class="role">
             <h3>Research Software Engineer <span class="org">· University at Buffalo (SUNY)</span></h3>
             <ul class="bullets">
               <li>Building a transaction reordering layer in Go that lowers tail latency and aborts of existing strictly serializable concurrency control without changing its code: up to 75% lower tail latency and 85% fewer aborts across 2PL, OCC and NCC on CloudLab; in preparation for USENIX OSDI 2027.</li>
-              <li>Prototyped primary-backup, chain replication, and distributed two-phase locking in Go to stress-test protocol behavior for collaborative AI workloads on CloudLab (NSF-supported).</li>
-              <li>Building a coordination-free concurrency protocol for microservices in Java that keeps distributed transactions correct without the central coordinator and global row locks Apache Seata holds across a commit, which serialize conflicting transactions and add a round trip to every one; in preparation for USENIX OSDI 2027.</li>
+              <li>Prototyped primary-backup, chain replication, and distributed two-phase locking in Go on CloudLab (NSF-supported).</li>
+              <li>Building a transaction protocol in Go and Java for microservices that each keep their own, possibly different, database, aiming for serializable, all-or-nothing transactions without requiring XA support and without the row locks Apache Seata’s AT and XA modes hold until the global commit; in preparation for USENIX OSDI 2027.</li>
             </ul>
           </div>
         </li>
 
         <li class="hang">
-          <div class="m"><span>Jul – Dec 2024</span><span class="where">Dallas, TX</span></div>
+          <div class="m"><span class="range"><span>Jul</span> <span>– Dec 2024</span></span><span class="where">Dallas, TX</span></div>
           <div class="role">
             <h3>Software Engineer <span class="org">· Linq.io (remote)</span></h3>
             <ul class="bullets">
@@ -51,7 +51,7 @@ import { site } from '../data/site';
         </li>
 
         <li class="hang">
-          <div class="m"><span>May – Dec 2024</span><span class="where">Lahore, PK</span></div>
+          <div class="m"><span class="range"><span>May</span> <span>– Dec 2024</span></span><span class="where">Lahore, PK</span></div>
           <div class="role">
             <h3>System Engineer <span class="org">· Its IT Group (contract, remote)</span></h3>
             <ul class="bullets">
@@ -62,7 +62,7 @@ import { site } from '../data/site';
         </li>
 
         <li class="hang">
-          <div class="m"><span>Oct 2023 – Mar 2024</span><span class="where">Lahore, PK</span></div>
+          <div class="m"><span class="range"><span>Oct 2023</span> <span>– Mar 2024</span></span><span class="where">Lahore, PK</span></div>
           <div class="role">
             <h3>Software Engineer <span class="org">· Interactive Media Lab, LUMS</span></h3>
             <ul class="bullets">
@@ -83,7 +83,7 @@ import { site } from '../data/site';
 
       <ol class="roles">
         <li class="hang">
-          <div class="m"><span>May 2022 – Dec 2023</span><span class="where">Lahore, PK</span></div>
+          <div class="m"><span class="range"><span>May 2022</span> <span>– Dec 2023</span></span><span class="where">Lahore, PK</span></div>
           <div class="role">
             <h3>Research Software Engineer <span class="org">· Network and Systems Group, LUMS</span></h3>
             <ul class="bullets">
@@ -135,7 +135,7 @@ import { site } from '../data/site';
 
       <ol class="roles">
         <li class="hang">
-          <div class="m"><span><span class="nw">Jan 2025 – May 2028</span> (expected)</span><span class="where">Buffalo, NY</span></div>
+          <div class="m"><span class="range"><span>Jan 2025</span> <span>– May 2028</span> <span>(expected)</span></span><span class="where">Buffalo, NY</span></div>
           <div class="role">
             <h3>PhD, Computer Science <span class="org">· University at Buffalo (SUNY)</span></h3>
             <ul class="bullets">
@@ -145,7 +145,7 @@ import { site } from '../data/site';
         </li>
 
         <li class="hang">
-          <div class="m"><span>Sep 2020 – May 2024</span><span class="where">Lahore, PK</span></div>
+          <div class="m"><span class="range"><span>Sep 2020</span> <span>– May 2024</span></span><span class="where">Lahore, PK</span></div>
           <div class="role">
             <h3>BS, Computer Science <span class="org">· Lahore University of Management Sciences (LUMS)</span></h3>
           </div>
@@ -183,7 +183,7 @@ import { site } from '../data/site';
 
       <ol class="roles">
         <li class="hang">
-          <div class="m"><span>2022 – 2023</span></div>
+          <div class="m"><span class="range"><span>2022</span> <span>– 2023</span></span></div>
           <div class="role">
             <h3>Backend / frontend coursework projects &amp; short roles <span class="org">· LUMS</span></h3>
             <p class="desc">P2P file sharing with DHTs, speech-therapy MERN app (Guftaar), and a short course-website engagement for an Internet Architecture workshop.</p>
@@ -220,7 +220,7 @@ import { site } from '../data/site';
     text-wrap: balance;
   }
 
-  /* Keeps a term or date range on one line in the 9.5rem margin
+  /* Keeps a term or date range on one line in the 8rem margin
      ("Spring 2023, / Fall 2023", not "Spring 2023, Fall / 2023") */
   .nw {
     white-space: nowrap;

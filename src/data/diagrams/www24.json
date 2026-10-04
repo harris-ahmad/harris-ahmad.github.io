@@ -1,0 +1,774 @@
+{
+ "width": 656,
+ "height": 1156,
+ "bands": [
+  {
+   "top": 0.0,
+   "height": 124.0,
+   "tinted": false,
+   "rule": false
+  },
+  {
+   "top": 124.0,
+   "height": 124.0,
+   "tinted": true,
+   "rule": true
+  },
+  {
+   "top": 248.0,
+   "height": 256.0,
+   "tinted": false,
+   "rule": true
+  },
+  {
+   "top": 504.0,
+   "height": 124.0,
+   "tinted": true,
+   "rule": true
+  },
+  {
+   "top": 628.0,
+   "height": 156.0,
+   "tinted": false,
+   "rule": true
+  },
+  {
+   "top": 784.0,
+   "height": 124.0,
+   "tinted": true,
+   "rule": true
+  },
+  {
+   "top": 908.0,
+   "height": 140.0,
+   "tinted": false,
+   "rule": true
+  },
+  {
+   "top": 1048.0,
+   "height": 108.0,
+   "tinted": true,
+   "rule": true
+  }
+ ],
+ "wires": [
+  {
+   "points": [
+    [
+     592.0,
+     64.0
+    ],
+    [
+     640.0,
+     64.0
+    ],
+    [
+     640.0,
+     304.0
+    ],
+    [
+     594.0,
+     304.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": true,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     208.0,
+     184.0
+    ],
+    [
+     254.0,
+     184.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     448.0,
+     184.0
+    ],
+    [
+     402.0,
+     184.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     352.0,
+     216.0
+    ],
+    [
+     352.0,
+     274.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     304.0,
+     276.0
+    ],
+    [
+     304.0,
+     218.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     328.0,
+     332.0
+    ],
+    [
+     328.0,
+     374.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     136.0,
+     532.0
+    ],
+    [
+     136.0,
+     458.0
+    ]
+   ],
+   "tone": "accent",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     304.0,
+     532.0
+    ],
+    [
+     304.0,
+     458.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     544.0,
+     532.0
+    ],
+    [
+     544.0,
+     458.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     592.0,
+     416.0
+    ],
+    [
+     640.0,
+     416.0
+    ],
+    [
+     640.0,
+     696.0
+    ],
+    [
+     594.0,
+     696.0
+    ]
+   ],
+   "tone": "accent",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     304.0,
+     736.0
+    ],
+    [
+     304.0,
+     810.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     352.0,
+     812.0
+    ],
+    [
+     352.0,
+     738.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     520.0,
+     736.0
+    ],
+    [
+     520.0,
+     810.0
+    ]
+   ],
+   "tone": "accent",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     208.0,
+     844.0
+    ],
+    [
+     254.0,
+     844.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": true,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     520.0,
+     876.0
+    ],
+    [
+     520.0,
+     934.0
+    ]
+   ],
+   "tone": "accent",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     136.0,
+     1000.0
+    ],
+    [
+     136.0,
+     1074.0
+    ]
+   ],
+   "tone": "accent",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     328.0,
+     1000.0
+    ],
+    [
+     328.0,
+     1074.0
+    ]
+   ],
+   "tone": "accent",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     520.0,
+     1000.0
+    ],
+    [
+     520.0,
+     1074.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  }
+ ],
+ "boxes": [
+  {
+   "left": 64.0,
+   "top": 36.0,
+   "width": 528.0,
+   "height": 56.0,
+   "title": "8 Ubuntu 22.04 machines, one per country",
+   "mono": false,
+   "note": "in-country commercial VPN · throttled to the country’s average mobile bandwidth",
+   "edge": "dashed"
+  },
+  {
+   "left": 64.0,
+   "top": 152.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Trending feeds",
+   "mono": false,
+   "note": "4 URLs, 20 scrolls each",
+   "edge": "dashed"
+  },
+  {
+   "left": 256.0,
+   "top": 152.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "S1.py -t / -n",
+   "mono": true,
+   "note": "watch?v= links, getDuration()",
+   "edge": "solid"
+  },
+  {
+   "left": 448.0,
+   "top": 152.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "YouTube homepage",
+   "mono": false,
+   "note": "40 scrolls, sampled to the trending count",
+   "edge": "dashed"
+  },
+  {
+   "left": 64.0,
+   "top": 276.0,
+   "width": 528.0,
+   "height": 56.0,
+   "title": "data-collection.sh",
+   "mono": false,
+   "note": "splits each category into 4 list files, starts an S2.py worker on each",
+   "edge": "solid"
+  },
+  {
+   "left": 64.0,
+   "top": 376.0,
+   "width": 528.0,
+   "height": 80.0,
+   "title": "S2.py → ChromeDriver → Chrome",
+   "mono": false,
+   "note": "Nexus 5 mobile emulation (360×640, DPR 3); Stats for Nerds on, autoplay off, muted; 360p player default; polls continuously until the video ends, restarting paused playback",
+   "edge": "accent"
+  },
+  {
+   "left": 64.0,
+   "top": 532.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Stats for Nerds",
+   "mono": false,
+   "note": "enabled by S2 via settings",
+   "edge": "dashed"
+  },
+  {
+   "left": 256.0,
+   "top": 532.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "HTML5 player",
+   "mono": false,
+   "note": "movie_player API, <video>",
+   "edge": "dashed"
+  },
+  {
+   "left": 448.0,
+   "top": 532.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Player ad state",
+   "mono": false,
+   "note": ".ad-showing, .ytp-ad-* nodes",
+   "edge": "dashed"
+  },
+  {
+   "left": 64.0,
+   "top": 656.0,
+   "width": 528.0,
+   "height": 80.0,
+   "title": "One JSON folder per video",
+   "mono": false,
+   "note": "stream_details (per ad: count, skippable, countdown; main: URL, duration, modal res) · buffer_details (main buffer, time) · BufferAdvert (last main buffer read, time at each ad) · AdvertBufferState (ad buffer, ad time, res)",
+   "edge": "solid"
+  },
+  {
+   "left": 64.0,
+   "top": 812.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "yt-dlp",
+   "mono": true,
+   "note": "metadata only: duration, format size",
+   "edge": "dashed"
+  },
+  {
+   "left": 256.0,
+   "top": 812.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "make-csv-*.sh",
+   "mono": true,
+   "note": "cleanup, add_time, get_res, get_bytes",
+   "edge": "solid"
+  },
+  {
+   "left": 448.0,
+   "top": 812.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "make-csv.ipynb",
+   "mono": true,
+   "note": "per-ad metrics, one CSV row per video",
+   "edge": "solid"
+  },
+  {
+   "left": 64.0,
+   "top": 936.0,
+   "width": 528.0,
+   "height": 64.0,
+   "title": "16 country CSVs + resolution experiment",
+   "mono": false,
+   "note": "8 countries × trending / non-trending × 1,100 streams = 17,600 rows, 46,613 ads · resolution experiment: Pakistan, main video at 360p vs 720p · bitrates.csv",
+   "edge": "solid"
+  },
+  {
+   "left": 64.0,
+   "top": 1076.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Skip-loss",
+   "mono": false,
+   "note": "ad buffer ahead at the 5 s skip",
+   "edge": "solid"
+  },
+  {
+   "left": 256.0,
+   "top": 1076.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Mid-roll loss",
+   "mono": false,
+   "note": "main buffer before − after, mid-roll ads only",
+   "edge": "solid"
+  },
+  {
+   "left": 448.0,
+   "top": 1076.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Ad data cost",
+   "mono": false,
+   "note": "share of stream data and of a 2 GB plan",
+   "edge": "solid"
+  }
+ ],
+ "labels": [
+  {
+   "left": 16.0,
+   "top": 10.0,
+   "width": 378.0,
+   "lines": [
+    "Per-country vantage points · daily, 1 Mar – 1 May 2023"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 128.0,
+   "width": 217.0,
+   "lines": [
+    "Phase 1 · S1.py, desktop Chrome"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 252.0,
+   "width": 133.0,
+   "lines": [
+    "Phase 2 · streaming"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 508.0,
+   "width": 91.0,
+   "lines": [
+    "m.youtube.com"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 632.0,
+   "width": 112.0,
+   "lines": [
+    "Per-video output"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 788.0,
+   "width": 126.0,
+   "lines": [
+    "Offline enrichment"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 912.0,
+   "width": 105.0,
+   "lines": [
+    "Published data/"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 1052.0,
+   "width": 98.0,
+   "lines": [
+    "analysis.ipynb"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 548.0,
+   "top": 100.0,
+   "width": 80.0,
+   "lines": [
+    "daily (CRON)"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": false
+  },
+  {
+   "left": 219.0,
+   "top": 224.0,
+   "width": 73.0,
+   "lines": [
+    "runs -t, -n"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": false
+  },
+  {
+   "left": 364.0,
+   "top": 224.0,
+   "width": 146.0,
+   "lines": [
+    "URL lists split at 1 h"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 340.0,
+   "top": 340.0,
+   "width": 119.0,
+   "lines": [
+    "one list file each"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 148.0,
+   "top": 464.0,
+   "width": 93.0,
+   "lines": [
+    "video ID, res,",
+    "buffer seconds"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": true
+  },
+  {
+   "left": 316.0,
+   "top": 464.0,
+   "width": 80.0,
+   "lines": [
+    "state, time,",
+    "duration"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 419.0,
+   "top": 464.0,
+   "width": 113.0,
+   "lines": [
+    "ad flag, skip",
+    "button, countdown"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": false
+  },
+  {
+   "left": 548.0,
+   "top": 604.0,
+   "width": 80.0,
+   "lines": [
+    "at video end"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": true
+  },
+  {
+   "left": 199.0,
+   "top": 744.0,
+   "width": 93.0,
+   "lines": [
+    "IDs, URLs, res"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": false
+  },
+  {
+   "left": 364.0,
+   "top": 744.0,
+   "width": 126.0,
+   "lines": [
+    "+ ad Duration,",
+    "Size, ad Resolution"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 532.0,
+   "top": 744.0,
+   "width": 73.0,
+   "lines": [
+    "4 JSON logs"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": true
+  },
+  {
+   "left": 532.0,
+   "top": 884.0,
+   "width": 113.0,
+   "lines": [
+    "one row per video"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": true
+  },
+  {
+   "left": 148.0,
+   "top": 1008.0,
+   "width": 86.0,
+   "lines": [
+    "Advert_Buffer"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": true
+  },
+  {
+   "left": 340.0,
+   "top": 1008.0,
+   "width": 106.0,
+   "lines": [
+    "Main_Buffer_Lost"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": true
+  },
+  {
+   "left": 532.0,
+   "top": 1008.0,
+   "width": 93.0,
+   "lines": [
+    "s ÷ duration",
+    "× Size → bytes"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  }
+ ]
+}
