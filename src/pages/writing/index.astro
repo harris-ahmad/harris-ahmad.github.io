@@ -1,0 +1,77 @@
+---
+import Page from '../../layouts/Page.astro';
+import { getPosts, postPath, longDate, isoDay, readingMinutes } from '../../data/writing';
+
+const posts = await getPosts();
+---
+<Page
+  title="Writing — Harris Ahmad"
+  description="Notes on distributed systems, internet measurement, AI tooling, and research from Harris Ahmad — Computer Science PhD student at University at Buffalo."
+  path="/writing/"
+  nav="writing"
+  heading="Writing"
+  lede="Short technical notes and explainers. Newest first."
+>
+  <ol class="posts">
+    {posts.map((post) => (
+      <li class="hang">
+        <div class="m"><time datetime={isoDay(post.data.date)}>{longDate(post.data.date)}</time></div>
+        <article>
+          <h2><a href={postPath(post)}>{post.data.title}</a></h2>
+          <p>{post.data.excerpt}</p>
+          <p class="meta">{readingMinutes(post.body)} min read</p>
+        </article>
+      </li>
+    ))}
+  </ol>
+</Page>
+
+<style>
+  .posts {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--rule);
+  }
+
+  .posts > li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -.01em;
+    text-wrap: pretty;
+  }
+
+  h2 a {
+    color: var(--fg);
+    text-decoration: none;
+  }
+
+  h2 a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+  }
+
+  article p {
+    color: var(--muted);
+    text-wrap: pretty;
+  }
+
+  .meta {
+    font-family: var(--mono);
+    font-size: .75rem;
+    color: var(--faint);
+  }
+</style>

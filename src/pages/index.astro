@@ -1,0 +1,1019 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import ArchDiagram from '../components/ArchDiagram.astro';
+import { site, bookingEnabled } from '../data/site';
+import { news, monthLabel, inlineLinks } from '../data/news';
+import blastradius from '../data/diagrams/blastradius.json';
+import deadpush from '../data/diagrams/deadpush.json';
+
+const posts = (await getCollection('writing', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 2);
+
+const postDate = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>';
+---
+<Base
+  title="Harris Ahmad | Distributed Systems PhD @ University at Buffalo"
+  description="Harris Ahmad is a PhD student at the University at Buffalo building transactional systems for distributed databases and microservices, and shipping developer tools. Seeking SWE/research internships for Summer 2027."
+  path="/"
+  ogType="profile"
+  keywords="Harris Ahmad, PhD student, software engineer, distributed systems, transactions, concurrency control, microservices, developer tools, MCP, University at Buffalo, research internship, software engineering internship, summer 2027"
+>
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="name">
+    <div class="hero-id">
+      <img class="avatar" src={site.avatar} alt="Portrait of Harris Ahmad" width="72" height="72" fetchpriority="high" />
+      <div class="id-text">
+        <h1 id="name">Harris Ahmad</h1>
+        <p class="whoami">{site.pronouns} · {site.location}</p>
+      </div>
+    </div>
+
+    <p class="lede">I build transactional systems for distributed databases and microservices, and ship developer tools people install.</p>
+
+    <div class="intro">
+      <p class="muted">CS PhD student at the University at Buffalo, advised by <a href="https://sites.google.com/view/haonanlu/home">Dr. Haonan Lu</a>. Before that I shipped production backends at Linq.io, Its IT Group and LUMS.</p>
+      <p class="now"><span class="strong">Now:</span> a transaction reordering layer for existing strictly serializable concurrency control, a coordination-free protocol for microservices, and shipping BlastRadius.</p>
+      <p class="status">
+        <span class="dot" aria-hidden="true"></span>
+        <span><span class="strong-500">Open to software engineering and research internships · Summer 2027.</span> <span class="muted">Returning afterwards to the PhD (expected May 2028).</span></span>
+      </p>
+    </div>
+
+    <div class="actions">
+      <div class="cta">
+        <a href={site.resume} class="btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"></path></svg>
+          <span>Résumé</span>
+          <span class="pdf">PDF</span>
+        </a>
+        <a href={`mailto:${site.email}?subject=Summer%202027%20internship`}>Email</a>
+        {bookingEnabled && <a href="/meet">Book a 1:1</a>}
+      </div>
+      <ul class="prof" aria-label="Profiles">
+        {site.profiles.map((p) => (
+          <li><a class="soft" href={p.href}>{p.label}<Fragment set:html={ext} /></a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Proof strip: 2 x 2, one column on phones -->
+  <section aria-label="Results at a glance">
+    <ul class="proof">
+      <li>
+        <span class="big nowrap"><span class="pre">up to </span>75%</span>
+        <span class="what">lower tail latency, and 85% fewer aborts</span>
+        <span class="src">src · transaction reordering layer, in preparation for USENIX OSDI 2027</span>
+      </li>
+      <li>
+        <span class="big">39/39</span>
+        <span class="what">recall, 0 false positives</span>
+        <span class="src">src · BlastRadius eval, planted 6-repo corpus</span>
+      </li>
+      <li>
+        <span class="big nowrap">5s<span class="arrow"> → </span>500ms</span>
+        <span class="what">API latency for 20K+ daily active users</span>
+        <span class="src">src · Awaaz-e-Sehat, LUMS</span>
+      </li>
+      <li>
+        <span class="big">838</span>
+        <span class="what">PyPI installs</span>
+        <span class="src">src · BlastRadius 336 + deadpush 502</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Selected work -->
+  <section class="block" aria-labelledby="work">
+    <div class="sec-head">
+      <h2 id="work" class="eyebrow">Selected work</h2>
+      <a href="/projects">All projects</a>
+    </div>
+
+    <ol class="works">
+      <!-- 01 BlastRadius -->
+      <li class="hang">
+        <div class="m"><span class="n">01</span><span>Aug 2026 – present</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>BlastRadius</h3>
+            <span class="kicker">MCP server · Claude Code plugin</span>
+          </div>
+          <p>Cross-repo dependency memory for coding agents: it tells an agent which other repos break before it bumps a shared Docker image, Terraform module, GitHub Action, Helm chart, npm package or Python package.</p>
+          <p class="result"><span class="tag">Result</span><span>39/39 recall · 0 false positives · 376 tests</span></p>
+          <div class="well" role="group" aria-label="Sample terminal output">
+            <div class="pre-wrap"><span class="c" aria-hidden="true">$ </span>pip install blastradius-mcp</div>
+            <div class="c"># sample output</div>
+            <div class="pre-wrap"><span class="sev">[CRITICAL]</span> vitest  CVE-2026-47429</div>
+          </div>
+          <!-- Architecture as of blastradius-mcp v0.3.2 -->
+          <figure class="arch">
+            <ArchDiagram id="br" data={blastradius as any} label="BlastRadius architecture diagram" />
+            <figcaption><span class="strong">Architecture</span> — When the agent reads, edits or runs a command on a manifest, a PreToolUse hook looks up the local SQLite index and injects which other repos depend on that artifact and how tightly each pins it (blue path). At Stop, a second hook lists manifests the index hasn’t seen, and the agent records them through the MCP server, which reads exact versions from lockfiles. Outside the session (dashed), a launchd/systemd watcher syncs OSV advisories into the same index and can post new ones to Slack.</figcaption>
+          </figure>
+          <div class="links">
+            <a href="/blastradius/">Case study</a>
+            <a href="https://github.com/harris-ahmad/blastradius-mcp">GitHub</a>
+            <a href="https://pypi.org/project/blastradius-mcp/">PyPI</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 02 Transaction reordering layer: public wording only (unpublished, in preparation) -->
+      <li class="hang">
+        <div class="m"><span class="n">02</span><span>Jan 2025 – present</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>Transaction reordering layer</h3>
+            <span class="kicker">Research · Go</span>
+          </div>
+          <p>A transaction reordering layer that lowers the tail latency and aborts of a system’s existing strictly serializable concurrency control, without changing its code.</p>
+          <p class="result"><span class="tag">Result</span><span>up to 75% lower tail latency · up to 85% fewer aborts</span><span class="muted">2PL, OCC, NCC · CloudLab</span></p>
+          <div class="links mono faint">
+            <span>In preparation for USENIX OSDI 2027</span>
+            <span>No public link yet</span>
+          </div>
+        </div>
+      </li>
+
+      <!-- 03 deadpush -->
+      <li class="hang">
+        <div class="m"><span class="n">03</span><span>Jun 2026 – present</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>deadpush</h3>
+            <span class="kicker">Guardian daemon · 22 MCP tools</span>
+          </div>
+          <p>Stops an AI coding agent from destroying your work: before a destructive git command runs in its sandbox, it takes a validated save point, then blocks the command.</p>
+          <div class="well ablation" role="group" aria-label="Ablation results">
+            <div class="c"># ablation</div>
+            <dl>
+              <dt>block rate</dt>
+              <dd><span class="muted">0.33</span> <span class="c">→</span> <span class="hi">0.67</span></dd>
+              <dt>work preserved</dt>
+              <dd><span class="muted">0.92</span> <span class="c">→</span> <span class="hi">1.00</span></dd>
+            </dl>
+            <div>0 false positives <span class="muted">(48 runs)</span></div>
+          </div>
+          <!-- Architecture as of deadpush main @ 3867e07 -->
+          <figure class="arch">
+            <ArchDiagram id="dp" data={deadpush as any} label="deadpush architecture diagram" />
+            <figcaption><span class="strong">Architecture</span> — Every agent write path (MCP calls, raw file writes, git) goes through one <code>enforce_content()</code> kernel. A raw file write that breaks a rule is quarantined, its last safe version is restored from git HEAD, and an INCIDENT is pushed to the agent; a proxied MCP call, commit or push that breaks one is refused before it lands. Inside a deadpush sandbox session, a destructive git command (reset --hard or force-push) is handled differently: deadpush takes a validated save point, refuses the command and reports it over GPC. In CI, deadpush scan runs the same kernel on pull requests and pushes to main.</figcaption>
+          </figure>
+          <div class="links">
+            <a href="/writing/deadpush-ai-coding-agent-guardrails/">Write-up</a>
+            <a href="https://github.com/harris-ahmad/deadpush">GitHub</a>
+            <a href="https://pypi.org/project/deadpush/">PyPI</a>
+            <code class="inline-code">pip install deadpush</code>
+          </div>
+        </div>
+      </li>
+
+      <!-- 04 WWW '24 -->
+      <li class="hang">
+        <div class="m"><span class="n">04</span><span>WWW ’24</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>Hidden data costs of YouTube ads</h3>
+            <span class="kicker">Paper + public dataset</span>
+          </div>
+          <p>First independent empirical study of mobile YouTube ad data costs, from the user’s side.</p>
+          <p class="result"><span class="tag">Data</span><span>17.6K videos · 46.6K ads · 8 countries</span></p>
+          <figure class="well bars">
+            <div role="img" aria-label="Latent buffer loss: 10.1 MB at 720p versus 3.4 MB at 360p, drawn to scale." class="bar-rows">
+              <div class="bar-row">
+                <span>720p</span>
+                <span class="track"><span class="fill" style="width: 100%"></span></span>
+                <span class="val">10.1 MB</span>
+              </div>
+              <div class="bar-row">
+                <span>360p</span>
+                <span class="track"><span class="fill low" style="width: 33.7%"></span></span>
+                <span class="val">3.4 MB</span>
+              </div>
+            </div>
+            <figcaption><span class="strong-500">~3×</span> higher latent buffer loss at 720p</figcaption>
+          </figure>
+          <div class="links">
+            <a href="/files/ytafford-www24.pdf">Paper (PDF)</a>
+            <a href="https://github.com/nsgLUMS/videoads-affordability-www24">Code &amp; data</a>
+            <a href="/writing/youtube-mobile-ad-data-costs/">Explainer</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="block" aria-labelledby="research-h">
+    <div class="sec-head">
+      <h2 id="research-h" class="eyebrow">Research</h2>
+      <a href="/publications">Publications</a>
+    </div>
+
+    <div class="research">
+      <div class="hang">
+        <div class="m label">Problem</div>
+        <p class="essay">Collaborative AI workloads put many writers on shared state. Under contention, distributed transactions abort, wait on locks, or serialize behind a central coordinator, and tail latency climbs.</p>
+      </div>
+
+      <div class="hang">
+        <div class="m label">Approach</div>
+        <ol class="approach">
+          <li>
+            <span class="num">01</span>
+            <div>
+              <div class="title-row tight">
+                <h3>Transaction reordering layer</h3>
+                <span class="chip">OSDI 2027 · in preparation</span>
+              </div>
+              <p>Go. Lowers the tail latency and aborts of existing strictly serializable concurrency control without changing its code: up to 75% lower tail latency and 85% fewer aborts across 2PL, OCC and NCC on CloudLab.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <div>
+              <div class="title-row tight">
+                <h3>Coordination-free concurrency protocol</h3>
+                <span class="chip">OSDI 2027 · in preparation</span>
+              </div>
+              <p>Java, for microservices: drops the central coordinator and global row locks Apache Seata holds across a commit.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <div>
+              <div class="title-row tight">
+                <h3>Protocol prototypes</h3>
+                <span class="chip">Go · CloudLab</span>
+              </div>
+              <p>Primary-backup, chain replication and distributed two-phase locking.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="hang">
+        <div class="m label">Status</div>
+        <p class="essay">Both 01 and 02 are in preparation for USENIX OSDI 2027, with support from NSF-funded projects at UB.</p>
+      </div>
+    </div>
+
+    <div class="hang pub" id="publication">
+      <div class="m"><span>2024</span></div>
+      <div class="pub-body">
+        <h3 class="eyebrow faint">Publication</h3>
+        <p>Emaan Atique*, Saad Sher Alam*, <span class="me">Harris Ahmad</span>, Ihsan Ayyub Qazi, Zafar Ayyub Qazi. <span class="ptitle">“Uncovering the Hidden Data Costs of Mobile YouTube Video Ads.”</span> <em class="venue">The ACM Web Conference 2024 (WWW ’24)</em>, Singapore. <span class="note">*co-primary authors</span></p>
+        <div class="links mono">
+          <a href="/files/ytafford-www24.pdf">[PDF]</a>
+          <a href="https://doi.org/10.1145/3589334.3645496">[DOI]</a>
+          <a href="https://github.com/nsgLUMS/videoads-affordability-www24">[Code &amp; data]</a>
+          <a href="/writing/youtube-mobile-ad-data-costs/">[Explainer]</a>
+          <a href="/publications#bibtex">[BibTeX]</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hang">
+      <div class="m label">Teaching</div>
+      <p class="small-text">TA, Modern Networking Concepts at UB; Object Oriented Design in C++ and Distributed Systems at LUMS.</p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="block" aria-labelledby="exp">
+    <div class="sec-head">
+      <h2 id="exp" class="eyebrow">Experience</h2>
+      <a href="/work-experience">Full history</a>
+    </div>
+
+    <ol class="jobs">
+      <li class="hang">
+        <div class="m"><span>Jan 2025 – present</span></div>
+        <div>
+          <h3>Research Software Engineer <span class="org">· University at Buffalo</span></h3>
+          <p>Transactional support for distributed databases and microservices, in Go and Java.</p>
+        </div>
+      </li>
+      <li class="hang">
+        <div class="m"><span>Jul – Dec 2024</span></div>
+        <div>
+          <h3>Software Engineer <span class="org">· Linq.io, Dallas (remote)</span></h3>
+          <p>On-demand media API cut page load 60% across 10K+ item inventories; enterprise OAuth 2.0 SSO.</p>
+        </div>
+      </li>
+      <li class="hang">
+        <div class="m"><span>May – Dec 2024</span></div>
+        <div>
+          <h3>System Engineer <span class="org">· Its IT Group (contract, remote)</span></h3>
+          <p>Real-time WebSocket backend for an AR app with 5K+ daily active users; LiDAR → Unity pipeline cut manual measurement time 80%.</p>
+        </div>
+      </li>
+      <li class="hang">
+        <div class="m"><span>Oct 2023 – Mar 2024</span></div>
+        <div>
+          <h3>Software Engineer <span class="org">· Interactive Media Lab, LUMS</span></h3>
+          <p>Awaaz-e-Sehat: API latency 5s → 500ms; Whisper + GPT-4 clinical notes at 95% accuracy.</p>
+        </div>
+      </li>
+      <li class="hang">
+        <div class="m"><span>May 2022 – Dec 2023</span></div>
+        <div>
+          <h3>Research Software Engineer <span class="org">· Network and Systems Group, LUMS</span></h3>
+          <p>Built the WWW ’24 dataset and toolchain.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="hang edu" id="education">
+      <div class="m label">Education</div>
+      <ul>
+        <li><span>PhD, Computer Science, University at Buffalo</span><span class="yr">2025 – 2028 (expected)</span></li>
+        <li><span>BS, Computer Science, LUMS</span><span class="yr">2020 – 2024</span></li>
+        <li><span>YC AI Startup School, selected from 30,000 applications</span><span class="yr">2026</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="block tight-gap" aria-labelledby="news">
+    <div class="sec-head">
+      <h2 id="news" class="eyebrow">News</h2>
+    </div>
+    <ul class="news">
+      {news.slice(0, 4).map((item) => (
+        <li class="hang">
+          <div class="m"><time datetime={item.date}>{monthLabel(item.date)}</time></div>
+          <p set:html={inlineLinks(item.text)} />
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Writing -->
+  <section class="block tight-gap" aria-labelledby="writing">
+    <div class="sec-head">
+      <h2 id="writing" class="eyebrow">Writing</h2>
+      <a href="/writing/">All writing</a>
+    </div>
+    <ul class="posts">
+      {posts.map((post) => (
+        <li>
+          <time datetime={post.data.date.toISOString().slice(0, 10)}>{postDate(post.data.date)}</time>
+          <a href={`/writing/${post.id}/`}>{post.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Get in touch -->
+  <section class="block contact" aria-labelledby="contact">
+    <div class="sec-head">
+      <h2 id="contact" class="eyebrow">Get in touch</h2>
+    </div>
+    <a href={`mailto:${site.email}?subject=Summer%202027%20internship`} class="mail">{site.email}</a>
+    <div class="links">
+      <a href={site.resume}>Résumé (PDF)</a>
+      {bookingEnabled && <a href="/meet">Book a 1:1</a>}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .muted {
+    color: var(--muted);
+  }
+
+  .faint {
+    color: var(--faint);
+  }
+
+  .strong {
+    font-weight: 600;
+    color: var(--fg);
+  }
+
+  .strong-500 {
+    font-weight: 500;
+    color: var(--fg);
+  }
+
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  /* Hero */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .hero-id {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .avatar {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: none;
+    background: var(--tint);
+    box-shadow: 0 0 0 1px var(--rule);
+  }
+
+  .id-text {
+    display: flex;
+    flex-direction: column;
+    gap: .375rem;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -.018em;
+  }
+
+  .whoami {
+    font-family: var(--mono);
+    font-size: .8125rem;
+    line-height: 1.4;
+    color: var(--muted);
+  }
+
+  .lede {
+    max-width: 38rem;
+    font-family: var(--serif);
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -.008em;
+    text-wrap: balance;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    gap: .875rem;
+    max-width: 37rem;
+  }
+
+  .intro p {
+    text-wrap: pretty;
+  }
+
+  .now {
+    font-size: .9375rem;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .status {
+    display: flex;
+    align-items: baseline;
+    gap: .625rem;
+    font-size: .9375rem;
+    line-height: 1.5;
+  }
+
+  .dot {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+    transform: translateY(-.05rem);
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem 1.75rem;
+    padding-top: .25rem;
+  }
+
+  .cta > a:not(.btn) {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: .9375rem;
+  }
+
+  .pdf {
+    font-family: var(--mono);
+    font-size: .75rem;
+    font-weight: 500;
+  }
+
+  .prof {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 1.25rem;
+    font-size: .875rem;
+  }
+
+  .prof a {
+    min-height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+  }
+
+  /* Proof strip */
+  .proof {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+    gap: 1.75rem 2.5rem;
+    padding: 1.75rem 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .proof li {
+    display: flex;
+    flex-direction: column;
+    gap: .375rem;
+  }
+
+  .big {
+    font-family: var(--mono);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -.03em;
+  }
+
+  .big .pre {
+    font-size: 1rem;
+    letter-spacing: 0;
+    color: var(--muted);
+  }
+
+  .big .arrow {
+    color: var(--faint);
+  }
+
+  .what {
+    font-size: .9375rem;
+    line-height: 1.45;
+  }
+
+  .src {
+    font-family: var(--mono);
+    font-size: .75rem;
+    line-height: 1.5;
+    color: var(--faint);
+  }
+
+  /* Sections */
+  .block {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .block.tight-gap {
+    gap: 2rem;
+  }
+
+  .block.contact {
+    gap: 1.25rem;
+  }
+
+  /* Selected work */
+  .works {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    min-width: 0;
+  }
+
+  .work > p {
+    text-wrap: pretty;
+  }
+
+  .title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .25rem .875rem;
+  }
+
+  .title-row h3 {
+    font-family: var(--serif);
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -.01em;
+  }
+
+  .result {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .125rem .75rem;
+    font-family: var(--mono);
+    font-size: .8125rem;
+    line-height: 1.55;
+  }
+
+  .result .tag {
+    font-family: var(--sans);
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--fg);
+  }
+
+  .pre-wrap {
+    white-space: pre-wrap;
+  }
+
+  .sev {
+    padding: 0 .3125rem;
+    border-radius: 2px;
+    background: var(--fg);
+    color: var(--well);
+    font-weight: 500;
+  }
+
+  .ablation {
+    gap: .25rem;
+  }
+
+  .ablation dl {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: .125rem 1.5rem;
+    max-width: 22rem;
+  }
+
+  .ablation dt {
+    color: var(--muted);
+  }
+
+  .ablation dd {
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .hi {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .arch {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    min-width: 0;
+  }
+
+  .arch figcaption {
+    max-width: 40rem;
+    font-size: .875rem;
+    line-height: 1.55;
+    color: var(--muted);
+    text-wrap: pretty;
+  }
+
+  .arch code {
+    font-size: .8125rem;
+    color: var(--fg);
+  }
+
+  .links.faint {
+    color: var(--faint);
+  }
+
+  .bars {
+    gap: .625rem;
+    padding: .875rem 1rem;
+    line-height: 1.5;
+  }
+
+  .bar-rows {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .bar-row {
+    display: grid;
+    grid-template-columns: 2.75rem minmax(0, 1fr) 4.25rem;
+    align-items: center;
+    gap: .75rem;
+  }
+
+  .track {
+    display: block;
+    height: .75rem;
+    background: var(--well-line);
+  }
+
+  .fill {
+    display: block;
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+    background: var(--accent);
+  }
+
+  .fill.low {
+    background: var(--faint);
+  }
+
+  .val {
+    text-align: right;
+    font-weight: 500;
+  }
+
+  .bars figcaption {
+    padding-top: .5rem;
+    border-top: 1px dashed var(--rule-strong);
+    color: var(--muted);
+  }
+
+  /* Research */
+  .research {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .essay {
+    font-family: var(--serif);
+    font-size: 1.1875rem;
+    line-height: 1.6;
+    text-wrap: pretty;
+  }
+
+  .approach {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--rule);
+  }
+
+  .approach > li {
+    display: grid;
+    grid-template-columns: 2rem minmax(0, 1fr);
+    gap: .75rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .approach > li > div {
+    display: flex;
+    flex-direction: column;
+    gap: .375rem;
+    min-width: 0;
+  }
+
+  .num {
+    font-family: var(--mono);
+    font-size: .8125rem;
+    line-height: 1.9;
+    color: var(--faint);
+  }
+
+  .title-row.tight {
+    gap: .25rem .75rem;
+  }
+
+  .title-row.tight h3 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+
+  .approach p {
+    font-size: .9375rem;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  .pub {
+    padding-top: .5rem;
+  }
+
+  .pub-body {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .pub-body h3 {
+    line-height: 1.5;
+  }
+
+  .pub-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-wrap: pretty;
+  }
+
+  .me {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .2em;
+    font-weight: 600;
+  }
+
+  .ptitle {
+    font-family: var(--serif);
+    font-size: 1.125rem;
+  }
+
+  .venue {
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+  }
+
+  .note {
+    color: var(--muted);
+    font-size: .875rem;
+  }
+
+  .small-text {
+    font-size: .9375rem;
+    line-height: 1.6;
+    text-wrap: pretty;
+  }
+
+  /* Experience */
+  .jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .jobs > li > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+
+  .jobs h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .org {
+    font-weight: 400;
+    color: var(--muted);
+  }
+
+  .jobs p {
+    font-size: .9375rem;
+    line-height: 1.6;
+  }
+
+  .edu {
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .edu .m {
+    letter-spacing: .12em;
+  }
+
+  .edu ul {
+    display: flex;
+    flex-direction: column;
+    gap: .375rem;
+    font-size: .9375rem;
+    line-height: 1.55;
+  }
+
+  .edu li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 .75rem;
+  }
+
+  .yr {
+    font-family: var(--mono);
+    font-size: .8125rem;
+    color: var(--muted);
+  }
+
+  /* News */
+  .news {
+    display: flex;
+    flex-direction: column;
+    gap: .875rem;
+  }
+
+  .news .m {
+    line-height: 1.6;
+  }
+
+  .news p {
+    font-size: .9375rem;
+    line-height: 1.6;
+  }
+
+  /* Writing */
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+    gap: 1.75rem 3rem;
+  }
+
+  .posts li {
+    display: flex;
+    flex-direction: column;
+    gap: .375rem;
+  }
+
+  .posts time {
+    font-family: var(--mono);
+    font-size: .75rem;
+    line-height: 1.5;
+    color: var(--faint);
+  }
+
+  .posts a {
+    font-family: var(--serif);
+    font-size: 1.1875rem;
+    line-height: 1.35;
+    font-weight: 500;
+    text-wrap: pretty;
+  }
+
+  /* Contact */
+  .mail {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    font-family: var(--serif);
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -.012em;
+    overflow-wrap: anywhere;
+  }
+
+  @media (min-width: 1120px) {
+    .hero-id {
+      margin-left: -6rem;
+    }
+  }
+
+  @media (max-width: 720px) {
+    h1 {
+      font-size: 2.25rem;
+    }
+
+    .lede {
+      font-size: 1.375rem;
+    }
+
+    .avatar {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    .hero-id {
+      gap: 1rem;
+    }
+
+    .essay {
+      font-size: 1.0625rem;
+    }
+
+    .mail {
+      font-size: 1.625rem;
+      min-height: 2.75rem;
+    }
+
+    .prof a {
+      min-height: 2.75rem;
+    }
+  }
+</style>

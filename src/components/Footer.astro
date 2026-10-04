@@ -1,0 +1,54 @@
+---
+import { site } from '../data/site';
+
+// "Last updated" is the month the site was built and deployed
+const updated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'America/New_York' });
+const year = new Date().getFullYear();
+---
+<footer class="foot">
+  <nav aria-label="Elsewhere" class="row">
+    {site.profiles.map((p) => <a href={p.href}>{p.label}</a>)}
+    <a href="/contact">Contact</a>
+    <a href="/feed.xml">RSS</a>
+  </nav>
+  <p class="small"><span>© {year} Harris Ahmad</span><span>Last updated {updated}</span></p>
+</footer>
+
+<style>
+  .foot {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 1.375rem;
+    font-size: .9375rem;
+  }
+
+  .row a {
+    min-height: 2rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .small {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem 1.25rem;
+    font-family: var(--mono);
+    font-size: .75rem;
+    color: var(--faint);
+  }
+
+  @media (max-width: 720px) {
+    .row a {
+      min-height: 2.75rem;
+    }
+  }
+</style>

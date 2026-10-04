@@ -1,0 +1,620 @@
+{
+ "width": 656,
+ "height": 672,
+ "bands": [
+  {
+   "top": 0.0,
+   "height": 140.0,
+   "tinted": false,
+   "rule": false
+  },
+  {
+   "top": 140.0,
+   "height": 140.0,
+   "tinted": true,
+   "rule": true
+  },
+  {
+   "top": 280.0,
+   "height": 132.0,
+   "tinted": false,
+   "rule": true
+  },
+  {
+   "top": 412.0,
+   "height": 152.0,
+   "tinted": true,
+   "rule": true
+  },
+  {
+   "top": 564.0,
+   "height": 108.0,
+   "tinted": false,
+   "rule": true
+  }
+ ],
+ "wires": [
+  {
+   "points": [
+    [
+     136.0,
+     92.0
+    ],
+    [
+     136.0,
+     166.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     304.0,
+     92.0
+    ],
+    [
+     304.0,
+     166.0
+    ]
+   ],
+   "tone": "accent",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     352.0,
+     168.0
+    ],
+    [
+     352.0,
+     94.0
+    ]
+   ],
+   "tone": "accent",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     496.0,
+     92.0
+    ],
+    [
+     496.0,
+     166.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     544.0,
+     168.0
+    ],
+    [
+     544.0,
+     94.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     136.0,
+     232.0
+    ],
+    [
+     136.0,
+     438.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     160.0,
+     232.0
+    ],
+    [
+     160.0,
+     336.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     160.0,
+     336.0
+    ],
+    [
+     254.0,
+     336.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     328.0,
+     232.0
+    ],
+    [
+     328.0,
+     306.0
+    ]
+   ],
+   "tone": "accent",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     520.0,
+     232.0
+    ],
+    [
+     520.0,
+     306.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     328.0,
+     440.0
+    ],
+    [
+     328.0,
+     366.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": true,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     592.0,
+     472.0
+    ],
+    [
+     640.0,
+     472.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": true,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     640.0,
+     472.0
+    ],
+    [
+     640.0,
+     64.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": true,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     640.0,
+     64.0
+    ],
+    [
+     594.0,
+     64.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": true,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     328.0,
+     504.0
+    ],
+    [
+     328.0,
+     528.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": true,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     136.0,
+     528.0
+    ],
+    [
+     520.0,
+     528.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": true,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     136.0,
+     528.0
+    ],
+    [
+     136.0,
+     590.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": true,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     520.0,
+     528.0
+    ],
+    [
+     520.0,
+     590.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": true,
+   "arrow": true
+  }
+ ],
+ "boxes": [
+  {
+   "left": 64.0,
+   "top": 36.0,
+   "width": 528.0,
+   "height": 56.0,
+   "title": "Claude agent",
+   "mono": false,
+   "note": "Read · Edit · Bash calls",
+   "edge": "solid"
+  },
+  {
+   "left": 64.0,
+   "top": 168.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "MCP server",
+   "mono": false,
+   "note": "stdio, 3 tools",
+   "edge": "solid"
+  },
+  {
+   "left": 256.0,
+   "top": 168.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Inject hook",
+   "mono": false,
+   "note": "PreToolUse, 5s budget",
+   "edge": "accent"
+  },
+  {
+   "left": 448.0,
+   "top": 168.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Capture hook",
+   "mono": false,
+   "note": "Stop, flags unread manifests",
+   "edge": "solid"
+  },
+  {
+   "left": 256.0,
+   "top": 308.0,
+   "width": 336.0,
+   "height": 56.0,
+   "title": "SQLite index",
+   "mono": false,
+   "note": "~/.blastradius/index.db · WAL mode",
+   "edge": "solid"
+  },
+  {
+   "left": 64.0,
+   "top": 440.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Lockfile reader",
+   "mono": false,
+   "note": "npm, yarn, pip, poetry, uv",
+   "edge": "solid"
+  },
+  {
+   "left": 256.0,
+   "top": 440.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "CVE watcher",
+   "mono": false,
+   "note": "launchd/systemd, polls every 6h",
+   "edge": "solid"
+  },
+  {
+   "left": 448.0,
+   "top": 440.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Bootstrap indexer",
+   "mono": false,
+   "note": "claude -p per repo",
+   "edge": "solid"
+  },
+  {
+   "left": 64.0,
+   "top": 592.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "OSV.dev API",
+   "mono": false,
+   "note": "querybatch + /vulns/<id>",
+   "edge": "dashed"
+  },
+  {
+   "left": 448.0,
+   "top": 592.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Slack webhook",
+   "mono": false,
+   "note": "optional alert sink",
+   "edge": "dashed"
+  }
+ ],
+ "labels": [
+  {
+   "left": 16.0,
+   "top": 10.0,
+   "width": 135.0,
+   "lines": [
+    "Claude Code session"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 144.0,
+   "width": 105.0,
+   "lines": [
+    "blastradius-mcp"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 284.0,
+   "width": 89.0,
+   "lines": [
+    "Local storage"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 416.0,
+   "width": 105.0,
+   "lines": [
+    "blastradius-mcp"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 568.0,
+   "width": 110.0,
+   "lines": [
+    "External services"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 64.0,
+   "top": 100.0,
+   "width": 60.0,
+   "lines": [
+    "MCP tool",
+    "calls"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": false
+  },
+  {
+   "left": 237.0,
+   "top": 100.0,
+   "width": 55.0,
+   "lines": [
+    "manifest",
+    "tool call"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": true
+  },
+  {
+   "left": 364.0,
+   "top": 100.0,
+   "width": 51.0,
+   "lines": [
+    "injected",
+    "context"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": true
+  },
+  {
+   "left": 447.0,
+   "top": 100.0,
+   "width": 37.0,
+   "lines": [
+    "Stop",
+    "event"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": false
+  },
+  {
+   "left": 556.0,
+   "top": 100.0,
+   "width": 43.0,
+   "lines": [
+    "record",
+    "these"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 148.0,
+   "top": 384.0,
+   "width": 61.0,
+   "lines": [
+    "root_path"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 182.0,
+   "top": 292.0,
+   "width": 51.0,
+   "lines": [
+    "record /",
+    "query"
+   ],
+   "kind": "edge",
+   "align": "center",
+   "accent": false
+  },
+  {
+   "left": 340.0,
+   "top": 240.0,
+   "width": 75.0,
+   "lines": [
+    "consumer +",
+    "CVE lookup"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": true
+  },
+  {
+   "left": 532.0,
+   "top": 240.0,
+   "width": 59.0,
+   "lines": [
+    "what’s",
+    "indexed?"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 340.0,
+   "top": 372.0,
+   "width": 73.0,
+   "lines": [
+    "match pins,",
+    "add alerts"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 571.0,
+   "top": 372.0,
+   "width": 57.0,
+   "lines": [
+    "headless",
+    "sessions"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": false
+  },
+  {
+   "left": 148.0,
+   "top": 540.0,
+   "width": 85.0,
+   "lines": [
+    "advisory sync"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 532.0,
+   "top": 540.0,
+   "width": 65.0,
+   "lines": [
+    "new alerts"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  }
+ ]
+}

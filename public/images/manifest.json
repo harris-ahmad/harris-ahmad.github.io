@@ -1,0 +1,17 @@
+{
+  "name": "Harris Ahmad",
+  "short_name": "Harris Ahmad",
+  "description": "PhD CSE @ University at Buffalo — distributed systems & transactional databases",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7fa",
+  "theme_color": "#2c5aa0",
+  "icons": [
+    {
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+---
+import Page from '../layouts/Page.astro';
+import { site, bookingEnabled } from '../data/site';
+
+const mailto = `mailto:${site.email}?subject=Summer%202027%20internship`;
+
+// The profiles the contact page lists, shown as bare URLs (e.g. github.com/harris-ahmad)
+const listed = ['GitHub', 'LinkedIn', 'ORCID'];
+const profiles = site.profiles
+  .filter((p) => listed.includes(p.label))
+  .map((p) => ({ label: p.label, href: p.href, display: p.href.replace(/^https?:\/\/(www\.)?/, '') }));
+
+const ext = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg>';
+
+const schema = [
+  {
+    '@type': 'ContactPage',
+    '@id': `${site.url}/contact#webpage`,
+    url: `${site.url}/contact`,
+    name: 'Contact — Harris Ahmad',
+    isPartOf: { '@id': `${site.url}/#website` },
+    about: { '@id': `${site.url}/#person` },
+  },
+];
+---
+<Page
+  title="Contact — Harris Ahmad"
+  description="Contact Harris Ahmad, Computer Science PhD student at the University at Buffalo. Email harrisah@buffalo.edu about Summer 2027 internships and referrals."
+  path="/contact"
+  heading="Contact"
+  schema={schema}
+>
+  <a slot="meta" href={mailto} class="mail">{site.email}</a>
+
+  <div class="contact">
+    <dl class="rows">
+      <div class="hang row">
+        <dt class="m label">Location</dt>
+        <dd>Buffalo, New York, United States</dd>
+      </div>
+      {profiles.map((p) => (
+        <div class="hang row">
+          <dt class="m label">{p.label}</dt>
+          <dd><a href={p.href}>{p.display}<Fragment set:html={ext} /></a></dd>
+        </div>
+      ))}
+      {bookingEnabled && (
+        <div class="hang row">
+          <dt class="m label">Book a call</dt>
+          <dd><a href="/meet">Pick a time for a 1:1</a></dd>
+        </div>
+      )}
+    </dl>
+
+    <p class="status">
+      <span class="dot" aria-hidden="true"></span>
+      <span>I’m seeking software engineering / research internships for <strong>Summer 2027</strong>, returning to my PhD afterwards. {bookingEnabled ? <>Email me or <a href="/meet">book a 1:1</a>, whichever is easier.</> : 'Prefer email for first contact.'}</span>
+    </p>
+  </div>
+</Page>
+
+<style>
+  /* The address, big in serif, under the page title */
+  .mail {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-top: .25rem;
+    font-family: var(--serif);
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -.012em;
+    overflow-wrap: anywhere;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .rows {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+  }
+
+  .rows > .row > .m {
+    line-height: 1.9;
+  }
+
+  .rows dd {
+    min-width: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .rows dd a {
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    min-height: 2rem;
+  }
+
+  .rows dd a :global(svg) {
+    flex: none;
+  }
+
+  .status {
+    display: flex;
+    align-items: baseline;
+    gap: .625rem;
+    max-width: 37rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-size: 1rem;
+    line-height: 1.6;
+    text-wrap: pretty;
+  }
+
+  .status strong {
+    font-weight: 600;
+  }
+
+  .dot {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+    transform: translateY(-.05rem);
+  }
+
+  /* Mid-size screens: label and value side by side inside the column */
+  @media (min-width: 560px) and (max-width: 1119px) {
+    .rows > .row {
+      grid-template-columns: 8rem minmax(0, 1fr);
+      column-gap: 1.5rem;
+      align-items: baseline;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .mail {
+      font-size: 1.625rem;
+      min-height: 2.75rem;
+    }
+
+    .rows dd a {
+      min-height: 2.75rem;
+    }
+  }
+</style>

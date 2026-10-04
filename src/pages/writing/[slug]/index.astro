@@ -1,0 +1,78 @@
+---
+import { render } from 'astro:content';
+import Page from '../../../layouts/Page.astro';
+import { site } from '../../../data/site';
+import { getPosts, postPath, longDate, isoDay, readingMinutes, type Post } from '../../../data/writing';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props as { post: Post };
+const { Content } = await render(post);
+const path = postPath(post);
+const { title, description, date, updated, tags } = post.data;
+
+const schema = [
+  {
+    '@type': 'BlogPosting',
+    '@id': `${site.url}${path}#article`,
+    headline: title,
+    description,
+    datePublished: isoDay(date),
+    ...(updated ? { dateModified: isoDay(updated) } : {}),
+    author: { '@id': `${site.url}/#person` },
+    publisher: { '@id': `${site.url}/#person` },
+    mainEntityOfPage: `${site.url}${path}`,
+    keywords: tags.join(', '),
+    inLanguage: 'en-US',
+  },
+];
+---
+<Page
+  title={`${title} — Harris Ahmad`}
+  description={description}
+  path={path}
+  nav="writing"
+  ogType="article"
+  article={{ published: date, modified: updated, tags }}
+  schema={schema}
+  heading={title}
+>
+  <p slot="eyebrow" class="eyebrow back"><a href="/writing/" class="soft">Writing</a></p>
+  <p slot="meta" class="meta">
+    <time datetime={isoDay(date)}>{longDate(date)}</time>
+    {updated && <span> · updated <time datetime={isoDay(updated)}>{longDate(updated)}</time></span>}
+    <span> · {readingMinutes(post.body)} min read</span>
+  </p>
+  <article class="prose post">
+    <Content />
+  </article>
+  <footer class="post-foot">
+    <p>Written by Harris Ahmad, CS PhD student at the University at Buffalo. Questions or corrections: <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+    <p><a href="/writing/">← All writing</a></p>
+  </footer>
+</Page>
+
+<style>
+  .back a {
+    min-height: 2rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .post {
+    max-width: 40rem;
+  }
+
+  .post-foot {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-size: .9375rem;
+    color: var(--muted);
+  }
+</style>

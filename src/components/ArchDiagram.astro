@@ -1,0 +1,188 @@
+---
+/*
+ * Fixed-size architecture diagram: tinted bands, boxes and labels are HTML; every
+ * connector is drawn in one SVG overlay. Geometry lives in src/data/diagrams/*.json.
+ * On narrow screens the drawing scrolls sideways inside its frame.
+ */
+interface Wire {
+  points: number[][];
+  tone: string;
+  dashed: boolean;
+  arrow: boolean;
+}
+interface Box {
+  left: number;
+  top: number;
+  width: number;
+  height: number;
+  title: string;
+  mono: boolean;
+  note: string;
+  edge: 'solid' | 'dashed' | 'accent';
+}
+interface Label {
+  left: number;
+  top: number;
+  width: number;
+  lines: string[];
+  kind: 'zone' | 'edge';
+  align: string;
+  accent: boolean;
+}
+interface Diagram {
+  width: number;
+  height: number;
+  bands: { top: number; height: number; tinted: boolean; rule: boolean }[];
+  wires: Wire[];
+  boxes: Box[];
+  labels: Label[];
+}
+interface Props {
+  id: string;
+  data: Diagram;
+  /** Short accessible name; the figure caption carries the full description */
+  label: string;
+}
+
+const { id, data, label } = Astro.props;
+const tones = [...new Set(data.wires.map((w) => w.tone))];
+const px = (n: number) => `${n}px`;
+---
+<div class="frame" tabindex="0" role="region" aria-label={`${label} (scrolls sideways on small screens)`}>
+  <div class="canvas" role="img" aria-label={label} style={{ width: px(data.width), height: px(data.height) }}>
+    {data.bands.map((b) => (
+      <div class:list={['band', { tinted: b.tinted, ruled: b.rule }]} style={{ top: px(b.top), height: px(b.height) }} />
+    ))}
+    <svg class="wires" width={data.width} height={data.height} viewBox={`0 0 ${data.width} ${data.height}`} aria-hidden="true">
+      <defs>
+        {tones.map((tone) => (
+          <marker id={`${id}-head-${tone}`} orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible">
+            <path d="M0 0 L4 2 L0 4 Z" style={{ fill: `var(--${tone})` }} />
+          </marker>
+        ))}
+      </defs>
+      {data.wires.map((w) => (
+        <path
+          d={w.points.map(([x, y], i) => `${i ? 'L' : 'M'} ${x} ${y}`).join(' ')}
+          style={{ stroke: `var(--${w.tone})` }}
+          stroke-dasharray={w.dashed ? '6 6' : undefined}
+          marker-end={w.arrow ? `url(#${id}-head-${w.tone})` : undefined}
+        />
+      ))}
+    </svg>
+    {data.boxes.map((b) => (
+      <div
+        class:list={['box', b.edge]}
+        style={{ left: px(b.left), top: px(b.top), width: px(b.width), height: px(b.height) }}
+      >
+        <span><b class:list={{ mono: b.mono }}>{b.title}</b><br /><span class="note">{b.note}</span></span>
+      </div>
+    ))}
+    {data.labels.map((l) => (
+      <div
+        class:list={['lbl', l.kind, { accent: l.accent }]}
+        style={{ left: px(l.left), top: px(l.top), width: px(l.width), textAlign: l.align }}
+      >
+        {l.lines.map((line, i) => (i ? [<br />, line] : line))}
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .frame {
+    width: fit-content;
+    max-width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--bg);
+  }
+
+  .canvas {
+    position: relative;
+    font-family: var(--sans);
+  }
+
+  .band,
+  .box,
+  .lbl,
+  .wires {
+    position: absolute;
+  }
+
+  .band {
+    left: 0;
+    width: 100%;
+  }
+
+  .band.tinted {
+    background: var(--tint);
+  }
+
+  .band.ruled {
+    border-top: 1px solid var(--rule);
+  }
+
+  .wires {
+    left: 0;
+    top: 0;
+    overflow: visible;
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .box {
+    box-sizing: border-box;
+    padding: 6px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--bg);
+    border: 1px solid var(--line-ink);
+    border-radius: 4px;
+    color: var(--fg);
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .box.dashed {
+    border-style: dashed;
+  }
+
+  .box.accent {
+    border: 1.5px solid var(--accent);
+  }
+
+  .box b {
+    font-weight: 600;
+  }
+
+  .box b.mono {
+    font-family: var(--mono);
+    font-size: 12px;
+  }
+
+  .note {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .lbl {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .lbl.zone {
+    font-weight: 600;
+  }
+
+  .lbl.accent {
+    color: var(--accent);
+  }
+</style>

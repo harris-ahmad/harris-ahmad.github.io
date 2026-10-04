@@ -1,0 +1,488 @@
+---
+// Project index, ported from _pages/projects.md (permalink /projects).
+import Page from '../layouts/Page.astro';
+import { site } from '../data/site';
+
+const github = site.profiles.find((p) => p.label === 'GitHub')!.href;
+---
+<Page
+  title="Projects — Harris Ahmad"
+  description="Open-source and research engineering projects by Harris Ahmad — BlastRadius, deadpush, ChatLiberate, gitpull, Awaaz-e-Sehat, and systems/measurement artifacts."
+  path="/projects"
+  nav="projects"
+  heading="Projects"
+  lede="Developer tools I ship, the public artifact behind our WWW ’24 paper, and the applications and libraries I’ve built."
+>
+  <nav slot="meta" class="jump" aria-label="Project groups">
+    <ul class="links mono">
+      <li><a href="#tools">Developer tools</a></li>
+      <li><a href="#research-artifact">Research artifact</a></li>
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#libraries">Libraries and reference</a></li>
+    </ul>
+  </nav>
+
+  <!-- Developer tools -->
+  <section id="tools" class="group" aria-labelledby="tools-h">
+    <div class="sec-head">
+      <h2 id="tools-h" class="eyebrow">Developer tools</h2>
+      <a href={github}>GitHub</a>
+    </div>
+
+    <ol class="works">
+      <!-- 01 BlastRadius -->
+      <li class="hang">
+        <div class="m"><span class="n">01</span><span>Aug 2026 – present</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>BlastRadius</h3>
+            <span class="kicker">MCP server · Claude Code plugin</span>
+          </div>
+          <p>Cross-repo infrastructure memory for coding agents. It knows who else depends on an artifact before you change it, and watches those pins for CVEs.</p>
+          <dl class="facts">
+            <div>
+              <dt>Problem</dt>
+              <dd>Agents are excellent inside one repo and blind across many: nothing tells you which other repos pin the base image you just bumped.</dd>
+            </div>
+            <div>
+              <dt>Built</dt>
+              <dd>Claude Code hooks that inject cross-repo impact unprompted, an MCP server on PyPI and the Claude Code plugin marketplace, and OSV monitoring filtered to the versions your pins actually resolve to.</dd>
+            </div>
+            <div>
+              <dt>Result</dt>
+              <dd class="nums">
+                <span>Planted 6-repo corpus: 39/39 recall, 39/39 version specs intact, 0 false positives</span>
+                <span>376 tests</span>
+              </dd>
+            </div>
+            <div>
+              <dt>Install</dt>
+              <dd><code class="inline-code">pip install blastradius-mcp</code></dd>
+            </div>
+          </dl>
+          <div class="links">
+            <a href="/blastradius/">Case study</a>
+            <a href="https://github.com/harris-ahmad/blastradius-mcp">GitHub</a>
+            <a href="https://pypi.org/project/blastradius-mcp/">PyPI</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 02 deadpush -->
+      <li class="hang">
+        <div class="m"><span class="n">02</span><span>Jun 2026 – present</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>deadpush</h3>
+            <span class="kicker">Guardian daemon · 22 MCP tools</span>
+          </div>
+          <p>Always-on guardian for AI coding agents. It checkpoints every file a destructive command would touch, then blocks the command, and catches secrets and agent debris before they land in your repo.</p>
+          <dl class="facts">
+            <div>
+              <dt>Problem</dt>
+              <dd>Long-running agents destroy work, leak keys, commit scratchpads, and pollute context while you’re away.</dd>
+            </div>
+            <div>
+              <dt>Built</dt>
+              <dd>A real-time filesystem daemon with a content-addressed SHA-256 journal and two-phase preflight restore, quarantine, git hooks, 22 MCP tools plus an MCP proxy, and hardened / sandbox / CI enforcement tiers.</dd>
+            </div>
+            <div>
+              <dt>Result</dt>
+              <dd class="nums">
+                <span>48-run ablation: block rate doubled, 0.33 → 0.67; work preserved 0.92 → 1.00; 0 false positives</span>
+                <span>13 formally specified guarantees · 679 tests</span>
+              </dd>
+            </div>
+            <div>
+              <dt>Install</dt>
+              <dd><code class="inline-code">pip install deadpush</code></dd>
+            </div>
+          </dl>
+          <div class="links">
+            <a href="/writing/deadpush-ai-coding-agent-guardrails/">Write-up</a>
+            <a href="https://github.com/harris-ahmad/deadpush">GitHub</a>
+            <a href="https://pypi.org/project/deadpush/">PyPI</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 03 ChatLiberate -->
+      <li class="hang">
+        <div class="m"><span class="n">03</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>ChatLiberate</h3>
+            <span class="kicker">Chrome extension · Node CLI</span>
+          </div>
+          <p>Open-source ChatGPT exporter that works where Settings → Export does not, including Business &amp; Teams accounts.</p>
+          <dl class="facts">
+            <div>
+              <dt>Problem</dt>
+              <dd>Business/Teams users can’t use the official export, and third-party tools drop branches and images.</dd>
+            </div>
+            <div>
+              <dt>Built</dt>
+              <dd>A Chrome extension and a Node CLI that emit the official <code class="inline-code">conversations.json</code>, full conversation trees, and attachments.</dd>
+            </div>
+            <div>
+              <dt>Install</dt>
+              <dd class="install">
+                <span>From source; not on npm.</span>
+                <div class="well" role="group" aria-label="Install ChatLiberate from source">
+                  <div><span class="c" aria-hidden="true">$ </span>git clone https://github.com/harris-ahmad/chatliberate</div>
+                  <div><span class="c" aria-hidden="true">$ </span>cd chatliberate</div>
+                  <div><span class="c" aria-hidden="true">$ </span>npm install &amp;&amp; npm run build:extension</div>
+                  <div class="c"># then load apps/extension/ unpacked in Chrome, or run the CLI:</div>
+                  <div><span class="c" aria-hidden="true">$ </span>node apps/cli/bin/chatliberate.js -o ./my-backup</div>
+                </div>
+              </dd>
+            </div>
+          </dl>
+          <div class="links">
+            <a href="https://github.com/harris-ahmad/chatliberate">GitHub</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 04 gitpull -->
+      <li class="hang">
+        <div class="m"><span class="n">04</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>gitpull</h3>
+            <span class="kicker">Go CLI · Homebrew</span>
+          </div>
+          <p>Go CLI for multi-repo Git workflows: clone, sync, status, branch, and local AI helpers without context-switching.</p>
+          <dl class="facts">
+            <div>
+              <dt>Problem</dt>
+              <dd>Managing many clones means repetitive pull / status / commit across directories.</dd>
+            </div>
+            <div>
+              <dt>Built</dt>
+              <dd>Parallel clone and sync, workspace-wide status / diff / stash, plus optional Ollama-powered commit, standup and ask.</dd>
+            </div>
+            <div>
+              <dt>Install</dt>
+              <dd><code class="inline-code">brew tap harris-ahmad/tap &amp;&amp; brew install gitpull</code></dd>
+            </div>
+          </dl>
+          <div class="links">
+            <a href="https://github.com/harris-ahmad/gitpull">GitHub</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Research artifact -->
+  <section id="research-artifact" class="group" aria-labelledby="research-h">
+    <div class="sec-head">
+      <h2 id="research-h" class="eyebrow">Research artifact</h2>
+      <a href="/publications">Publications</a>
+    </div>
+
+    <ol class="works" start="5">
+      <!-- 05 WWW '24 -->
+      <li class="hang">
+        <div class="m"><span class="n">05</span><span>WWW ’24</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>Uncovering the Hidden Data Costs of Mobile YouTube Video Ads</h3>
+            <span class="kicker">Paper + public dataset</span>
+          </div>
+          <p>The artifact supporting our paper at The ACM Web Conference 2024 (WWW ’24) on the data costs of YouTube ads.</p>
+          <dl class="facts">
+            <div>
+              <dt>Built</dt>
+              <dd>A public dataset and toolchain, with per-video buffer telemetry.</dd>
+            </div>
+            <div>
+              <dt>Data</dt>
+              <dd class="nums"><span>17.6K videos · 46.6K ads · 8 countries</span></dd>
+            </div>
+          </dl>
+          <div class="links">
+            <a href="https://github.com/nsgLUMS/videoads-affordability-www24">Code &amp; data</a>
+            <a href="/files/ytafford-www24.pdf">Paper (PDF)</a>
+            <a href="/writing/youtube-mobile-ad-data-costs/">Explainer</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Applications -->
+  <section id="applications" class="group" aria-labelledby="applications-h">
+    <div class="sec-head">
+      <h2 id="applications-h" class="eyebrow">Applications</h2>
+    </div>
+
+    <ol class="works" start="6">
+      <!-- 06 Awaaz-e-Sehat -->
+      <li class="hang">
+        <div class="m"><span class="n">06</span><span>Oct 2023 – Mar 2024</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>Awaaz-e-Sehat</h3>
+            <span class="kicker">Flask · AWS Lambda</span>
+          </div>
+          <p>HIPAA-aligned e-health platform, built as a Software Engineer at the LUMS Interactive Media Lab.</p>
+          <dl class="facts">
+            <div>
+              <dt>Built</dt>
+              <dd>Patient workflows, a serverless recording pipeline, and Whisper + GPT-4 transcription into structured clinical notes (95% accuracy, 1K+ recordings/day).</dd>
+            </div>
+            <div>
+              <dt>Result</dt>
+              <dd class="nums"><span>API latency 5s → 500ms for 20K+ daily active users</span></dd>
+            </div>
+          </dl>
+          <div class="links">
+            <a href="https://github.com/harris-ahmad/awaaz-e-sehat">GitHub</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+
+    <ol class="works compact" start="7">
+      <!-- 07 Guftaar -->
+      <li class="hang">
+        <div class="m"><span class="n">07</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>Guftaar</h3>
+            <span class="kicker">Speech therapy web app</span>
+          </div>
+          <p>English-language m-Health app for people who stutter (PWS), connecting users with speech therapists and offering virtual treatment support, built to improve access where therapy resources are limited.</p>
+          <div class="links">
+            <a href="https://github.com/harris-ahmad/Guftaar-Speech">GitHub</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 08 Crypto Telegram Bot -->
+      <li class="hang">
+        <div class="m"><span class="n">08</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>Crypto Telegram Bot</h3>
+            <span class="kicker">Go · CoinGecko</span>
+          </div>
+          <p>Real-time cryptocurrency price monitoring and alerts via CoinGecko, implemented in Go.</p>
+          <div class="links">
+            <a href="https://github.com/harris-ahmad/TelegramBot-Go">GitHub</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 09 Real-time chat -->
+      <li class="hang">
+        <div class="m"><span class="n">09</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>Real-time Chat Application with Analytics</h3>
+            <span class="kicker">Flask · WebSockets</span>
+          </div>
+          <p>Flask chat app with WebSockets, sentiment analysis, user analytics, and PostgreSQL-backed storage.</p>
+          <div class="links">
+            <a href="https://github.com/harris-ahmad/ChatApp-Flask">GitHub</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Libraries and reference -->
+  <section id="libraries" class="group" aria-labelledby="libraries-h">
+    <div class="sec-head">
+      <h2 id="libraries-h" class="eyebrow">Libraries and reference</h2>
+    </div>
+
+    <ol class="works compact" start="10">
+      <!-- 10 SimpleAuth -->
+      <li class="hang">
+        <div class="m"><span class="n">10</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>SimpleAuth</h3>
+            <span class="kicker">npm package</span>
+          </div>
+          <p>Extensible authentication module for Node.js built on Passport.js: register, log in, and verify credentials with a simple API. Available on npm as <code class="inline-code">@harrisahmad/simpleauth</code>.</p>
+          <div class="links">
+            <a href="https://www.npmjs.com/package/@harrisahmad/simpleauth">npm</a>
+            <a href="https://github.com/harris-ahmad/AuthenticationSystem">GitHub</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 11 Everything OOP -->
+      <li class="hang">
+        <div class="m"><span class="n">11</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>Everything Object Oriented Programming</h3>
+            <span class="kicker">C++ · CS200 at LUMS</span>
+          </div>
+          <p>A structured C++ OOP guide and exercises, created following my TA role for CS200 at LUMS (Spring/Fall 2023).</p>
+          <div class="links">
+            <a href="https://github.com/harris-ahmad/Everything-OOP">GitHub</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 12 Data Structures and Algorithms -->
+      <li class="hang">
+        <div class="m"><span class="n">12</span></div>
+        <div class="work">
+          <div class="title-row">
+            <h3>Data Structures and Algorithms</h3>
+            <span class="kicker">C++ · Go · JavaScript · Python</span>
+          </div>
+          <p>Implementations of core data structures and algorithms in C++, Go, JavaScript, and Python.</p>
+          <div class="links">
+            <a href="https://github.com/harris-ahmad/DataStructuresAndAlgorithms">GitHub</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </section>
+</Page>
+
+<style>
+  /* In-page jump links under the title */
+  .jump {
+    padding-top: .25rem;
+  }
+
+  /* One group of projects: section heading, then the list */
+  .group {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .works.compact {
+    gap: 2.25rem;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    min-width: 0;
+  }
+
+  .work > p {
+    text-wrap: pretty;
+  }
+
+  .title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .25rem .875rem;
+  }
+
+  .title-row h3 {
+    font-family: var(--serif);
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -.01em;
+    text-wrap: balance;
+  }
+
+  /* Smaller entries: lighter title, muted one-liner */
+  .compact .work {
+    gap: .5rem;
+  }
+
+  .compact .title-row h3 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+
+  .compact .work > p {
+    font-size: .9375rem;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  /* Problem / Built / Result / Install, separated by hairlines */
+  .facts {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--rule);
+  }
+
+  .facts > div {
+    display: grid;
+    grid-template-columns: 5.25rem minmax(0, 1fr);
+    align-items: baseline;
+    gap: .25rem 1rem;
+    padding: .625rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .facts dt {
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    line-height: 1.6;
+    color: var(--faint);
+  }
+
+  .facts dd {
+    min-width: 0;
+    font-size: .9375rem;
+    line-height: 1.6;
+    color: var(--muted);
+    text-wrap: pretty;
+  }
+
+  .facts dd.nums {
+    display: flex;
+    flex-direction: column;
+    gap: .125rem;
+    font-family: var(--mono);
+    font-size: .8125rem;
+    line-height: 1.7;
+    color: var(--fg);
+  }
+
+  .facts dd.install {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .facts .well {
+    max-width: 100%;
+  }
+
+  @media (max-width: 520px) {
+    .facts > div {
+      grid-template-columns: minmax(0, 1fr);
+      gap: .25rem;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .title-row h3 {
+      font-size: 1.4375rem;
+    }
+
+    .compact .title-row h3 {
+      font-size: 1.1875rem;
+    }
+  }
+</style>

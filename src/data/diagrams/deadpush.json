@@ -1,0 +1,711 @@
+{
+ "width": 656,
+ "height": 844,
+ "bands": [
+  {
+   "top": 0.0,
+   "height": 238.0,
+   "tinted": false,
+   "rule": false
+  },
+  {
+   "top": 238.0,
+   "height": 354.0,
+   "tinted": true,
+   "rule": true
+  },
+  {
+   "top": 592.0,
+   "height": 152.0,
+   "tinted": false,
+   "rule": true
+  },
+  {
+   "top": 744.0,
+   "height": 100.0,
+   "tinted": false,
+   "rule": true
+  }
+ ],
+ "wires": [
+  {
+   "points": [
+    [
+     184.0,
+     100.0
+    ],
+    [
+     184.0,
+     146.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     136.0,
+     204.0
+    ],
+    [
+     136.0,
+     266.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     328.0,
+     204.0
+    ],
+    [
+     328.0,
+     266.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     520.0,
+     204.0
+    ],
+    [
+     520.0,
+     266.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     172.0,
+     332.0
+    ],
+    [
+     172.0,
+     420.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     172.0,
+     420.0
+    ],
+    [
+     254.0,
+     420.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     136.0,
+     332.0
+    ],
+    [
+     136.0,
+     532.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     136.0,
+     532.0
+    ],
+    [
+     254.0,
+     532.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     100.0,
+     332.0
+    ],
+    [
+     100.0,
+     634.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     328.0,
+     332.0
+    ],
+    [
+     328.0,
+     386.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     448.0,
+     300.0
+    ],
+    [
+     432.0,
+     300.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     432.0,
+     300.0
+    ],
+    [
+     432.0,
+     404.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     432.0,
+     404.0
+    ],
+    [
+     402.0,
+     404.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     520.0,
+     332.0
+    ],
+    [
+     520.0,
+     386.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     496.0,
+     452.0
+    ],
+    [
+     496.0,
+     532.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     496.0,
+     532.0
+    ],
+    [
+     402.0,
+     532.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     544.0,
+     452.0
+    ],
+    [
+     544.0,
+     634.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     328.0,
+     564.0
+    ],
+    [
+     328.0,
+     732.0
+    ]
+   ],
+   "tone": "line-ink",
+   "dashed": false,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     328.0,
+     732.0
+    ],
+    [
+     8.0,
+     732.0
+    ]
+   ],
+   "tone": "line-ink",
+   "dashed": false,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     8.0,
+     732.0
+    ],
+    [
+     8.0,
+     68.0
+    ]
+   ],
+   "tone": "line-ink",
+   "dashed": false,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     8.0,
+     68.0
+    ],
+    [
+     62.0,
+     68.0
+    ]
+   ],
+   "tone": "line-ink",
+   "dashed": false,
+   "arrow": true
+  },
+  {
+   "points": [
+    [
+     592.0,
+     300.0
+    ],
+    [
+     640.0,
+     300.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     640.0,
+     300.0
+    ],
+    [
+     640.0,
+     796.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": false
+  },
+  {
+   "points": [
+    [
+     640.0,
+     796.0
+    ],
+    [
+     594.0,
+     796.0
+    ]
+   ],
+   "tone": "faint",
+   "dashed": false,
+   "arrow": true
+  }
+ ],
+ "boxes": [
+  {
+   "left": 64.0,
+   "top": 36.0,
+   "width": 240.0,
+   "height": 64.0,
+   "title": "Sandbox session",
+   "mono": false,
+   "note": "Seatbelt or bubblewrap jail, fanotify deny",
+   "edge": "solid"
+  },
+  {
+   "left": 64.0,
+   "top": 148.0,
+   "width": 528.0,
+   "height": 56.0,
+   "title": "Coding agent",
+   "mono": false,
+   "note": "Claude Code, Cursor, any CLI",
+   "edge": "solid"
+  },
+  {
+   "left": 64.0,
+   "top": 268.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Guardian daemon",
+   "mono": false,
+   "note": "watchdog, safety score",
+   "edge": "solid"
+  },
+  {
+   "left": 256.0,
+   "top": 268.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "MCP gate",
+   "mono": false,
+   "note": "mcp server + mcp-proxy",
+   "edge": "solid"
+  },
+  {
+   "left": 448.0,
+   "top": 268.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Git gates",
+   "mono": false,
+   "note": "hooks + sandbox git shim",
+   "edge": "solid"
+  },
+  {
+   "left": 256.0,
+   "top": 388.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "enforce_content()",
+   "mono": true,
+   "note": "secrets, injection, debris, plugins",
+   "edge": "solid"
+  },
+  {
+   "left": 448.0,
+   "top": 388.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Staged git deny",
+   "mono": false,
+   "note": "reset --hard, force-push",
+   "edge": "solid"
+  },
+  {
+   "left": 256.0,
+   "top": 500.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "Push channel (GPC)",
+   "mono": false,
+   "note": "Unix socket, durable outbox",
+   "edge": "solid"
+  },
+  {
+   "left": 64.0,
+   "top": 636.0,
+   "width": 144.0,
+   "height": 80.0,
+   "title": "Quarantine + audit",
+   "mono": false,
+   "note": "moved files, hash-chained log",
+   "edge": "solid"
+  },
+  {
+   "left": 448.0,
+   "top": 636.0,
+   "width": 144.0,
+   "height": 80.0,
+   "title": "Journal + save points",
+   "mono": false,
+   "note": "sha256 blobs, validated snapshots",
+   "edge": "solid"
+  },
+  {
+   "left": 448.0,
+   "top": 764.0,
+   "width": 144.0,
+   "height": 64.0,
+   "title": "CI scan gate",
+   "mono": false,
+   "note": "same kernel, branch protection",
+   "edge": "dashed"
+  }
+ ],
+ "labels": [
+  {
+   "left": 16.0,
+   "top": 10.0,
+   "width": 92.0,
+   "lines": [
+    "Agent session"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 242.0,
+   "width": 106.0,
+   "lines": [
+    "deadpush (local)"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 596.0,
+   "width": 72.0,
+   "lines": [
+    "Repo-local",
+    "state"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 16.0,
+   "top": 748.0,
+   "width": 81.0,
+   "lines": [
+    "Off-machine"
+   ],
+   "kind": "zone",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 196.0,
+   "top": 115.0,
+   "width": 150.0,
+   "lines": [
+    "wraps agent, relays GPC"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 148.0,
+   "top": 214.0,
+   "width": 60.0,
+   "lines": [
+    "file writes"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 340.0,
+   "top": 214.0,
+   "width": 58.0,
+   "lines": [
+    "tools/call"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 428.0,
+   "top": 214.0,
+   "width": 80.0,
+   "lines": [
+    "git commands"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": false
+  },
+  {
+   "left": 184.0,
+   "top": 348.0,
+   "width": 53.0,
+   "lines": [
+    "scan file"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 340.0,
+   "top": 348.0,
+   "width": 62.0,
+   "lines": [
+    "scan args"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 444.0,
+   "top": 348.0,
+   "width": 62.0,
+   "lines": [
+    "scan files"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 532.0,
+   "top": 340.0,
+   "width": 74.0,
+   "lines": [
+    "reset --hard",
+    "/ -f"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 144.0,
+   "top": 488.0,
+   "width": 104.0,
+   "lines": [
+    "INCIDENT, PAUSE,",
+    "LOCKDOWN"
+   ],
+   "kind": "edge",
+   "align": "center",
+   "accent": false
+  },
+  {
+   "left": 424.0,
+   "top": 488.0,
+   "width": 63.0,
+   "lines": [
+    "REPORT_",
+    "STAGED"
+   ],
+   "kind": "edge",
+   "align": "center",
+   "accent": false
+  },
+  {
+   "left": 112.0,
+   "top": 548.0,
+   "width": 85.0,
+   "lines": [
+    "quarantine,",
+    "restore HEAD"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 462.0,
+   "top": 548.0,
+   "width": 70.0,
+   "lines": [
+    "checkpoint"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": false
+  },
+  {
+   "left": 20.0,
+   "top": 420.0,
+   "width": 43.0,
+   "lines": [
+    "push",
+    "events"
+   ],
+   "kind": "edge",
+   "align": "left",
+   "accent": false
+  },
+  {
+   "left": 578.0,
+   "top": 548.0,
+   "width": 50.0,
+   "lines": [
+    "allowed",
+    "push"
+   ],
+   "kind": "edge",
+   "align": "right",
+   "accent": false
+  }
+ ]
+}

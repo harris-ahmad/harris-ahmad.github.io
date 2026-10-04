@@ -1,0 +1,390 @@
+---
+import Page from '../layouts/Page.astro';
+import { site } from '../data/site';
+
+const paperTitle = 'Uncovering the Hidden Data Costs of Mobile YouTube Video Ads';
+const doi = '10.1145/3589334.3645496';
+const doiUrl = `https://doi.org/${doi}`;
+const scholar = site.profiles.find((p) => p.label === 'Scholar')?.href;
+
+// Verified against Crossref for DOI 10.1145/3589334.3645496
+const bibtex = `@inproceedings{atique2024uncovering,
+  title     = {Uncovering the Hidden Data Costs of Mobile YouTube Video Ads},
+  author    = {Atique, Emaan and Alam, Saad Sher and Ahmad, Harris and Qazi, Ihsan Ayyub and Qazi, Zafar Ayyub},
+  booktitle = {Proceedings of the ACM Web Conference 2024},
+  series    = {WWW '24},
+  pages     = {1138--1148},
+  year      = {2024},
+  month     = may,
+  publisher = {ACM},
+  doi       = {10.1145/3589334.3645496},
+  url       = {https://doi.org/10.1145/3589334.3645496}
+}`;
+
+const schema = [
+  {
+    '@type': 'ScholarlyArticle',
+    '@id': `${site.url}/publications#www24`,
+    headline: paperTitle,
+    name: paperTitle,
+    author: [
+      { '@type': 'Person', name: 'Emaan Atique' },
+      { '@type': 'Person', name: 'Saad Sher Alam' },
+      { '@id': `${site.url}/#person` },
+      { '@type': 'Person', name: 'Ihsan Ayyub Qazi' },
+      { '@type': 'Person', name: 'Zafar Ayyub Qazi' },
+    ],
+    datePublished: '2024-05',
+    publisher: { '@type': 'Organization', name: 'ACM' },
+    pagination: '1138-1148',
+    identifier: { '@type': 'PropertyValue', propertyID: 'DOI', value: doi },
+    sameAs: doiUrl,
+    url: `${site.url}/publications`,
+  },
+];
+---
+<Page
+  title="Publications — Harris Ahmad"
+  description="Research publications by Harris Ahmad, including a paper at The ACM Web Conference 2024 (WWW '24) on the hidden mobile data costs of YouTube video ads."
+  path="/publications"
+  heading="Publications"
+  schema={schema}
+>
+  <!-- Peer-reviewed -->
+  <section class="block" aria-labelledby="papers">
+    <div class="sec-head">
+      <h2 id="papers" class="eyebrow">Conference papers</h2>
+    </div>
+
+    <article class="hang" id="www24" aria-labelledby="www24-title">
+      <div class="m"><span class="n">2024</span><span>WWW ’24</span></div>
+      <div class="pub">
+        <div class="cite">
+          <h3 id="www24-title" class="ptitle">{paperTitle}</h3>
+          <p class="authors">Emaan Atique*, Saad Sher Alam*, <span class="me">Harris Ahmad</span>, Ihsan Ayyub Qazi, Zafar Ayyub Qazi</p>
+          <p class="note">*Co-primary authors</p>
+          <p class="venue-line"><em class="venue">The ACM Web Conference 2024 (WWW ’24)</em>, Singapore, May 13–17, 2024</p>
+          <p class="doi"><a href={doiUrl}>doi:{doi}</a></p>
+        </div>
+
+        <p class="result"><span class="tag">Data</span><span>17,600 main videos · 46,600+ ads · ~8,225 hours · 8 countries</span></p>
+
+        <div class="links mono">
+          <a href="/files/ytafford-www24.pdf">[PDF]</a>
+          <a href="/writing/youtube-mobile-ad-data-costs/">[Explainer]</a>
+          <a href="https://github.com/nsgLUMS/videoads-affordability-www24">[Code &amp; data]</a>
+          {scholar && <a href={scholar}>[Google Scholar]</a>}
+          <a href="#bibtex">[BibTeX]</a>
+        </div>
+
+        <div class="part">
+          <div class="sec-head">
+            <h4 class="eyebrow">Summary</h4>
+          </div>
+          <div class="prose summary">
+            <p>Video platforms monetize via ads, but users also pay in mobile data, which is especially costly in developing regions. This paper presents the first independent empirical analysis of YouTube in-stream video ad data costs from the user perspective.</p>
+            <p>We built a crawl/stream pipeline and released a public corpus of 17,600 main videos and 46,600+ ads (~8,225 hours) across eight countries, four developing and four developed. Buffer-state analysis surfaces latent wastage:</p>
+            <ul>
+              <li>Users often still download <strong>80–100%</strong> of a skippable ad’s data even after skipping (~31% of cases in developing regions, ~52.6% in developed regions).</li>
+              <li>Mid-roll ads can force re-download of as much as <strong>~71 seconds</strong> of main video on average early in playback.</li>
+              <li>Excess losses average about <strong>6.7%</strong> of a 2GB mobile plan.</li>
+            </ul>
+            <p>We discuss implications for platforms, ABR/ad-insertion policies, and affordability/inclusion.</p>
+            <p><strong>Longer write-up:</strong> <a href="/writing/youtube-mobile-ad-data-costs/">The hidden mobile data cost of YouTube video ads</a></p>
+          </div>
+        </div>
+
+        <div class="part" id="bibtex">
+          <div class="sec-head">
+            <h4 class="eyebrow">BibTeX</h4>
+            <button type="button" class="copy" id="bib-copy" hidden><span class="lbl">Copy</span><span class="visually-hidden"> BibTeX</span></button>
+          </div>
+          <pre class="bib" role="region" tabindex="0" aria-label="BibTeX entry for the WWW ’24 paper"><code id="bib-text">{bibtex}</code></pre>
+          <p id="bib-status" class="visually-hidden" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- In preparation: public wording only (see the disclosure policy) -->
+  <section class="block" aria-labelledby="prep">
+    <div class="sec-head">
+      <h2 id="prep" class="eyebrow">In preparation</h2>
+    </div>
+
+    <ol class="prep">
+      <li class="hang">
+        <div class="m"><span class="n">01</span><span>Go</span></div>
+        <div class="item">
+          <div class="title-row">
+            <h3>Transaction reordering layer</h3>
+            <span class="chip">USENIX OSDI 2027 · in preparation</span>
+          </div>
+          <p>Lowers the tail latency and aborts of a system’s existing strictly serializable concurrency control, without changing its code.</p>
+        </div>
+      </li>
+      <li class="hang">
+        <div class="m"><span class="n">02</span><span>Java</span></div>
+        <div class="item">
+          <div class="title-row">
+            <h3>Coordination-free concurrency protocol</h3>
+            <span class="chip">USENIX OSDI 2027 · in preparation</span>
+          </div>
+          <p>For microservices: drops the central coordinator and global row locks that Apache Seata holds across a commit.</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="aside">PhD research at the University at Buffalo, with support from NSF-funded projects. No public link yet.</p>
+  </section>
+</Page>
+
+<script>
+  // Progressive enhancement: the Copy button stays hidden unless the Clipboard API is available
+  const button = document.getElementById('bib-copy') as HTMLButtonElement | null;
+  const label = button?.querySelector('.lbl');
+  const source = document.getElementById('bib-text');
+  const status = document.getElementById('bib-status');
+
+  if (button && label && source && navigator.clipboard && window.isSecureContext) {
+    let timer: number | undefined;
+    button.hidden = false;
+
+    const show = (text: string, announce: string) => {
+      label.textContent = text;
+      if (status) status.textContent = announce;
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => {
+        label.textContent = 'Copy';
+        if (status) status.textContent = '';
+      }, 2000);
+    };
+
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(source.textContent ?? '');
+        show('Copied', 'BibTeX copied to the clipboard');
+      } catch {
+        // Fall back to selecting the entry so it can be copied by hand
+        const range = document.createRange();
+        range.selectNodeContents(source);
+        const selection = window.getSelection();
+        selection?.removeAllRanges();
+        selection?.addRange(range);
+        show('Selected', 'Could not copy automatically; the BibTeX entry is selected');
+      }
+    });
+  }
+</script>
+
+<style>
+  .block {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  /* The paper */
+  .pub {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 0;
+  }
+
+  .cite {
+    display: flex;
+    flex-direction: column;
+    gap: .375rem;
+  }
+
+  .ptitle {
+    margin-bottom: .25rem;
+    font-family: var(--serif);
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -.01em;
+    text-wrap: balance;
+  }
+
+  .authors {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-wrap: pretty;
+  }
+
+  .me {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .2em;
+    font-weight: 600;
+  }
+
+  .venue-line {
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .venue {
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+    color: var(--fg);
+  }
+
+  .note {
+    font-size: .875rem;
+    color: var(--muted);
+  }
+
+  .doi {
+    font-family: var(--mono);
+    font-size: .8125rem;
+    overflow-wrap: anywhere;
+  }
+
+  .doi a {
+    min-height: 2rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .result {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .125rem .75rem;
+    font-family: var(--mono);
+    font-size: .8125rem;
+    line-height: 1.55;
+  }
+
+  .result .tag {
+    font-family: var(--sans);
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--fg);
+  }
+
+  .part {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    min-width: 0;
+    padding-top: 1rem;
+  }
+
+  .summary {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .summary p {
+    text-wrap: pretty;
+  }
+
+  /* BibTeX */
+  .copy {
+    order: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 6rem;
+    min-height: 2rem;
+    padding: 0 .75rem;
+    /* --line-ink keeps the button edge at >= 3:1 against --bg in both themes */
+    border: 1px solid var(--line-ink);
+    border-radius: 3px;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--mono);
+    font-size: .8125rem;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .copy:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .copy[hidden] {
+    display: none;
+  }
+
+  .bib {
+    max-width: 100%;
+    padding: .875rem 1rem;
+    border: 1px solid var(--well-line);
+    border-radius: 4px;
+    background: var(--well);
+    color: var(--fg);
+    font-size: .8125rem;
+    line-height: 1.6;
+    white-space: pre;
+    overflow-x: auto;
+    tab-size: 2;
+  }
+
+  .bib code {
+    font-family: var(--mono);
+  }
+
+  /* In preparation */
+  .prep {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    min-width: 0;
+  }
+
+  .title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .25rem .75rem;
+  }
+
+  .title-row h3 {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  .item p {
+    font-size: .9375rem;
+    line-height: 1.6;
+    color: var(--muted);
+    text-wrap: pretty;
+  }
+
+  .aside {
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .875rem;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  @media (max-width: 720px) {
+    .ptitle {
+      font-size: 1.375rem;
+    }
+
+    .copy,
+    .doi a {
+      min-height: 2.75rem;
+    }
+  }
+</style>

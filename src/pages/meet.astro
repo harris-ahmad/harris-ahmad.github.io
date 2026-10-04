@@ -1,0 +1,77 @@
+---
+import Page from '../layouts/Page.astro';
+import { site, bookingEnabled } from '../data/site';
+
+const mail = `mailto:${site.email}?subject=Meeting%20request`;
+---
+<Page
+  title="Book a 1:1 — Harris Ahmad"
+  description="Book a 1:1 call with Harris Ahmad, Computer Science PhD student at the University at Buffalo, about Summer 2027 internships, research, or referrals."
+  path="/meet"
+  nav="meet"
+  heading="Book a 1:1"
+  lede={bookingEnabled
+    ? 'Pick a time to chat about Summer 2027 internships, research, or referrals. Times are shown in your time zone, and you’ll get a calendar invite once you book.'
+    : undefined}
+>
+  {bookingEnabled ? (
+    <section class="booking" aria-label="Booking calendar">
+      <div id="cal-inline" class="cal"></div>
+      <p class="fallback">Calendar not loading? Book at <a href={`https://cal.com/${site.calLink}`}>cal.com/{site.calLink}</a> or email <a href={mail}>{site.email}</a>.</p>
+      <script is:inline define:vars={{ calLink: site.calLink }}>
+        (function (C, A, L) { var p = function (a, ar) { a.q.push(ar); }; var d = C.document; C.Cal = C.Cal || function () { var cal = C.Cal; var ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { var api = function () { p(api, arguments); }; var namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        var calTheme = document.documentElement.getAttribute("data-theme");
+        if (calTheme !== "light" && calTheme !== "dark") {
+          calTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        Cal("init", "meet", { origin: "https://app.cal.com" });
+        var calConfig = { layout: "month_view", theme: calTheme };
+        Cal.ns.meet("inline", { elementOrSelector: "#cal-inline", calLink: calLink, config: calConfig });
+        Cal.ns.meet("ui", { theme: calTheme, layout: "month_view", hideEventTypeDetails: false, cssVarsPerTheme: { light: { "cal-brand": "#2c5aa0" }, dark: { "cal-brand": "#8fb2ea" } } });
+        /* Cal.com ignores live theme changes sent through "ui", so reload the calendar frame with the new
+           theme, but only when the visitor clicked the toggle here: an OS or other-tab change shouldn't wipe
+           a booking in progress. */
+        document.addEventListener("themechange", function (e) {
+          var frame = document.querySelector("#cal-inline iframe");
+          if (!frame) { calConfig.theme = e.detail.theme; return; }
+          if (e.detail.source !== "toggle") { return; }
+          var url = new URL(frame.src);
+          if (url.searchParams.get("theme") === e.detail.theme) { return; }
+          url.searchParams.set("theme", e.detail.theme);
+          url.searchParams.set("ui.color-scheme", e.detail.theme);
+          frame.src = url.toString();
+        });
+      </script>
+    </section>
+  ) : (
+    <p>Online booking isn’t open right now. Email me at <a href={mail}>{site.email}</a> and we’ll find a time.</p>
+  )}
+</Page>
+
+<style>
+  .booking {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .cal {
+    width: 100%;
+    min-height: 640px;
+    overflow: auto;
+  }
+
+  /* On wide screens let the calendar break out of the text column so Cal.com can show its side-by-side month view */
+  @media (min-width: 1120px) {
+    .cal {
+      --cal-w: min(64rem, calc(100vw - 4rem));
+      width: var(--cal-w);
+      margin-left: calc((100% - var(--cal-w)) / 2);
+    }
+  }
+
+  .fallback {
+    font-size: .9375rem;
+    color: var(--muted);
+  }
+</style>
