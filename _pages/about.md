@@ -67,7 +67,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
   <h2>Research</h2>
   <p>Collaborative AI workloads put many writers on shared state, and that is where distributed transactions struggle: under contention they abort, wait on locks, or serialize behind a central coordinator, and tail latency climbs. I'm building transactional support for microservices, distributed databases, and serverless systems that keeps transactions correct without that cost. Current work:</p>
   <ul>
-    <li>A transaction reordering and coordination layer over Apple's FoundationDB and CockroachDB, in Go, that reduces aborts, lock contention, and tail latency by 70% — in preparation for USENIX OSDI 2027</li>
+    <li>A transaction reordering layer, in Go, that lowers tail latency and aborts of existing strictly serializable concurrency control without changing its code: up to 75% lower tail latency and 85% fewer aborts across 2PL, OCC and NCC — in preparation for USENIX OSDI 2027</li>
     <li>A coordination-free concurrency protocol for microservices, in Java, that drops the central coordinator and global row locks Apache Seata holds across a commit — in preparation for USENIX OSDI 2027</li>
     <li>Prototypes of primary-backup, chain replication, and distributed two-phase locking in Go that stress-test protocol behavior for collaborative AI workloads on CloudLab</li>
   </ul>
@@ -166,7 +166,7 @@ keywords: "Harris Ahmad, PhD student, software engineer, distributed systems, tr
     <h3>Research Software Engineer</h3>
     <p class="experience-meta">University at Buffalo (SUNY) • Buffalo, NY • January 2025 - Present</p>
     <ul>
-      <li>Transactional support for microservices and distributed databases (FoundationDB, CockroachDB, Apache Seata); see <a href="#research">Research</a></li>
+      <li>Transactional support for distributed databases and microservices (Go, Java); see <a href="#research">Research</a></li>
     </ul>
   </div>
 

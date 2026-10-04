@@ -3,7 +3,7 @@ permalink: /work-experience
 title: ""
 seo_title: "Work Experience — Harris Ahmad"
 description: "Software engineering and research experience — University at Buffalo, Linq.io, Its IT Group, LUMS, and distributed systems work."
-keywords: "work experience, software engineer, research engineer, University at Buffalo, distributed systems, FoundationDB, CockroachDB, FastAPI, Go, YC, Y Combinator"
+keywords: "work experience, software engineer, research engineer, University at Buffalo, distributed systems, transactions, FastAPI, Go, YC, Y Combinator"
 ---
 
 # Work Experience
@@ -14,7 +14,7 @@ keywords: "work experience, software engineer, research engineer, University at 
 **University at Buffalo (SUNY) - Buffalo, NY** <br />
 _January 2025 to Present_
 
-- Built a distributed transaction reordering and coordination layer over Apple's FoundationDB and CockroachDB in Go, reducing aborts, lock contention, and tail latency by 70%; in preparation for USENIX OSDI 2027.
+- Building a transaction reordering layer in Go that lowers tail latency and aborts of existing strictly serializable concurrency control without changing its code: up to 75% lower tail latency and 85% fewer aborts across 2PL, OCC and NCC on CloudLab; in preparation for USENIX OSDI 2027.
 - Prototyped primary-backup, chain replication, and distributed two-phase locking in Go to stress-test protocol behavior for collaborative AI workloads on CloudLab (NSF-supported).
 - Building a coordination-free concurrency protocol for microservices in Java that keeps distributed transactions correct without the central coordinator and global row locks Apache Seata holds across a commit, which serialize conflicting transactions and add a round trip to every one; in preparation for USENIX OSDI 2027.
 
